@@ -201,7 +201,7 @@ Quy ước nguồn số liệu trong mục này:
 
 - **Tự thuật:** Lương và Bảo kể lại trong CP1–CP2.
 - **Phỏng vấn:** lời kể của A, B, C ở mục 3.2, là ước lượng của người được hỏi.
-- **Ước lượng từng bước:** chia từ tổng 30 phút trong Problem Card #3 của Lương, đối chiếu với lời kể của A và B. Nhóm chưa có mốc tin nhắn để đo riêng từng bước.
+- **Ước lượng từng bước:** chia từ tổng 30 phút trong Problem Card #3 của Lương (tự thuật), là mốc cao của khoảng 20–30 phút; A kể khoảng 20–25 phút. Nhóm chưa có mốc tin nhắn để đo riêng từng bước.
 - **Mục tiêu đề xuất:** con số nhóm đặt ra để kiểm ở CP5–CP6, chưa phải kết quả đo.
 
 ### 4.1. Quy trình hiện tại
@@ -215,6 +215,7 @@ flowchart LR
   B4 --> B2
   style B2 fill:#f8d7da,stroke:#c0392b
   style B3 fill:#f8d7da,stroke:#c0392b
+  style B4 fill:#f8d7da,stroke:#c0392b
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
@@ -227,26 +228,31 @@ flowchart LR
 
 **Tổng thời gian một lượt chốt lịch:** khoảng 20–30 phút theo phỏng vấn A, B và tự thuật của Lương, Bảo. Nhóm có lịch cố định (phỏng vấn C) chỉ mất khoảng 5–10 phút.
 
-**Bottleneck chính:** vòng lặp bước 2–3, gồm chờ thành viên phản hồi và đề xuất lại khi có người bận. Phỏng vấn cho thấy hai nguyên nhân khác nhau: A chủ yếu chờ người cuối trả lời, B chủ yếu do giờ rảnh không được nêu cụ thể. Theo ước lượng, bước 2–4 chiếm khoảng 26/30 phút.
+**Bottleneck chính:** vòng lặp bước 2–4, gồm chờ thành viên phản hồi, đề xuất lại khi có người bận và lặp lại các vòng đó. Phỏng vấn cho thấy hai nguyên nhân khác nhau: A chủ yếu chờ người cuối trả lời, B chủ yếu do giờ rảnh không được nêu cụ thể. Theo ước lượng, bước 2–4 chiếm khoảng 26/30 phút.
 
 **Cách đo lại baseline (giả định #4):** lấy một đoạn chat chốt lịch thật đã che tên, ghi thời điểm của tin đề xuất đầu tiên, từng phản hồi, mỗi lần đổi giờ và tin chốt. Từ đó tính số vòng, thời gian chờ phản hồi và thời gian tìm giờ thay thế.
 
 ### 4.2. Quy trình tương lai
 
-Đây là **phương án đề xuất** dựa trên research ở mục 3.3. Mức can thiệp chính thức (No AI / Rule / Workflow / Agent) do nhóm chốt ở CP6. Bước 3 là bước AI tùy chọn và chỉ dùng nếu CP6 chọn Workflow.
+Quy trình theo mức **Workflow** đã chốt ở mục 6.2: Rule làm lõi (Google Form, Sheets, Apps Script), AI chỉ làm một việc là đọc tin trả lời tự do trong chat. Nhóm đã có lịch họp cố định (pattern của C) thì không cần các bước này.
 
 ```mermaid
 flowchart TD
   F0{"Nhóm đã có khung họp cố định hằng tuần?"}
   F0 -->|"Có"| F6["0. Gửi một tin xác nhận khung cố định<br/>CON NGƯỜI"]
-  F0 -->|"Chưa có hoặc cần đổi giờ"| F1["1. Gửi mẫu hỏi giờ rảnh: 3–4 khung giờ cụ thể, kèm hạn trả lời<br/>RULE"]
-  F1 --> F2["2. Thành viên đánh dấu khung rảnh trong một lượt; đến hạn nhắc người chưa trả lời một lần<br/>RULE + CON NGƯỜI"]
-  F2 --> F3["3. Gom các trả lời thành bảng khung trùng<br/>AI tùy chọn, hoặc người hẹn tự đếm"]
-  F3 --> F4["4. Người hẹn kiểm bảng với tin nhắn gốc rồi chọn giờ<br/>CON NGƯỜI - HITL"]
-  F4 --> F5["5. Mọi thành viên xác nhận giờ đã chốt<br/>CON NGƯỜI"]
+  F0 -->|"Chưa có hoặc cần đổi giờ"| F1["1. Tạo Form hoặc bình chọn: 3–4 khung giờ cụ thể, kèm hạn trả lời<br/>RULE"]
+  F1 --> F2["2. Thành viên trả lời qua Form; đến hạn script nhắc người chưa trả lời một lần<br/>RULE"]
+  F2 --> F3a["3a. Phản hồi qua Form được ghi vào Sheets<br/>RULE"]
+  F2 --> F3b["3b. Tin trả lời tự do trong chat: người hẹn dán vào, AI trích trạng thái từng khung kèm nguyên văn, ghi vào Sheets<br/>AI"]
+  F3a --> F3c["Script tính khung đủ người<br/>RULE"]
+  F3b --> F3c
+  F3c --> F4["4. Người hẹn duyệt bảng, đối chiếu nguyên văn, chọn khung<br/>CON NGƯỜI - HITL"]
+  F4 --> F5["5. Gửi tin chốt, mọi thành viên xác nhận<br/>CON NGƯỜI"]
   F6 --> F5
-  F3 -.->|"Bảng sai hoặc không có khung trùng"| R["Phương án quay về: người hẹn tự đếm hoặc đề xuất thủ công trong chat như hiện tại"]
-  R --> F4
+  F3b -.->|"AI điền sai"| R1["Quay về: người hẹn tự sửa ô trong Sheets"]
+  F3c -.->|"Script lỗi hoặc không có khung đủ người"| R2["Quay về: đếm tay từ Form; quyết định họp với đa số hoặc dời lịch"]
+  R1 --> F4
+  R2 --> F4
 ```
 
 [Tệp Mermaid của quy trình tương lai](../assets/cp5-workflow-future.mmd)
@@ -254,37 +260,41 @@ flowchart TD
 | Bước | Ai xử lý | Việc làm | Giải nguyên nhân nào |
 |---:|---|---|---|
 | 0 | Con người | Nếu nhóm đã thống nhất khung họp cố định (pattern của C), chỉ gửi một tin xác nhận | Bỏ qua toàn bộ vòng lặp |
-| 1 | Rule | Người hẹn gửi mẫu tin nhắn cố định hoặc bình chọn trong chat: 3–4 khung giờ cụ thể và hạn trả lời | Nguyên nhân 2: buộc báo giờ cụ thể thay vì "theo buổi" |
-| 2 | Rule + con người | Thành viên chọn mọi khung mình rảnh trong một lượt. Đến hạn, người hẹn nhắc riêng người chưa trả lời một lần | Nguyên nhân 1: giới hạn thời gian chờ |
-| 3 | AI tùy chọn hoặc con người | Gom các trả lời thành bảng khung trùng. Nếu nhóm dùng bình chọn có sẵn, bước này không cần AI | Giảm việc đếm tay khi thành viên trả lời bằng tin nhắn tự do |
-| 4 | Con người (HITL) | Người hẹn đối chiếu bảng với tin nhắn gốc, chọn khung có đủ người. Nếu không có khung đủ người, quyết định họp với đa số hay dời lịch | Giữ quyết định chốt giờ ở con người |
-| 5 | Con người | Từng thành viên xác nhận giờ đã chốt | Tránh hiểu nhầm giờ họp |
+| 1 | Rule | Người hẹn tạo Form hoặc bình chọn theo mẫu cố định: 3–4 khung giờ cụ thể và hạn trả lời | Nguyên nhân 2: buộc báo giờ cụ thể thay vì "theo buổi" |
+| 2 | Rule | Thành viên chọn mọi khung mình rảnh trong một lượt. Đến hạn, Apps Script nhắc người chưa trả lời một lần | Nguyên nhân 1: giới hạn thời gian chờ, người hẹn không phải tự canh chat |
+| 3a | Rule | Phản hồi qua Form được ghi thẳng vào Sheets | Không cần đếm tay |
+| 3b | AI | Với tin trả lời tự do trong chat, người hẹn dán tin vào bước AI. AI trích trạng thái của người gửi ở từng khung (rảnh, bận, rảnh một phần, không rõ) kèm đoạn nguyên văn rồi ghi vào Sheets | Nguyên nhân 2: tin tự do không phải hỏi lại hoặc nhập tay |
+| — | Rule | Script tính khung có đủ người từ dữ liệu 3a và 3b | Không cần đếm tay |
+| 4 | Con người (HITL) | Người hẹn duyệt bảng, đối chiếu mọi ô AI điền với nguyên văn, chọn khung. Nếu không có khung đủ người, quyết định họp với đa số hay dời lịch | Giữ quyết định chốt giờ ở con người |
+| 5 | Con người | Người hẹn gửi tin chốt, từng thành viên xác nhận | Tránh hiểu nhầm giờ họp |
 
 **Boundary**
 
-- AI (nếu dùng) chỉ đọc các tin nhắn trả lời giờ rảnh được người hẹn đưa vào. AI không đọc lịch cá nhân hay toàn bộ lịch sử chat.
-- AI không tự chốt giờ, không tự gửi tin nhắn hay lời mời cho nhóm, không tự dời sự kiện nào (rủi ro đã ghi ở công cụ Reclaim, mục 3.3).
-- AI không suy diễn giờ rảnh khi thành viên chưa trả lời. Người chưa trả lời được ghi là "chưa có thông tin", không được tính là rảnh.
+- AI chỉ đọc các tin trả lời giờ rảnh mà người hẹn dán vào, tên đã thay bằng mã thành viên. AI không đọc lịch cá nhân hay toàn bộ lịch sử chat.
+- AI không gửi tin, không chốt giờ, không gửi lời mời và không dời lịch (rủi ro đã ghi ở công cụ Reclaim, mục 3.3).
+- AI không suy ra "rảnh" từ việc im lặng. Người chưa trả lời luôn là "chưa có thông tin". Câu mơ hồ được ghi "không rõ", "rảnh một phần" không được tính là đủ.
 
 **Khi nào cần con người kiểm tra (HITL)**
 
-- Bước 4: người hẹn luôn đối chiếu bảng khung trùng với tin nhắn gốc trước khi chốt.
+- Bước 4: người hẹn luôn đối chiếu mọi ô AI điền với nguyên văn trước khi chốt.
 - Khi không có khung nào đủ tất cả thành viên, người hẹn quyết định họp với đa số hay dời lịch.
 
 **Phương án quay về**
 
-- Bảng khung trùng sai, thiếu người hoặc không có khung trùng: người hẹn tự đếm từ bình chọn hoặc quay về đề xuất giờ thủ công trong chat như quy trình hiện tại.
-- Thành viên không dùng mẫu hoặc bình chọn: người hẹn hỏi riêng người đó, không chặn cả nhóm.
+- AI điền sai: người hẹn tự sửa ô trong Sheets và ghi vào cột "sửa tay" (dùng làm phản hồi cải thiện ở mục 6.3).
+- Script lỗi: người hẹn đếm tay từ Form, tức quay về No AI.
+- Không có khung đủ người: người hẹn hỏi lại thủ công trong chat như quy trình hiện tại, hoặc thống nhất họp với đa số hay dời lịch.
+- Thành viên không dùng Form: tin trả lời của người đó đi qua bước 3b, không chặn cả nhóm.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | 5, bước 2–4 lặp nhiều vòng | 5, không lặp nếu có khung trùng; 2 bước nếu có khung cố định | Vòng lặp đề xuất lại được thay bằng một lượt gom giờ rảnh |
+| Số bước | 5, bước 2–4 lặp nhiều vòng | 5 bước, không lặp nếu có khung đủ người; 2 bước nếu có khung cố định | Vòng lặp đề xuất lại được thay bằng một lượt gom giờ rảnh qua Form |
 | Tổng thời gian | Khoảng 20–30 phút (phỏng vấn A, B; tự thuật) | Mục tiêu đề xuất: dưới 10 phút | Mục tiêu dựa trên mốc 5–10 phút của nhóm có lịch cố định (phỏng vấn C). Chưa có số đo sau khi áp dụng |
-| Số bước thủ công | 5/5 | 3/5 (bước 2, 4, 5); bước 1 dùng mẫu cố định, bước 3 do AI hoặc tính năng bình chọn | Bước 4 giữ thủ công vì là điểm kiểm tra |
-| Bottleneck chính | Vòng lặp chờ phản hồi và đề xuất lại (bước 2–3) | Chờ thành viên trả lời trong một lượt (bước 2) | Research mục 3.3: chưa công cụ nào giải được phần chờ phản hồi. Hạn trả lời và nhắc một lần chỉ giới hạn được, không loại bỏ được |
-| Rủi ro mới phát sinh | — | Thành viên không mở bình chọn hoặc không theo mẫu; AI đọc sai giờ trong tin nhắn tự do; nhóm phụ thuộc vào một người hẹn; hạn trả lời gây áp lực | Xử lý bằng bước 4 (HITL), phương án quay về và việc ghi "chưa có thông tin" thay vì đoán |
+| Số bước thủ công | 5/5 | 3/5: tạo Form ở bước 1, duyệt ở bước 4, chốt ở bước 5 | Nhắc và tính khung đủ người do script làm. Bước 3b cần người hẹn dán tin vào AI. Bước 4 giữ thủ công vì là điểm kiểm tra |
+| Bottleneck chính | Vòng lặp chờ phản hồi và đề xuất lại (bước 2–4) | Chờ thành viên trả lời trong một lượt (bước 2) | Research mục 3.3: chưa công cụ nào giải được phần chờ phản hồi. Hạn trả lời và nhắc tự động chỉ giới hạn được, không loại bỏ được |
+| Rủi ro mới phát sinh | — | Thành viên không mở Form mà vẫn nhắn trong chat; AI đọc sai giờ hoặc bỏ điều kiện "trừ…"; script lỗi; người hẹn phải dán tin chat vào AI | Xử lý bằng bước 4 (HITL), các phương án quay về, quy tắc "chưa có thông tin" và thay tên bằng mã thành viên |
 
 Thời gian từng bước ở mục 4.1 là ước lượng. Khi đo lại theo cách nêu ở mục 4.1, nhóm cập nhật baseline cho Problem Statement ở mục 5.
 
@@ -446,8 +456,52 @@ PHƯƠNG ÁN QUAY VỀ: AI sai → người hẹn tự sửa ô trong Sheets; sc
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+**Hạn chế**
+
+- **Baseline chưa phải số đo.** Mốc 20–30 phút và 6–10 vòng đến từ tự thuật của Lương, Bảo và lời kể của A, B. Số phút từng bước ở mục 4.1 là ước lượng chia từ tổng 30 phút. Nhóm chưa lấy được mốc thời gian từ một đoạn chat chốt lịch thật.
+- **Mẫu kiểm chứng nhỏ.** Chỉ có 3 người được phỏng vấn, đều là sinh viên trong nhóm học tập. Trong đó C là trường hợp đối chiếu vì nhóm đã có lịch cố định. Chưa có survey để biết tình huống của A và B phổ biến đến đâu.
+- **Chưa tách được hai nguyên nhân của bottleneck.** A chủ yếu chờ người cuối trả lời, B chủ yếu do phản hồi không cụ thể. Giả định #2 vẫn chưa có số đo để biết nguyên nhân nào chiếm phần lớn thời gian.
+- **Hành vi dùng Form chưa được quan sát.** Giả định #3 mới dựa trên ý kiến của A và B. Chưa biết thành viên có chịu trả lời qua Form hay vẫn nhắn thẳng trong chat, nên rủi ro Usability còn ở mức Trung bình.
+- **Bước AI chưa được thử.** Bộ eval 10 tin trả lời mẫu và ngưỡng ≥ 90% ô khớp ở mục 7 chưa được chạy trên đầu ra thật.
+- **Phạm vi hẹp.** Kết luận chỉ áp dụng cho nhóm 3–4 người chưa có lịch họp cố định. Với nhóm như C, lịch cố định (No AI) đã đủ.
+
+**Hướng tiếp theo**
+
+- **Trước pilot:** đo lại baseline từ 3 lần chốt lịch gần nhất trong chat đã che tên, tách thời gian chờ phản hồi và thời gian hỏi lại. Chạy bộ eval 10 tin và chỉ dùng bước AI khi đạt cả 5 tiêu chí.
+- **Pilot 2 tuần** theo mục 8.2, tuần đầu chỉ dùng Rule. Áp dụng các ngưỡng dừng đã ghi: nếu tin tự do dưới 20% thì bỏ bước AI, nếu phần chờ phản hồi vẫn chiếm trên một nửa thời gian thì chuyển sang lịch họp cố định.
+- **Mở rộng kiểm chứng:** hỏi thêm các nhóm ngoài lớp, ưu tiên nhóm chưa có lịch cố định, để kiểm giả định #1 với nguồn độc lập.
+- **Candidate dự phòng:** L2 + B1 (đối chiếu yêu cầu lab, 30/35 điểm ở mục 2.4) có thể đào sâu ở vòng sau, sau khi nhóm chốt một bộ tài liệu và danh sách yêu cầu chuẩn để đo.
 
 ## 10. Tài liệu tham khảo
 
--
+**Dữ liệu sơ cấp của nhóm**
+
+- Bốn báo cáo cá nhân CP1–CP2 của [Hà Lê Duy](../individual/2A202603851_HaLeDuy.md), [Võ Hồng Lương](../individual/2A202603839_VoHongLuong.md), [Nguyễn Đức Nhật](../individual/2A202603812_NguyenDucNhat.md) và [Nguyễn Thiên Bảo](../individual/2A202603861_NguyenThienBao.md): nguồn của 12 candidate ở mục 2 và các mốc tự thuật.
+- Phỏng vấn trực tiếp ba thành viên của ba nhóm học tập khác, ghi theo mã A, B, C (mục 3.2). Không lưu tên thật hay thông tin liên lạc.
+
+**Công cụ và pattern đã research (mục 3.3), link mở và kiểm ngày 09/11/2026**
+
+- When2meet: https://www.when2meet.com/
+- Doodle, Group Poll: https://doodle.com/en/product/polls/
+- Google Calendar Help, Find a time for a meeting: https://support.google.com/calendar/answer/37161
+- Reclaim.ai, AI Scheduling Links: https://reclaim.ai/features/scheduling-links
+
+**Tài liệu của lab**
+
+- Worksheet và prompt mẫu: [docs/01-worksheet.md](../../docs/01-worksheet.md)
+- Bài làm mẫu: [docs/02-deliverable-example.md](../../docs/02-deliverable-example.md)
+- Danh mục framework và nguồn gốc: [docs/03-international-frameworks.md](../../docs/03-international-frameworks.md)
+
+**Framework đã áp dụng** (link theo danh mục ở docs/03)
+
+- Double Diamond, Design Council (toàn bài): https://www.designcouncil.org.uk/resources/framework-for-innovation/
+- Job Story, Intercom và Alan Klement (mục 2.1): https://www.intercom.com/blog/accidentally-invented-job-stories/
+- Opportunity Solution Tree, Teresa Torres (mục 2.3): https://www.producttalk.org/opportunity-solution-trees/
+- Assumptions Mapping, David Bland và Strategyzer (mục 3.1): https://www.strategyzer.com/library/how-assumptions-mapping-can-focus-your-teams-on-running-experiments-that-matter
+- The Mom Test, Rob Fitzpatrick (mục 3.2): https://www.momtestbook.com/
+- Lean UX, Business Problem Statement, Jeff Gothelf (mục 5 và 7): https://jeffgothelf.com/blog/business-problem-statement-opportunity-statement/
+- Building Effective Agents, Anthropic (mục 6.2): https://www.anthropic.com/research/building-effective-agents
+- AI Canvas, Agrawal, Gans và Goldfarb, HBR (mục 6.3): https://hbr.org/2018/04/a-simple-tool-to-start-making-decisions-with-the-help-of-ai
+- People + AI Guidebook, Google PAIR (mục 6.4): https://pair.withgoogle.com/chapter/user-needs/
+- AI evals, Hamel Husain và Shreya Shankar (tiêu chí đánh giá mục 7): https://www.lennysnewsletter.com/p/advanced-evals-how-to-find-and-fix
+- The Four Big Risks, Marty Cagan, SVPG (mục 8.1): https://www.svpg.com/four-big-risks/

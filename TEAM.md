@@ -14,7 +14,7 @@
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Hà Lê Duy | 2A202603851 | Trưởng nhóm | duyhale95 |
-| 2 | Võ Hồng Lương | 2A202603839 |  | Chờ thành viên xác nhận |
+| 2 | Võ Hồng Lương | 2A202603839 | Vẽ quy trình trước/sau, hạn chế và tài liệu tham khảo | luongvh2510 |
 | 3 | Nguyễn Đức Nhật | 2A202603812 |  | Chờ thành viên xác nhận |
 | 4 | Nguyễn Thiên Bảo | 2A202603861 |  | Chờ thành viên xác nhận |
 
@@ -65,19 +65,28 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
--
+- Đề xuất candidate L3 (chốt giờ họp nhóm), được nhóm chọn ở CP3.
+- CP5: quy trình hiện tại, quy trình tương lai và bảng before/after (mục 4 báo cáo nhóm).
+- Mục 9 (hạn chế và hướng tiếp theo) và mục 10 (tài liệu tham khảo) của báo cáo nhóm.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- **CP3:** pitch ba card L1, L2, L3. Câu hỏi của Nhật về bottleneck của L3 giúp nhóm tách hai nguyên nhân chờ phản hồi và tìm giờ thay thế, sau này thành giả định #2 ở CP4.
+- **Mục 4.1:** sơ đồ Mermaid và bảng 5 bước có actor, input, output, thời gian, ghi rõ nguồn của từng số (phỏng vấn, tự thuật, ước lượng). Xác định bottleneck là vòng lặp bước 2–3 với hai nguyên nhân từ phỏng vấn A và B, kèm cách đo lại baseline từ mốc tin nhắn.
+- **Mục 4.2:** quy trình tương lai theo mức Workflow đã chốt ở CP6, chỉ rõ bước Rule, bước AI, bước người kiểm tra (HITL), boundary và các phương án quay về. Cập nhật tệp Mermaid trong `report/assets/`.
+- **Mục 4.3:** bảng before/after với 5 chỉ số và rủi ro mới.
+- **Mục 9:** 6 hạn chế về baseline, mẫu kiểm chứng, giả định chưa kiểm và 4 hướng tiếp theo khớp với pilot và ngưỡng dừng ở mục 8.
+- **Mục 10:** tập hợp dữ liệu sơ cấp, 4 công cụ research, tài liệu lab và 11 framework đã áp dụng; kiểm lại cả 15 link đều mở được.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- [Mục 4 — Quy trình trước/sau](report/team/group_report.md#4-quy-trình-trướcsau-cp5) · [Tệp Mermaid](report/assets/cp5-workflow-future.mmd)
+- [Mục 9 — Hạn chế và hướng tiếp theo](report/team/group_report.md#9-hạn-chế-và-hướng-tiếp-theo) · [Mục 10 — Tài liệu tham khảo](report/team/group_report.md#10-tài-liệu-tham-khảo)
+- [Commit mục 4 bản đầu](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/11d71d1) · [Commit thời gian từng bước](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/44229bb)
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Cùng là "chốt lịch chậm" nhưng A và B chậm ở hai bước khác nhau, nên một giải pháp chỉ giải được một nửa. Khi vẽ quy trình, mình phải ghi nguồn cho từng con số, vì phần lớn số liệu là ước lượng chứ chưa phải số đo.
 
 ### NguyenDucNhat-2A202603812
 
