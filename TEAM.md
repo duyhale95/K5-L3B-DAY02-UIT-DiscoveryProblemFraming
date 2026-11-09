@@ -4,14 +4,14 @@
 
 - Tên nhóm: UIT
 - Trưởng nhóm: Hà Lê Duy
-- Candidate ưu tiên sau đối chiếu CP2: Đọc và đối chiếu yêu cầu bài lab từ nhiều file hướng dẫn.
-- Trạng thái lựa chọn: Chờ nhóm xác nhận trong cuộc họp CP3.
+- Candidate được chọn: Đọc và đối chiếu yêu cầu bài lab từ nhiều file hướng dẫn.
+- Trạng thái lựa chọn: Hà Lê Duy, trưởng nhóm, xác nhận chọn S1 ngày 09/11/2026 để triển khai CP4–CP5.
 - Quyết định cuối: Chờ CP4–CP6.
 - Báo cáo và căn cứ đề xuất: [group_report.md](report/team/group_report.md)
 
 ## Thành viên
 
-| STT | Họ và tên | MSSV | Vai trò dự kiến | Tài khoản GitHub |
+| STT | Họ và tên | MSSV | Vai trò được phân công | Tài khoản GitHub |
 |---:|---|---|---|---|
 | 1 | Hà Lê Duy | 2A202603851 | Trưởng nhóm, điều phối, tổng hợp và chốt biên bản | duyhale95 |
 | 2 | Võ Hồng Lương | 2A202603839 | Kiểm chứng, đo lường, tiêu chí đánh giá | Chờ thành viên xác nhận |
@@ -20,7 +20,7 @@
 
 ## Phân công theo checkpoint
 
-Phân công dự kiến để triển khai sau khi nhóm xác nhận candidate. Kết quả thực hiện được cập nhật theo công việc đã hoàn thành.
+Phân công triển khai S1 theo xác nhận của trưởng nhóm. Kết quả thực hiện được cập nhật theo công việc đã hoàn thành.
 
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|

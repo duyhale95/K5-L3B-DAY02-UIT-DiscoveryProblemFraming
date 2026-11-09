@@ -5,8 +5,8 @@
 - Tên nhóm: UIT
 - Trưởng nhóm: Hà Lê Duy
 - Thành viên và phân công: [TEAM.md](../../TEAM.md)
-- Candidate ưu tiên: Đọc và đối chiếu yêu cầu bài lab từ nhiều file hướng dẫn.
-- Trạng thái: Đề xuất sau đối chiếu CP2, chờ nhóm xác nhận tại CP3.
+- Candidate được chọn: Đọc và đối chiếu yêu cầu bài lab từ nhiều file hướng dẫn.
+- Trạng thái: Hà Lê Duy, trưởng nhóm, xác nhận chọn S1 ngày 09/11/2026. Bắt đầu triển khai CP4–CP5.
 - Quyết định Go / Not Yet / No-Go: Chờ kết quả CP4–CP6.
 
 ## 2. Hội tụ nhóm (CP3)
@@ -108,9 +108,9 @@ Các cụm “tự động hóa release notes”, “đối soát tự động�
 | N1 | Cần dữ liệu nội bộ, quy tắc và người có quyền xác nhận. Sơ đồ hiện có 8 bước, số giờ và tỷ lệ chưa kèm bằng chứng. |
 | N3 | Cần dữ liệu đơn hàng/ngân hàng và người đối soát. Tỷ lệ 85%/15% cùng mục tiêu lỗi 0% cần nguồn và cách đo. |
 
-### 2.5. Candidate ưu tiên và lý do lựa chọn
+### 2.5. Candidate được chọn và lý do lựa chọn
 
-**Đề xuất chọn S1 — Đọc và đối chiếu yêu cầu bài lab.**
+**Đã chọn S1 — Đọc và đối chiếu yêu cầu bài lab theo xác nhận của trưởng nhóm Hà Lê Duy ngày 09/11/2026.**
 
 > Khi bắt đầu một bài lab có nhiều file hướng dẫn, tôi muốn xác định đúng sản phẩm cần nộp, tiêu chí bắt buộc và cách nộp, để lập kế hoạch làm bài và kiểm tra đầy đủ trước hạn.
 
@@ -124,9 +124,9 @@ Phạm vi đầu tiên là một bộ tài liệu và một checklist có nguồ
 
 **Điều kiện xem xét lại.** Nếu người được hỏi cho biết checklist sẵn có đã đủ, hoặc nghẽn chính là chưa hiểu kiến thức chuyên môn, nhóm cần sửa phạm vi trước khi xét mức can thiệp.
 
-### 2.6. Nội dung thảo luận để xác nhận CP3
+### 2.6. Câu hỏi cần làm rõ và ghi nhận quyết định
 
-Người dẫn là phân công đề xuất. Câu trả lời và quyết định được ghi theo cuộc họp thực tế.
+Candidate S1 đã được trưởng nhóm chốt. Các câu hỏi dưới đây tiếp tục dùng để làm rõ phạm vi và bằng chứng. Câu trả lời được cập nhật theo trao đổi thực tế.
 
 | Bước | Câu hỏi quyết định | Người dẫn đề xuất | Nội dung cần ghi |
 |---|---|---|---|
@@ -137,17 +137,17 @@ Người dẫn là phân công đề xuất. Câu trả lời và quyết địn
 | Kiểm khảo sát | Có thể mời 2–3 học viên ngoài nhóm đã làm lab tương tự và quan sát họ thao tác không? | Duy | Người liên hệ theo vai trò, lịch hẹn, tài liệu sử dụng. |
 | Chốt shortlist | S1 có còn dẫn đầu khi tính bằng chứng và quyền tiếp cận dữ liệu? | Cả nhóm | Điểm điều chỉnh, ý kiến khác và lý do chọn/loại. |
 
-**Trạng thái xác nhận cuộc họp**
+**Ghi nhận quyết định và phần thảo luận còn thiếu**
 
 - Thời điểm và người tham dự: Chờ ghi nhận.
 - Câu hỏi từng thành viên thực sự đã đặt và câu trả lời: Chờ ghi nhận.
-- Candidate nhóm xác nhận: Chờ ghi nhận.
+- Quyết định chọn candidate: Hà Lê Duy xác nhận S1 ngày 09/11/2026 qua trao đổi trực tiếp trong chat điều phối, đồng thời yêu cầu triển khai phân công CP4–CP5.
 - Bất đồng và cách giải quyết: Chờ ghi nhận.
 - Người xác nhận biên bản: Hà Lê Duy sau cuộc họp.
 
-### 2.7. Phân công sau khi xác nhận S1
+### 2.7. Phân công triển khai S1
 
-Phân công dự kiến theo thế mạnh thể hiện trong CP2. Các mốc tính từ lúc nhóm chốt S1.
+Phân công triển khai theo xác nhận của trưởng nhóm. Bảo và Lương thực hiện khảo sát, Nhật research song song. CP5 sử dụng kết quả CP4 đã được tổng hợp.
 
 | Phần việc | Người chính | Người hỗ trợ/kiểm tra | Đầu ra và mốc |
 |---|---|---|---|
