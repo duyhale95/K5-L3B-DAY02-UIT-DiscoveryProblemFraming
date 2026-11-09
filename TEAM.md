@@ -1,68 +1,111 @@
 # Team UIT
 
+> Điền file này trên repo chung do nhóm trưởng fork. Nhóm điền phần **Thông tin nhóm** và **Thành viên**. Mỗi người tự điền phần của mình trong **Cá nhân**. Không copy file này sang repo khác.
+
 ## Thông tin nhóm
 
 - Tên nhóm: UIT
 - Trưởng nhóm: Hà Lê Duy
-- Candidate được chọn: Đọc và đối chiếu yêu cầu bài lab từ nhiều file hướng dẫn.
-- Trạng thái lựa chọn: Hà Lê Duy, trưởng nhóm, xác nhận chọn S1 ngày 09/11/2026 để triển khai CP4–CP5.
-- Quyết định cuối: Chờ CP4–CP6.
-- Báo cáo và căn cứ đề xuất: [group_report.md](report/team/group_report.md)
+- Candidate problem nhóm chọn (1 câu):
+- Quyết định cuối (Go / Not Yet / No-Go):
 
 ## Thành viên
 
-| STT | Họ và tên | MSSV | Vai trò được phân công | Tài khoản GitHub |
+| STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | Hà Lê Duy | 2A202603851 | Trưởng nhóm, điều phối, tổng hợp và chốt biên bản | duyhale95 |
-| 2 | Võ Hồng Lương | 2A202603839 | Rà metric, tiêu chí đánh giá | Chờ thành viên xác nhận |
-| 3 | Nguyễn Đức Nhật | 2A202603812 | So sánh mức can thiệp, kiểm tra kỹ thuật | Chờ thành viên xác nhận |
-| 4 | Nguyễn Thiên Bảo | 2A202603861 | Kiểm chứng và research CP4, quy trình trước/sau | Chờ thành viên xác nhận |
+| 1 | Hà Lê Duy | 2A202603851 | Trưởng nhóm | duyhale95 |
+| 2 | Võ Hồng Lương | 2A202603839 |  | Chờ thành viên xác nhận |
+| 3 | Nguyễn Đức Nhật | 2A202603812 |  | Chờ thành viên xác nhận |
+| 4 | Nguyễn Thiên Bảo | 2A202603861 |  | Chờ thành viên xác nhận |
+
+Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
+
+Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối thời gian, ghi chép, người phản biện chính, phụ trách kiểm chứng (phỏng vấn/survey), phụ trách research, vẽ quy trình, viết Problem Statement.
 
 ## Phân công theo checkpoint
 
-Phân công triển khai S1 theo xác nhận của trưởng nhóm. Kết quả thực hiện được cập nhật theo công việc đã hoàn thành.
-
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
-| CP3 — Hội tụ | Hà Lê Duy | Cả nhóm | Xác nhận cluster, cây cơ hội, shortlist, câu hỏi và quyết định thực tế |
-| CP4 — Giả định | Hà Lê Duy | Nguyễn Thiên Bảo | 4–6 giả định và thứ tự kiểm chứng |
-| CP4 — Phỏng vấn | Nguyễn Thiên Bảo | Hà Lê Duy duyệt | 2–3 snapshot với người ngoài nhóm, có tín hiệu phản bác |
-| CP4 — Đo hiện trạng | Nguyễn Thiên Bảo | Hà Lê Duy duyệt | Phút từng bước, mẫu đầu ra, mục thiếu và nguồn |
-| CP4 — Research | Nguyễn Thiên Bảo | Hà Lê Duy duyệt | 2–3 công cụ hoặc pattern, link đã kiểm và phạm vi giải quyết |
-| CP5 — Quy trình trước/sau | Nguyễn Thiên Bảo | Nguyễn Đức Nhật | Sơ đồ, bảng bước, before/after và phương án quay về |
-| CP5 — Problem Statement v0 | Hà Lê Duy | Võ Hồng Lương | Sáu trường do nhóm chốt dựa trên CP4 |
-| CP6 — Mức can thiệp | Nguyễn Đức Nhật | Nguyễn Thiên Bảo | So sánh bốn mức và lý do lựa chọn |
-| CP6 — Eval và v1 | Võ Hồng Lương | Nguyễn Đức Nhật | 3–5 tiêu chí, bảng thay đổi v0→v1 |
-| CP6 — Quyết định | Hà Lê Duy | Cả nhóm | Bốn rủi ro, kết luận, bước tiếp theo và ngưỡng dừng |
+| CP3 — Hội tụ nhóm | | | Cluster, cây OST, bảng chấm điểm |
+| CP4 — Kiểm chứng | | | Assumption map, snapshot hoặc survey |
+| CP4 — Research | | | Bảng research có link |
+| CP5 — Quy trình trước/sau | | | Quy trình + bảng before/after |
+| CP5 — Problem Statement v0 | | | Problem Statement v0 |
+| CP6 — Mức can thiệp + Problem Statement v1 | | | Ma trận, AI Canvas, eval, Problem Statement v1 |
+| CP6 — Quyết định | | | 4 rủi ro + Go/Not Yet/No-Go |
 
 ## Cá nhân
 
-Mỗi thành viên tự bổ sung đóng góp thực tế, bằng chứng và điều học được sau khi thực hiện.
+Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `HoVaTen-MSSV`.
 
 ### HaLeDuy-2A202603851
 
-- Phần việc được phân công: Điều phối CP3, giả định CP4, tổng hợp v0 và quyết định CP6.
-- Đóng góp CP4: Chuẩn bị bảng giả định, đối chiếu tài liệu và lập kế hoạch kiểm chứng. Duyệt và phản biện kết quả CP4 sau khi Bảo bàn giao.
-- Bằng chứng: [Báo cáo nhóm, mục 3.1–3.2](report/team/group_report.md#31-assumption-map).
-- Điều học được từ phần nhóm: Chờ cập nhật.
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
 
 ### VoHongLuong-2A202603839
 
-- Phần việc được phân công: Rà metric, eval và v1.
-- Đóng góp đã hoàn thành: Chờ cập nhật.
-- Bằng chứng: Chờ cập nhật.
-- Điều học được từ phần nhóm: Chờ cập nhật.
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
 
 ### NguyenDucNhat-2A202603812
 
-- Phần việc được phân công: So sánh mức can thiệp, rà quy trình và eval.
-- Đóng góp đã hoàn thành: Chờ cập nhật.
-- Bằng chứng: Chờ cập nhật.
-- Điều học được từ phần nhóm: Chờ cập nhật.
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
 
 ### NguyenThienBao-2A202603861
 
-- Phần việc được phân công: Thực hiện phỏng vấn, đo hiện trạng và research CP4. Vẽ quy trình trước/sau ở CP5.
-- Đóng góp đã hoàn thành: Cung cấp ba bản trả lời ngoài nhóm ngày 09/11/2026, tổng hợp thành snapshot ẩn danh với điều kiện sử dụng để minh họa; đối chiếu A1–A5, ghi tín hiệu phản bác và tổng hợp ba phương án research có nguồn. Phần đo hiện trạng chưa có kết quả; bản tổng hợp chờ Duy duyệt.
-- Bằng chứng: [Báo cáo nhóm, mục 3](report/team/group_report.md#3-kiểm-chứng--research-giải-pháp-đã-có-cp4); [P01](report/assets/cp4-interview-snapshot-01.md), [P02](report/assets/cp4-interview-snapshot-02.md), [P03](report/assets/cp4-interview-snapshot-03.md).
-- Điều học được từ phần nhóm: Chờ cập nhật.
+**Phần việc phụ trách:**
+
+-
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+-
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+-
+
+**Điều mình học được từ phần nhóm:**
+
+-
