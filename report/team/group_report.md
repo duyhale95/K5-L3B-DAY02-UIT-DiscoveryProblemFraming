@@ -191,6 +191,8 @@ Nếu đổi candidate, Duy điều chỉnh đầu vào và đối tượng kh�
 
 **Kế hoạch kiểm chứng**
 
+Bộ phiếu chuẩn bị cho Bảo: [câu hỏi phỏng vấn](../assets/cp4-interview-guide.md), [mẫu snapshot ẩn danh](../assets/cp4-interview-snapshot-template.md) và [phiếu bấm giờ, đối chiếu đầu ra](../assets/cp4-baseline-measurement-template.md). Đây là tài liệu chuẩn bị, chưa phải kết quả kiểm chứng; ưu tiên A1–A2 và chuẩn bị bộ nguồn/tham chiếu theo A5 trước lượt đo.
+
 - **Bảo** phỏng vấn tổng cộng 2–3 học viên ngoài nhóm đã làm bài lab có nhiều file hướng dẫn. Hỏi về một lần cụ thể, các nguồn đã mở, chỗ phải tra lại, cách xử lý và hậu quả đã xảy ra. Ghi cả trường hợp dùng checklist sẵn có và hoàn thành thuận lợi.
 - **Bảo** quan sát ít nhất một lượt theo cách làm thông thường của học viên. Bắt đầu khi học viên mở bộ tài liệu, kết thúc khi người đó báo đã kiểm xong danh sách yêu cầu. Ghi phiên bản tài liệu, các phút tìm, đọc, đối chiếu, lập và kiểm lại. Tách thời gian gián đoạn khỏi thời gian thao tác. Đối chiếu đầu ra với danh sách tham chiếu để đếm mục thiếu, hiểu sai hoặc thiếu nguồn.
 - **Bảo** tổng hợp mỗi snapshot theo mã, vai trò, ngày, phương thức, tình huống gần nhất, cách xử lý, số liệu và nguồn. Giữ riêng lời kể, số bấm giờ và các ý chưa xác nhận. Ghi trích dẫn nguyên văn khi có ghi chép, cùng tín hiệu xác nhận và phản bác.
