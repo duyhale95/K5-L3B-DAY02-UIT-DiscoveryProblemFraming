@@ -1,4 +1,4 @@
-# Báo cáo cá nhân — MSSV_HoTen
+# Báo cáo cá nhân — 2A202603812_NguyenDucNhat
 
 > Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
 > Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
@@ -177,29 +177,28 @@ Quy trình nháp hiện tại:
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
-
----
+| Pitch Problem Card | Trình bày 3 bài toán cá nhân trong Mục 2.1 (`N1` — Đối soát 3 bên trạm sạc Green SM, `N2` — Tổng hợp Release Notes từ Git/Jira, `N3` — Đối soát chuyển khoản VietQR giờ cao điểm). | Đóng góp nhánh bài toán vận hành dữ liệu thực tế để nhóm đối chiếu giữa bài toán chuyên sâu của doanh nghiệp (`N1`) và bài toán chung mà cả 4 thành viên đều trực tiếp trải nghiệm hàng tuần (`L3`). |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt:<br>• Với `D2` (của Duy): *"Nếu dùng bảng ghi việc ngay trong cuộc họp, còn bước nào phải làm lại?"*<br>• Với `L3` (của Lương): *"Bottleneck thật là bước này, hay là bước trước nó?"*<br>• Với `B1` (của Bảo): *"Nếu đã có một checklist mẫu dùng lại cho mọi lab, bước đối chiếu còn tốn thời gian không?"* | Câu hỏi phản biện của mình cho card `L3` đã giúp nhóm bóc tách rõ 2 nguyên nhân gốc rễ của việc chốt lịch họp chậm: (1) chờ thành viên phản hồi và (2) phản hồi bằng tin nhắn tự do mơ hồ phải hỏi lại nhiều vòng — đây chính là cơ sở hình thành Giả định #2 ở CP4 và kiến trúc kết hợp Form (Rule) + AI ở CP5–CP6. |
+| Nhận phản biện | Câu hỏi tôi nhận được:<br>• Từ Bảo (cho `N1`): *"Đối chiếu theo mã phiên sạc xử lý được bao nhiêu phần trăm khối lượng công việc, và còn lại những ca ngoại lệ nào?"*<br>• Từ Lương (cho `N2`): *"Bottleneck thật là bước này, hay là bước trước nó?"*<br>• Từ Duy (cho `N3`): *"Ai ngoài bạn gặp vấn đề này? Bạn có bằng chứng không?"* | Tôi đã sửa gì: Làm rõ trong Card #1 (`N1`) rằng khớp mã `Session_ID` bằng Rule-based giải quyết được 85–90% giao dịch chuẩn, còn 10–15% ngoại lệ là do rớt mạng mất gói tin và hóa đơn điện EVN dạng ảnh chụp; đồng thời đồng thuận không chọn `N1` làm bài nhóm vì dữ liệu nội bộ doanh nghiệp khó để cả 4 thành viên cùng phỏng vấn kiểm chứng ngay trong buổi học. |
+| Gom cluster / cây OST | Cùng nhóm gom 12 cards (D1–D3, L1–L3, N1–N3, B1–B3) vào các cụm vấn đề và xây dựng nhánh cây cơ hội (OST) xoay quanh việc phối hợp làm việc nhóm không đồng bộ. | Giúp nhóm lọc ra 3 ứng viên vào shortlist chấm điểm hội tụ ở Mục 2.3 & 2.4. |
+| Chọn candidate problem | Tham gia chấm điểm shortlist theo 7 tiêu chí và đồng thuận chọn **`L3 — Chốt giờ họp nhóm`** (đạt 32/35 điểm, cao nhất nhóm). | Chọn được bài toán mà cả 4 thành viên đều là người trong cuộc, có thể đo đạc lại từ lịch sử tin nhắn thật của nhóm và kiểm chứng ngay lập tức. |
+| Kiểm chứng / research | Tham gia rà soát bản đồ giả định (Assumption Map - Mục 3.1), đối chiếu kết quả phỏng vấn thực tế (nhân vật A và B) và phân tích hạn chế của các công cụ hiện có (When2meet, Google Calendar, bình chọn Zalo/Messenger ở Mục 3.3). | Làm rõ lý do vì sao đã có công cụ tạo poll/form nhưng thành viên vẫn nhắn tin tự do kèm điều kiện (*"sau 8h tối nếu xong sớm"*, *"chiều thứ 5 bận tới 4h"*), dẫn đến người hẹn vẫn phải đọc và tổng hợp tay. |
+| Quy trình nhóm | Phối hợp với Lương rà soát điểm nghẽn (bottleneck) ở vòng lặp bước 2–3 của quy trình hiện tại (Mục 4.1) và xác định luồng xử lý ngoại lệ bằng AI kèm bước người kiểm tra (HITL) trong quy trình đề xuất (Mục 4.2). | Thống nhất quy trình tương lai 4 bước: dùng Form/Rule thu nhận lịch chuẩn trước, AI chỉ đứng ở Bước 3 để đọc các tin nhắn trả lời tự do và điền vào bảng nháp cho người hẹn duyệt ở Bước 4. |
+| Problem Statement | Cùng nhóm rà soát Problem Statement v0 (Mục 5) và tinh chỉnh Problem Statement v1 (Mục 6.2) để gắn chặt ranh giới can thiệp (boundary) và điều kiện kiểm duyệt của người hẹn họp. | Đảm bảo Problem Statement không bị "solution-first", nêu đúng đối tượng nhóm 3–4 người chưa có lịch cố định và lượng hóa mục tiêu rút thời gian chốt lịch từ 20–30 phút xuống dưới 10 phút. |
+| Mức can thiệp AI | Đóng góp xây dựng Ma trận can thiệp (Mục 6.1), AI Canvas rút gọn (Mục 6.3) và bộ 5 tiêu chí đánh giá Eval (Mục 6.4), đặc biệt là nguyên tắc *"0 ô rảnh sai"* và *"chuyển câu mơ hồ thành không rõ"*. | Chốt mức can thiệp hợp lý là **Workflow** (Rule làm lõi + AI đọc tin nhắn tự do + HITL duyệt cuối), bác bỏ phương án dùng Agent tự động chốt lịch vì rủi ro xếp lịch sai khi thiếu xác nhận. |
+| Quyết định | Cùng nhóm đánh giá 4 nhóm rủi ro (Value, Usability, Feasibility, Viability - Mục 8.1) và thiết lập ngưỡng dừng (Stop condition) cho vòng pilot 2 tuần (Mục 8.2). | Chốt quyết định **Go (phạm vi nhỏ)**: thử nghiệm 2 tuần (tối thiểu 3 lượt hẹn họp thật), nếu không đạt `< 10 phút` ở ít nhất 2/3 lượt hoặc xuất hiện bất kỳ ô `"rảnh"` sai nào thì dừng phần AI và quay về dùng Form + Rul
 
 ## 5. Dùng AI
 
+
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Dùng AI gợi ý danh sách 15 ý tưởng bài toán thực tế theo 4 lăng kính và chuẩn hóa câu chữ theo cấu trúc Job Story (*Khi... tôi muốn... để...*). | Giúp mở rộng nhanh góc nhìn sang nhiều lĩnh vực (lập trình, bán hàng, học thuật) và định dạng bảng Markdown rất nhanh. | Một số ý tưởng AI gợi ý ban đầu hơi chung chung (như lên thực đơn đi chợ, quản lý chi tiêu cá nhân) và chưa có số liệu định lượng cụ thể. | Loại bỏ các bài toán cá nhân rời rạc; tự đưa bài toán nghiệp vụ thực tế có độ sâu cao (đối soát trạm sạc Green SM - Card #6) vào làm trọng tâm và bổ sung số liệu thực tế (120–160 giờ/tháng, tỷ lệ lệch 1.5%–2.5%). |
+| CP2 Problem Card | Nhờ AI đóng vai người phản biện (critic) để soi điểm yếu của 3 Problem Cards và hỗ trợ xuất sơ đồ quy trình nháp dạng ASCII và XML Draw.io. | Chỉ ra rất đúng lỗi viết Job Story như mô tả công việc và cảnh báo rủi ro nếu dùng LLM để tính toán số liệu kế toán trực tiếp. | Ban đầu AI có xu hướng đề xuất dùng AI Agent tự động hóa toàn bộ quy trình đối soát mà chưa xét đến tính nhạy cảm của dữ liệu tài chính giải ngân. | Hạ mức can thiệp từ *AI Agent* xuống *AI Workflow + Rule-based*: khóa chặt bước tính toán bằng code truyền thống và bắt buộc có Kế toán duyệt biên bản giải trình trước khi gửi đối tác. |
+| CP4 Research | Dùng AI tra cứu nhanh cách thức hoạt động và hạn chế của các công cụ tìm giờ họp nhóm phổ biến (When2meet, Doodle, Google Calendar, bình chọn nhóm chat) cho bài toán `L3`. | Liệt kê nhanh bảng so sánh tính năng của từng công cụ để nhóm đối chiếu với thói quen thực tế của sinh viên. | AI giả định rằng chỉ cần gửi link When2meet là mọi thành viên sẽ tự giác vào điền đầy đủ, bỏ qua thực tế là nhiều bạn ngại mở link ngoài trên điện thoại và vẫn nhắn câu tự do trực tiếp vào nhóm chat. | Bổ sung phát hiện thực tế từ phỏng vấn A và B vào Mục 3.3: vấn đề không phải thiếu công cụ bình chọn, mà là phản hồi phân tán giữa cả Form lẫn tin nhắn chat tự do kèm điều kiện ràng buộc. |
+| CP5 Quy trình | Dùng AI hỗ trợ kiểm tra cấu trúc sơ đồ quy trình Trước/Sau (Mermaid/ASCII) và bảng so sánh Before/After ở Mục 4. | Giúp chuẩn hóa nhanh cú pháp sơ đồ và gợi ý cách trình bày bảng đối chiếu 5 chỉ số trực quan. | Bản nháp đầu của AI gộp chung bước "chờ phản hồi" và "tổng hợp tin nhắn" làm một, đồng thời cho phép AI tự động gửi thông báo chốt giờ họp. | Tách rõ bottleneck ở vòng lặp bước 2–3 thành hai nguyên nhân riêng biệt và đặt rào chắn **Human-in-the-loop (HITL)** ở Bước 4: người hẹn bắt buộc phải xem và duyệt bảng tổng hợp trước khi công bố giờ họp. |
+| CP5–6 Problem Statement | Nhờ AI rà soát câu chữ của Problem Statement v0 và v1 xem đã đủ các thành phần (Actor, Pain point, Impact, Target metric, Boundary) theo Rubric chưa. | Giúp cô đọng câu văn rõ ràng, mạch lạc, không bị lặp ý giữa phần mô tả quy trình và phần phát biểu bài toán. | AI hay thêm các tính từ hoa mỹ như *"tối ưu hóa toàn diện trải nghiệm giao tiếp nhóm"* và tự đưa ra con số tiết kiệm thời gian tới 95% không có căn cứ. | Xóa toàn bộ từ ngữ sáo rỗng; giữ đúng các con số có nguồn từ phỏng vấn và tự thuật của nhóm (baseline 6–10 vòng nhắn tin, 20–30 phút chờ; target rút xuống dưới 10 phút ở ít nhất 2/3 lượt pilot). |
+| CP6 Mức can thiệp / quyết định | Dùng AI gợi ý khung tiêu chí đánh giá (Eval criteria) cho bước trích xuất tin nhắn tự do và rà soát 4 nhóm rủi ro (Value, Usability, Feasibility, Viability). | Gợi ý tốt các trường hợp biên (edge cases) khi thành viên nhắn câu trả lời mơ hồ như *"chắc được"*, *"tối mình báo lại"*, *"rảnh sau 8h nếu xong việc"*. | AI ban đầu đánh giá lỗi phân loại nhầm trạng thái `"bận"` thành `"rảnh"` và `"rảnh"` thành `"bận"` có mức độ nghiêm trọng ngang nhau. | Chỉnh lại tiêu chí Eval ở Mục 6.4 theo đúng thực tế vận hành nhóm: báo nhầm `"rảnh"` (False Positive) nguy hiểm hơn nhiều vì làm cả nhóm chốt nhầm giờ có người vắng mặt, nên phải áp ngưỡng cứng **0 ô `"rảnh"` sai** và quy định mọi câu mơ hồ phải gán nhãn `"không rõ"`. |
 
 ---
 
@@ -208,21 +207,36 @@ Quy trình nháp hiện tại:
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Bài học lớn nhất từ buổi trình bày CP3 là giá trị của những bài toán nhỏ nhưng sát sườn và kiểm chứng được ngay thay vì các vấn đề vĩ mô như trạm sạc N1. Một bài toán Discovery tốt cần cả 4 thành viên đều chạm tới, có thể phỏng vấn người thật lập tức và có lịch sử tin nhắn để đo baseline rõ ràng. Ngoài ra việc vẽ WorkFlow giúp hiểu ra rằng không phải nỗi đau nào cũng phải dùng AI mà chỉ cần một template nhỏ đã là phương án tối ưu tốt ưu và hiệu quả hơn
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Có, vừa nghe tên đề tài là mấy đứa đã nhao nhao tính chuyện làm bot quét Zalo hay gọi API tóm tắt. Cả đám phải khựng lại khi ngồi vẽ quy trình lên giấy rồi nhận ra vấn đề nằm ở chỗ người thì rep chậm, người thì trả lời nước đôi chứ chẳng liên quan gì đến việc thiếu công cụ AI xịn
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Có, mình đổi ý ngay tại bàn khi Bảo hỏi bài trạm sạc có cần AI không. Mình thừa nhận luôn là 90% số đó chạy script SQL là xong, dùng AI chỉ tổ sai số. Với lại anh em ngồi chung nhóm không ai có dữ liệu trạm sạc để kiểm chứng cùng, nên mình bỏ luôn để theo bài hẹn lịch của Lương
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Bất ngờ là cả nhóm ngồi cạnh nhau hỏi nhanh mới biết bình thường ai cũng lười bấm vào link bình chọn hay mở app riêng. Toàn nhắn thẳng vào nhóm chat kiểu "tối rảnh sau 8h nếu không bận đột xuất", chính mấy câu nửa nọ nửa kia đó mới làm thằng trưởng nhóm nhức đầu gom lịch
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Khó nhất là ngồi cạnh nhau bàn luận rất dễ quen miệng nói luôn giải pháp làm con bot này con bot kia, trong khi bản v0 bắt buộc phải viết thuần về nỗi đau và số liệu mất thời gian mà không được đụng chữ AI nào vào
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu làm lại, mình sẽ bắt cả nhóm mở luôn tin nhắn Zalo thật của các môn trước ra đếm xem mất bao nhiêu phút để có số liệu cứng ngay. Mình cũng sẽ phản biện mạnh hơn là nhóm có 4 đứa ngồi chung một chỗ thì cần gì AI đọc tin nhắn cho mệt, trừ khi áp dụng cho các nhóm học online không bao giờ gặp mặt
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài toán nhóm mình làm là việc hẹn giờ làm bài lab nhóm ngoài giờ lên lớp rất mất thời gian vì 4 đứa mỗi người một lịch đi làm hay học môn khác. Quy trình bình thường tốn 20–30 phút chủ yếu do nhắn tin hỏi qua lại trên nhóm chat rồi chờ nhau trả lời, đứa thì nhắn rảnh đứa thì nhắn bận kèm điều kiện lung tung làm người gom lịch phát mệt. Mục tiêu đặt ra là kéo thời gian chốt lịch xuống dưới 10 phút và tuyệt đối không được báo nhầm giờ làm đứa bận thành rảnh khiến lúc hẹn làm bài thiếu người. Ranh giới chốt cứng là AI không được tự chốt giờ hay tự gửi tin nhắn, người hẹn họp bắt buộc phải nhìn bảng tổng hợp để duyệt bước cuối. Nhóm chọn mức Workflow, lấy form làm khung chính để gom giờ rảnh, chỉ dùng AI phụ trách việc đọc mấy câu nhắn tự do có điều kiện đưa vào bảng nháp. Cả nhóm chốt quyết định Go làm thử trong 2 tuần, nếu áp dụng thử mà AI vẫn báo sai giờ rảnh hoặc làm lâu hơn tự hỏi nhau thì bỏ AI quay về dùng form bình chọn cho nhanh
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- Repository bài tập nhóm UIT: [duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming)z
+- Báo cáo nhóm hoàn chỉnh (CP3–CP6): [report/team/group_report.md](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/team/group_report.md)
+- Phân công và đóng góp thành viên: [TEAM.md](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/TEAM.md)
+- Tài liệu hướng dẫn & Worksheet môn học: [docs/01-worksheet.md](https://www.google.com/search?q=https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/docs/01-worksheet.md) và [docs/02-deliverable-example.md](https://www.google.com/search?q=https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/docs/02-deliverable-example.md)
+
+- Hệ thống đối soát, thanh toán tự động trạm sạc nhượng quyền V-Green (Phụ kiện VinFast - Cập nhật dữ liệu hệ thống vận hành).  https://phukienvinfast.vn/he-thong-doi-soat-thanh-toan-tu-dong-tram-sac-nhuong-quyen-v-green/
+- Tài liệu hướng dẫn vận hành trạm sạc dành cho đối tác và chủ trạm nhượng quyền V-Green (Cổng thông tin điện tử chính thức V-Green). : http://vgreen.net/vi/tai-lieu-huong-dan-van-hanh-tram-sac-danh-cho-doi-tac-v-green
+- Chính sách chia sẻ doanh thu (750đ - 850đ/kWh) và biểu phí phạt đỗ xe chiếm dụng quá giờ Idle Fee (1.000đ/phút). Tham chiếu Cộng đồng Đối tác phát triển trạm sạc xanh toàn cầu V-Green.

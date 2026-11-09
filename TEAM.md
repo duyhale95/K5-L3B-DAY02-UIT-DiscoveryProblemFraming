@@ -91,20 +91,22 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 ### NguyenDucNhat-2A202603812
 
 **Phần việc phụ trách:**
+- Đóng góp 3 candidate cards N1, N2, N3 và phản biện chéo các card D2, L3, B1 ở CP3.
+- Phối hợp phân tích bottleneck quy trình hiện tại và xác định ranh giới can thiệp AI, người kiểm tra cho bài toán L3 hẹn giờ làm bài nhóm.
+- Cùng nhóm xây dựng 5 tiêu chí đánh giá bước AI và điều kiện dừng cho vòng thử nghiệm 2 tuần.
 
--
+**Đóng góp cụ thể (mình đã làm gì, ra sản phẩm gì):**
+- **CP3:** Pitch 3 bài toán cá nhân N1, N2, N3 và đặt câu hỏi phản biện cho L3 về việc bottleneck thực sự nằm ở bước nào, giúp cả nhóm tách bạch hai nguyên nhân gây trễ lịch hẹn: do chờ bạn trả lời và do câu trả lời tự do kèm điều kiện riêng.
+- **CP4:** Khảo sát thói quen phản hồi lịch hẹn thực tế trên nhóm chat so với các công cụ như When2meet, Google Calendar, poll chat để chỉ ra khoảng trống khi thành viên nhắn câu tự do ngoài biểu mẫu.
+- **CP5–CP6:** Khóa chặt ranh giới không dùng AI để tự chốt lịch hay suy diễn im lặng là rảnh; đóng góp thiết kế 5 tiêu chí đánh giá cho bước AI đọc tin nhắn tự do với ngưỡng cứng 0 ô rảnh sai và chuyển câu mơ hồ về nhãn không rõ.
 
-**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
-
--
-
-**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
-
--
+**Bằng chứng (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):**
+- [Mục 2.1 — Pitch danh sách vấn đề cá nhân](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/team/group_report.md#21-pitch-danh-s%C3%A1ch-v%E1%BA%A5n-%C4%91%E1%BB%81-c%C3%A1-nh%C3%A2n)
+- [Mục 4 — Quy trình trước/sau khi có AI](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/team/group_report.md#4-quy-tr%C3%ACnh-tr%C6%B0%E1%BB%9Bc--sau-khi-c%C3%B3-ai-cp5) · [Mục 6 — Mức can thiệp AI, Problem Statement v1 & Eval](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/team/group_report.md#6-m%E1%BB%A9c-can-thi%E1%BB%87p-ai--problem-statement-v1-cp6)
+- [Báo cáo cá nhân 2A202603812_NguyenDucNhat.md](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/individual/2A202603812_NguyenDucNhat.md) · [Commit nộp bài CP1 CP2 ab664fb](https://www.google.com/search?q=https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/ab664fb)
 
 **Điều mình học được từ phần nhóm:**
-
--
+- Bài toán nhìn qua tưởng cần làm bot hay gọi mô hình phức tạp, nhưng khi ngồi phân tích quy trình thật với nhau mới thấy điểm nghẽn nằm ở các câu trả lời tự do kèm điều kiện. Dùng form làm khung chính kết hợp AI đọc câu trả lời tự do và bắt buộc người hẹn duyệt lại vừa gọn vừa tránh được rủi ro báo nhầm giờ rảnh làm lỡ việc của cả nhóm.
 
 ### NguyenThienBao-2A202603861
 
