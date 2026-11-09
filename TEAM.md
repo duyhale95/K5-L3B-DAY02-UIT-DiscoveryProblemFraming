@@ -82,7 +82,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - [Mục 4 — Quy trình trước/sau](report/team/group_report.md#4-quy-trình-trướcsau-cp5) · [Tệp Mermaid](report/assets/cp5-workflow-future.mmd)
 - [Mục 9 — Hạn chế và hướng tiếp theo](report/team/group_report.md#9-hạn-chế-và-hướng-tiếp-theo) · [Mục 10 — Tài liệu tham khảo](report/team/group_report.md#10-tài-liệu-tham-khảo)
-- [Commit mục 4 bản đầu](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/11d71d1) · [Commit thời gian từng bước](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/44229bb)
+- [Commit mục 4 bản đầu](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/11d71d1) · [Commit thời gian từng bước](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/44229bb) · [Commit cập nhật mục 4.2–4.3 theo CP6, mục 9–10](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/40cdfa1)
 
 **Điều mình học được từ phần nhóm:**
 
