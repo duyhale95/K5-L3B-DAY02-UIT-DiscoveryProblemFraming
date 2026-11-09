@@ -1,9 +1,9 @@
 flowchart TD
   F0{"Nhóm đã có khung họp cố định hằng tuần?"}
   F0 -->|"Có"| F6["0. Gửi một tin xác nhận khung cố định<br/>CON NGƯỜI"]
-  F0 -->|"Chưa có hoặc cần đổi giờ"| F1["1. Gửi mẫu hỏi giờ rảnh: 3–4 khung giờ cụ thể, kèm hạn trả lời<br/>RULE"]
-  F1 --> F2["2. Thành viên đánh dấu khung rảnh trong một lượt; đến hạn nhắc người chưa trả lời một lần<br/>RULE + CON NGƯỜI"]
-  F2 --> F3["3. Gom các trả lời thành bảng khung trùng<br/>AI tùy chọn, hoặc người hẹn tự đếm"]
+  F0 -->|"Chưa có hoặc cần đổi giờ"| F1["1. Gửi mẫu hỏi giờ rảnh hoặc bình chọn: 3–4 khung giờ cụ thể, kèm hạn trả lời<br/>CON NGƯỜI + MẪU CỐ ĐỊNH"]
+  F1 --> F2["2. Thành viên đánh dấu khung rảnh trong một lượt; đến hạn nhắc người chưa trả lời một lần<br/>CON NGƯỜI"]
+  F2 --> F3["3. Gom các trả lời thành bảng khung trùng<br/>Người hẹn tự đếm hoặc bình chọn đếm giúp (đã chọn ở CP6)<br/>Nhánh AI tùy chọn: không dùng"]
   F3 --> F4["4. Người hẹn kiểm bảng với tin nhắn gốc rồi chọn giờ<br/>CON NGƯỜI - HITL"]
   F4 --> F5["5. Mọi thành viên xác nhận giờ đã chốt<br/>CON NGƯỜI"]
   F6 --> F5
