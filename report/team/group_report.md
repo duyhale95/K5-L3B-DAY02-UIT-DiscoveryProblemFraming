@@ -157,26 +157,25 @@ Giả định nhóm kiểm chứng trong buổi này: Kiểm chứng trước **
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Nhóm phỏng vấn trực tiếp ba người đã từng chốt giờ họp qua chat, mỗi người thuộc một nhóm học tập khác nhau và đều ngoài nhóm thực hiện báo cáo. A, B và C là mã ẩn danh. Các ghi nhận dưới đây tóm tắt lời kể của người tham gia. Thời gian chốt lịch là ước lượng của họ, chưa có mốc tin nhắn kèm theo để đối chiếu.
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+#### Ghi nhận phỏng vấn
 
-| Trường | Nội dung |
+| Người tham gia | Cách chốt lịch và tình huống được kể | Thời gian và số lượt | Ảnh hưởng |
+|---|---|---|---|
+| A — Thành viên nhóm 4 người | Nhóm đề xuất họp lúc 20:00 qua Messenger. Hai người trả lời sớm, người cuối phản hồi muộn và báo bận. Nhóm đổi sang 20:30 rồi chốt nhanh. | Khoảng 20–25 phút, 2 lượt đề xuất. Phần lớn thời gian là chờ phản hồi. | Người hẹn phải kiểm tra tin nhắn nhiều lần. Nhóm vẫn kịp nộp bài. |
+| B — Thành viên nhóm 3 người | Nhóm đề xuất giờ qua Messenger. Mọi người phản hồi khá nhanh nhưng ban đầu chỉ báo rảnh theo buổi. Sau khi hỏi lại giờ cụ thể, nhóm vẫn chưa tìm được giờ chung trong ngày. | Khoảng 30 phút trao đổi trước khi dời lịch. Chưa xác định số lượt đề xuất. | Buổi họp và việc ghép báo cáo dời sang hôm sau. Nhóm vẫn kịp nộp bài. |
+| C — Thành viên nhóm 4 người | Nhóm thường họp cố định tối Chủ nhật và chỉ nhắn xác nhận. Lần được kể, một thành viên về muộn nên cả nhóm lùi giờ họp 15 phút. | Khoảng 5–10 phút để chốt, gồm một lượt xác nhận và một lượt điều chỉnh. | Ảnh hưởng không đáng kể. |
+
+#### Đối chiếu giả định ở mục 3.1
+
+| Giả định | Kết quả đối chiếu |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| #1 — Các nhóm khác cũng chờ lâu và phải đề xuất nhiều vòng | A và B có những lần chốt lịch kéo dài khoảng 20–30 phút, nhưng A chỉ đổi giờ một lần và B chưa rõ số lượt. C là trường hợp đối chiếu: nhóm có lịch cố định chốt trong 5–10 phút. Ba lời kể cho thấy có tình huống chốt lịch kéo dài, nhưng chưa đủ để kết luận các nhóm khác thường phải đổi giờ nhiều lần. |
+| #2 — Tìm và đề xuất lại giờ chiếm phần lớn thời gian | A chủ yếu chờ người cuối phản hồi. B mất thời gian làm rõ giờ rảnh và tìm khung giờ chung. Hai trường hợp cho thấy hai nguyên nhân khác nhau. Cần mốc tin nhắn để đo riêng thời gian chờ phản hồi và thời gian tìm giờ thay thế. |
+| #3 — Thành viên sẵn sàng báo giờ rảnh trong một lượt | A và B thấy cách gom giờ rảnh có thể giảm hỏi lại. C chỉ thấy cách này hữu ích khi cần đổi lịch. Đây là ý kiến tự thuật về một phương án. Chưa có lượt chốt lịch áp dụng phương án này để quan sát hành vi. |
 
-Tổng hợp:
-
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
-|---|---:|---|---|
-| | | | |
-
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Điều chỉnh L3 sau phỏng vấn.** Nhóm thu hẹp phạm vi vào các nhóm học tập 3–4 người chưa có lịch họp cố định và cần hẹn qua chat. Việc chốt giờ có thể kéo dài khi phải chờ thành viên phản hồi hoặc khi các khung giờ rảnh chưa được nêu cụ thể và khó tìm giờ chung. Hai nguyên nhân cần được ghi riêng khi đo quy trình.
 
 ### 3.3. Research giải pháp đã có
 
