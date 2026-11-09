@@ -6,7 +6,7 @@
 
 - Tên nhóm: UIT
 - Trưởng nhóm: Hà Lê Duy
-- Candidate problem nhóm chọn (1 câu):
+- Candidate problem nhóm chọn (1 câu): **L3 — Chốt giờ họp nhóm.** Thành viên nhóm 3–4 người phải chờ phản hồi và đề xuất lại nhiều vòng để tìm giờ mọi người đều rảnh.
 - Quyết định cuối (Go / Not Yet / No-Go):
 
 ## Thành viên
