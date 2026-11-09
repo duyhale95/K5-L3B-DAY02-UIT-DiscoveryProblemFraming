@@ -18,23 +18,20 @@
 
 Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng hợp nhiều thông tin** · **Pain từ người khác**.
 
+Số phút trong bảng là ước lượng theo trí nhớ, chưa bấm giờ.
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | Tốn thời gian; Cần đọc, tổng hợp nhiều thông tin | Khi làm một bài lab mới, tôi muốn nắm đủ yêu cầu nội dung, tiêu chí chấm và cách nộp, để làm đúng ngay từ đầu và không phải kiểm tra vội sát hạn. | Tôi, với vai trò học viên làm và nộp bài lab | Mỗi lab tôi mất ít nhất 30 phút để đọc README, RUBRIC và SUBMISSION (ước lượng theo trí nhớ). Tôi lo đặt sai tên file và từng nộp bài sát deadline. Chưa ghi lại tên bài, thời điểm nộp và số phút sát hạn; chưa kết luận thời gian đọc là nguyên nhân duy nhất. |
-| 2 | Lặp lại — cần xác nhận tần suất | Khi lớp có thông báo đột ngột, tôi muốn biết kịp nội dung cần thực hiện và hạn xử lý, để không bỏ quên việc học. | Tôi, với vai trò người nhận thông báo của lớp | Tôi từng suýt bỏ quên một thông báo và chỉ nhận ra khi mở máy tính. Cần bổ sung: thông báo về việc gì, trên kênh nào, lúc đăng và lúc tôi đọc được; chưa có số lần hoặc độ trễ cụ thể. |
-| 3 | Tốn thời gian | Khi gặp một thắc mắc đã được giải đáp trong nhóm chat, tôi muốn tìm lại đúng câu trả lời, để tiếp tục làm bài mà không phải hỏi lại. | Thành viên tìm hướng dẫn; người trả lời câu hỏi | Cần bổ sung: câu hỏi từng tìm, số phút tìm, số lần gặp trong tuần và đoạn hội thoại tương ứng. |
-| 4 | Cần đọc, tổng hợp nhiều thông tin | Khi kết thúc buổi họp nhóm, tôi muốn biết rõ việc mình cần làm, hạn hoàn thành và phần phụ thuộc vào người khác, để bắt đầu đúng việc đã thống nhất. | Thành viên tham gia họp và người tổng hợp phân công | Cần bổ sung: buổi họp gần nhất, số phút chốt lại phân công, số việc chưa rõ và ghi chú hoặc tin nhắn xác nhận. |
-| 5 | Lặp lại — cần xác nhận tần suất | Khi làm bài nhóm, tôi muốn biết ai đang làm phần nào và đã xong chưa, để không phải hỏi lại trong group chat. | Tôi và các thành viên cùng làm bài nhóm | Tôi gặp tình trạng không nắm rõ người phụ trách và trạng thái phần việc, nên phải hỏi lại trong group chat. Cần bổ sung: bài nhóm cụ thể, số lượt hỏi trong một lần kiểm tra tiến độ, thời gian tìm và thời gian chờ phản hồi. |
-| 6 | Tốn thời gian | Khi ghép các phần báo cáo của nhóm, tôi muốn tìm ra nội dung trùng hoặc mâu thuẫn, để bản cuối thống nhất trước khi nộp. | Người ghép báo cáo; người viết từng phần | Cần bổ sung: báo cáo từng ghép, số phút đọc đối chiếu, số chỗ không khớp và lịch sử sửa tài liệu. |
-| 7 | Cần đọc, tổng hợp nhiều thông tin | Khi ôn một chủ đề đã học, tôi muốn tìm đúng phần liên quan trong slide, ghi chú và bài tập, để dành thời gian cho phần mình chưa hiểu. | Sinh viên ôn tập | Cần bổ sung: chủ đề gần nhất, số nguồn phải mở và thời gian tìm tài liệu, tách khỏi thời gian học nội dung. |
-| 8 | Tốn thời gian | Khi nhận repo của bạn cùng nhóm để làm tiếp, tôi muốn xác định đúng các bước cài đặt và chạy, để bắt đầu phần việc của mình. | Thành viên nhận repo | Cần bổ sung: repo hoặc bài tập cụ thể, lỗi cài đặt đã gặp, số phút đến khi chạy được và số lượt hỏi người viết. |
-| 9 | Pain từ người khác | Khi bạn cùng nhóm báo lỗi cần tôi kiểm tra, tôi muốn biết các thao tác, đầu vào và kết quả đã xảy ra, để tái hiện đúng lỗi trước khi tìm nguyên nhân. | Người báo lỗi; người nhận kiểm tra | Cần bổ sung: một lỗi đã nhận, số lượt hỏi thêm, thời gian tái hiện và tin nhắn hoặc issue. Chỉ giữ lăng kính này khi có phản ánh thật từ người báo lỗi. |
-| 10 | Pain từ người khác | Khi các thành viên phản ánh lịch họp bị trùng, tôi muốn xác định khung giờ mọi người tham gia được, để chốt lịch và tránh đổi nhiều lần. | Các thành viên cần tham gia họp | Cần bổ sung: lần chốt lịch cụ thể, số người phản hồi, số lần đổi lịch và đoạn trao đổi thể hiện việc bị trùng lịch. |
+| 1 | Cần đọc, tổng hợp nhiều thông tin | Khi làm một bài lab mới, tôi muốn nắm đủ yêu cầu nội dung, tiêu chí chấm và cách nộp, để làm đúng ngay từ đầu và không phải kiểm tra vội sát hạn. | Tôi và các bạn học viên AI20k; coach chấm bài | Mỗi lab tôi mất khoảng 30 phút đọc README, RUBRIC, SUBMISSION và thêm khoảng 20 phút đối chiếu, kiểm lại. Từng nộp bài sát deadline. Bạn Lương trong nhóm cũng gặp (10–15 phút/lần, 3–4 lần/tuần). |
+| 2 | Pain từ người khác | Khi lớp có thông báo đột ngột, tôi muốn biết kịp nội dung cần làm và hạn xử lý, để không bỏ quên việc học. | Tôi; các bạn trong lớp; coach phải nhắc lại | Khoảng 1–2 thông báo đột ngột/tuần. Lần suýt bỏ quên gần nhất: thông báo đăng buổi tối, khoảng 10 tiếng sau tôi mới thấy khi mở máy tính. |
+| 3 | Tốn thời gian | Khi gặp một thắc mắc đã được giải đáp trong nhóm chat, tôi muốn tìm lại đúng câu trả lời, để làm tiếp bài mà không phải hỏi lại. | Tôi; người đã trả lời bị hỏi lại | Khoảng 10–15 phút mỗi lần cuộn và thử từ khóa, 2–3 lần/tuần. |
+| 4 | Lặp lại | Khi làm bài nhóm, tôi muốn biết ai đang làm phần nào và đã xong chưa, để không phải hỏi lại trong group chat. | Tôi và 3 thành viên cùng nhóm | Mỗi lần kiểm tra tiến độ tôi nhắn hỏi 3–4 tin và chờ khoảng 30 phút mới đủ câu trả lời; 2–3 lần cho mỗi bài nhóm. |
+| 5 | Lặp lại | Khi nhóm cần chốt giờ họp, tôi muốn biết giờ nào mọi người đều rảnh, để không phải nhắn qua lại nhiều vòng. | Nhóm 3–4 người | Mỗi lần chốt lịch nhắn qua lại khoảng 6–10 vòng, mất khoảng 30 phút chờ. Bạn Lương trong nhóm ghi nhận con số tương tự. |
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
-- Từ danh sách AI gợi ý, tôi xác nhận đã gặp #1, #2 và #5 và bổ sung trải nghiệm của mình. Với #2, vấn đề thực tế là dễ bỏ lỡ thông báo đột ngột, chưa có cơ sở nói tôi phải đối chiếu nhiều phiên bản thông báo. Các ý còn lại chưa đưa vào top 3 vì chưa có trải nghiệm cụ thể để đối chiếu. Bảng vẫn cần ít nhất hai vấn đề thật nữa để đủ CP1; chưa đủ dữ liệu cho bonus B1.
+- AI gợi ý cho tôi 10 ý. Tôi giữ 5 ý mà tôi đã thật sự gặp và ghi lại số liệu của mình (#1–#5 ở trên).
+- Bỏ các ý: chốt việc sau buổi họp, ghép báo cáo nhóm, tìm tài liệu ôn tập, chạy repo của bạn khác, tái hiện lỗi bạn báo. Lý do: tôi chưa gặp đủ nhiều hoặc không nhớ được con số cụ thể, nên không có dấu hiệu thật để ghi.
 
 ---
 
@@ -42,113 +39,101 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 ### Bảng chọn top 3
 
-Top 3 được điều chỉnh theo ba vấn đề tôi xác nhận đã gặp. Quy trình dưới đây là bản nháp cần đối chiếu lại với cách tôi làm; thời gian chưa nhớ rõ được để trống thay vì chia số phút tùy ý.
-
 | Rank | Problem | Vì sao chọn | Điều còn chưa chắc |
 |---:|---|---|---|
-| 1 | Đọc và nắm yêu cầu bài lab (#1) | Xảy ra mỗi lab, có mốc ít nhất 30 phút theo trí nhớ; gắn với lo ngại sai tên file và trải nghiệm nộp sát hạn. | Phần nào trong ba tài liệu mất thời gian nhất? Việc đọc ảnh hưởng đến thời điểm nộp đến mức nào? |
-| 2 | Nắm người phụ trách và tiến độ bài nhóm (#5) | Là vấn đề tôi gặp khi làm chung; có thể kiểm lại bằng trao đổi trong group chat. | Mất thời gian tìm thông tin đã có hay phải đợi người khác cập nhật? |
-| 3 | Nhận biết kịp thông báo đột ngột (#2) | Tôi từng suýt bỏ quên thông báo nếu không mở máy tính. | Thông báo đến từ kênh nào? Do cài đặt nhận thông báo, thói quen kiểm tra hay thời gian báo trước quá ngắn? |
+| 1 | Đọc và nắm yêu cầu bài lab (#1) | Lặp lại mỗi lab, tốn khoảng 50 phút mỗi lần; cả nhóm đều gặp nên dễ kiểm chứng | Mất thời gian vì đọc, hay vì đối chiếu yêu cầu thành việc cần làm? |
+| 2 | Theo dõi ai làm gì trong bài nhóm (#4) | Gặp ở mọi bài nhóm, đếm được số tin nhắn hỏi lại | Nghẽn do khó tìm thông tin trong chat hay do thành viên chưa cập nhật? |
+| 3 | Biết kịp thông báo đột ngột (#2) | Từng suýt bỏ quên, độ trễ có thể tới cả buổi tối | Do cài đặt thông báo, do có quá nhiều kênh, hay do thói quen kiểm tra? |
 
-### Problem Card #1
+### Problem Card #1 — Đọc và nắm yêu cầu bài lab
 
 | Trường | Nội dung |
 |---|---|
 | Job Story | Khi làm một bài lab mới, tôi muốn nắm đủ yêu cầu nội dung, tiêu chí chấm và cách nộp, để làm đúng ngay từ đầu và không phải kiểm tra vội sát hạn. |
-| Actor | Tôi, học viên đọc đề và chuẩn bị bài nộp cá nhân. |
-| Thời điểm / bối cảnh | Mỗi khi nhận bài lab, tôi cần đọc README, RUBRIC và SUBMISSION. Tôi lo sai tên file và từng nộp sát deadline. |
-| Quy trình hiện tại (3–7 bước) | Bản nháp: 1. Đọc README để nắm đầu ra → 2. Đọc RUBRIC để hiểu tiêu chí → 3. Đọc SUBMISSION để kiểm cách đặt tên và nộp → 4. Đối chiếu các yêu cầu với phần cần làm → 5. Kiểm lại chỗ chưa chắc. |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Giả định ở bước 4: nối yêu cầu nội dung, tiêu chí và cách nộp thành những việc cụ thể. Chưa có thời gian riêng để khẳng định. Mốc ít nhất 30 phút chỉ áp dụng cho việc đọc ba tài liệu, không gán toàn bộ cho bước 4. |
-| Impact (nếu không giải thì sao) | Riêng việc đọc yêu cầu đã mất ít nhất 30 phút mỗi lab theo trí nhớ. Tôi còn lo sai tên file khi nộp. Đã có lần nộp sát hạn, nhưng chưa đủ dữ kiện để quy toàn bộ nguyên nhân cho việc đọc tài liệu. |
-| Success metric (baseline → target) | Baseline tự ước lượng: ít nhất 30 phút đọc bộ yêu cầu mỗi lab. Mục tiêu đề xuất: đọc và nắm được yêu cầu trong tối đa 20 phút, vẫn xác định đúng đầu ra, tiêu chí bắt buộc, tên file và cách nộp. Lần tới ghi giờ bắt đầu/kết thúc và đối chiếu các mục đã ghi với tài liệu gốc; đo riêng thời gian đọc và thời gian kiểm lại. |
-| Phương án không dùng AI | Ghi một checklist ngắn theo ba phần: cần làm gì, chấm thế nào, nộp thế nào; mỗi mục dẫn về tài liệu gốc. Dùng mẫu tên file từ SUBMISSION để kiểm trước khi nộp. |
-| Giả thuyết về AI (nếu có) | Hỗ trợ trích yêu cầu từ đúng bộ tài liệu của bài lab, kèm nguồn để tôi kiểm lại. Không tự suy ra deadline, không bỏ các ngoại lệ và không thay tôi đánh giá chất lượng bài. |
-| Cảm nhận nhanh | Chưa biết. Thử checklist trước; chỉ xét Workflow nếu việc đọc và đối chiếu vẫn mất nhiều thời gian. |
+| Actor | Tôi, học viên AI20k làm và nộp bài lab |
+| Thời điểm / bối cảnh | Đầu mỗi ngày lab, và lần nữa trước khi nộp. Mỗi lab có nhiều file hướng dẫn: README, RUBRIC, SUBMISSION, CHECKPOINTS, worksheet. |
+| Quy trình hiện tại (3–7 bước) | 1. Đọc README để biết đầu ra → 2. Đọc RUBRIC để biết tiêu chí chấm → 3. Đọc SUBMISSION để biết cách đặt tên và nộp → 4. Đối chiếu ba file thành danh sách việc cần làm → 5. Mở lại file gốc kiểm những chỗ chưa chắc |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4, đối chiếu ba file thành danh sách việc: khoảng 15 phút. Một yêu cầu nằm rải rác ở nhiều file (ví dụ tên file nằm ở cả SUBMISSION và RUBRIC) nên tôi phải mở qua lại nhiều lần. |
+| Impact (nếu không giải thì sao) | Khoảng 50 phút mỗi lab chỉ để hiểu đề. Dễ sót mục (sai tên file bị trừ 5 điểm), và phần thời gian làm bài bị dồn sát deadline. |
+| Success metric (baseline → target) | Baseline ước lượng 50 phút/lab → mục tiêu dưới 25 phút/lab, và 0 mục bị sót so với RUBRIC. Cách đo: bấm giờ ở 3 lab tiếp theo; sau khi chấm, đếm số mục bị trừ điểm vì thiếu hoặc sai format. |
+| Phương án không dùng AI | Tự lập một checklist mẫu dùng lại cho mọi lab: cần nộp gì, chấm thế nào, đặt tên ra sao, hạn lúc nào; mỗi mục ghi tên file gốc. Mỗi lab chỉ cần điền checklist rồi kiểm trước khi nộp. |
+| Giả thuyết về AI (nếu có) | AI trích yêu cầu từ các file của lab thành checklist, mỗi mục trích nguyên văn kèm tên file. Tôi đối chiếu lại với file gốc. AI không tự suy ra deadline hoặc yêu cầu không có trong đề. |
+| Cảm nhận nhanh | Rule (checklist) trước; xét Workflow nếu checklist vẫn không rút được thời gian đối chiếu. |
 
 Quy trình nháp hiện tại:
 
 ```text
-[1. Đọc README: t1 phút]
-→ [2. Đọc RUBRIC: t2 phút]
-→ [3. Đọc SUBMISSION: t3 phút]
-→ [4. Đối chiếu thành các việc cần làm: t4 phút] ← nghẽn giả định
-→ [5. Kiểm lại chỗ chưa chắc: t5 phút]
+HIỆN TẠI — khoảng 50 phút/lab (ước lượng)
 
-Dữ kiện đã có: đọc ba tài liệu mất ít nhất 30 phút/lab theo trí nhớ.
-Chưa có số phút từng bước; cần xác nhận mốc 30 phút có gồm đọc lại không.
-Không cộng thêm t4, t5 vào 30 phút khi chưa rõ phạm vi đo.
+[1 Đọc README: 12'] → [2 Đọc RUBRIC: 10'] → [3 Đọc SUBMISSION: 8']
+→ [4 Đối chiếu thành danh sách việc: 15'] ← BOTTLENECK
+→ [5 Kiểm lại chỗ chưa chắc: 5']
 ```
 
-### Problem Card #2
+### Problem Card #2 — Theo dõi ai làm gì trong bài nhóm
 
 | Trường | Nội dung |
 |---|---|
 | Job Story | Khi làm bài nhóm, tôi muốn biết ai đang làm phần nào và đã xong chưa, để không phải hỏi lại trong group chat. |
-| Actor | Tôi, thành viên cần nắm tiến độ các phần việc trong bài nhóm. |
-| Thời điểm / bối cảnh | Trong lúc làm bài chung, thông tin người phụ trách và trạng thái hoàn thành chưa rõ với tôi. |
-| Quy trình hiện tại (3–7 bước) | Bản nháp: 1. Xác định phần việc cần biết → 2. Tìm lại thông tin trong group chat → 3. Hỏi người phụ trách nếu chưa rõ → 4. Chờ phản hồi → 5. Đối chiếu câu trả lời với phần việc cần theo dõi. |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Giả định ở bước 2: tìm thông tin mới nhất về người nhận việc và trạng thái. Chưa có số phút; nếu thông tin chưa từng được cập nhật thì bước chờ phản hồi mới có thể là nghẽn chính. |
-| Impact (nếu không giải thì sao) | Tôi phải hỏi lại để biết ai làm gì và đã xong chưa. Chưa có số lượt hỏi, thời gian chờ hoặc bằng chứng về việc trễ hạn, làm trùng. |
-| Success metric (baseline → target) | Baseline chưa đo: số phút tìm trạng thái và số lượt hỏi lại trong một lần kiểm tra tiến độ; ghi riêng phút chờ. Mục tiêu đề xuất: giảm ít nhất 50% lượt hỏi lại, đồng thời xác định đúng người phụ trách và trạng thái của các việc được kiểm tra. Đếm từ đoạn chat và xác nhận lại với người làm; nếu lượt hỏi ban đầu bằng 0 thì xem lại pain. |
-| Phương án không dùng AI | Dùng bảng chung gồm phần việc, người phụ trách, trạng thái, lần cập nhật và link bài làm; thống nhất cập nhật khi nhận hoặc hoàn thành việc. |
-| Giả thuyết về AI (nếu có) | Có thể hỗ trợ tổng hợp trạng thái từ các cập nhật đã có, kèm tin nhắn nguồn. Không suy đoán “đã xong” từ việc không thấy ai phản hồi; thông tin cũ phải ghi rõ thời điểm. |
-| Cảm nhận nhanh | Ưu tiên No AI với bảng tiến độ và quy ước cập nhật. Chưa có bằng chứng cần mức phức tạp hơn. |
+| Actor | Tôi, thành viên nhóm 4 người làm bài chung trên một repo |
+| Thời điểm / bối cảnh | Giữa buổi làm bài nhóm và trước giờ nộp, khi cần biết phần nào còn thiếu |
+| Quy trình hiện tại (3–7 bước) | 1. Xác định phần mình cần biết tiến độ → 2. Cuộn group chat tìm tin phân công và cập nhật → 3. Nhắn hỏi người phụ trách → 4. Chờ trả lời → 5. Mở repo kiểm lại phần đó đã có chưa |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 4, chờ trả lời: khoảng 30 phút cho đủ người trả lời. Trong lúc chờ tôi không biết nên làm tiếp phần nào. |
+| Impact (nếu không giải thì sao) | Khoảng 50 phút mỗi lần kiểm tra tiến độ, 2–3 lần mỗi bài nhóm. Có nguy cơ làm trùng phần của người khác hoặc bỏ trống một phần. |
+| Success metric (baseline → target) | Baseline ước lượng 3–4 tin hỏi lại và 50 phút/lần → mục tiêu tối đa 1 tin hỏi lại và dưới 10 phút/lần. Cách đo: đếm tin nhắn hỏi tiến độ trong group chat và ghi thời gian ở 2 bài nhóm tiếp theo. |
+| Phương án không dùng AI | Bảng phân công chung (ví dụ bảng phân công trong TEAM.md) gồm phần việc, người phụ trách, trạng thái và link; ai nhận hoặc xong việc thì tự cập nhật ngay. |
+| Giả thuyết về AI (nếu có) | Chưa thấy cần AI. Nếu có, AI chỉ tóm tắt trạng thái từ tin nhắn kèm link tin gốc, không tự kết luận "đã xong". |
+| Cảm nhận nhanh | No AI |
 
 Quy trình nháp hiện tại:
 
 ```text
-[1. Xác định phần việc cần biết: t1 phút]
-→ [2. Tìm trạng thái trong group chat: t2 phút] ← nghẽn giả định
-→ [3. Hỏi lại nếu chưa rõ: t3 phút]
-→ [4. Chờ phản hồi: w phút]
-→ [5. Đối chiếu thông tin nhận được: t5 phút]
+HIỆN TẠI — khoảng 50 phút/lần kiểm tra (ước lượng)
 
-Thời gian chủ động = t1 + t2 + t3 + t5; thời gian chờ = w.
-Các giá trị chưa đo; cần lấy từ một lần kiểm tra tiến độ cụ thể.
+[1 Xác định phần cần biết: 2'] → [2 Cuộn group chat tìm cập nhật: 10']
+→ [3 Nhắn hỏi người phụ trách: 3'] → [4 Chờ trả lời: 30'] ← BOTTLENECK
+→ [5 Mở repo kiểm lại: 5']
 ```
 
-### Problem Card #3
+### Problem Card #3 — Biết kịp thông báo đột ngột
 
 | Trường | Nội dung |
 |---|---|
-| Job Story | Khi lớp có thông báo đột ngột, tôi muốn biết kịp nội dung cần thực hiện và hạn xử lý, để không bỏ quên việc học. |
-| Actor | Tôi, học viên nhận thông báo của lớp. |
-| Thời điểm / bối cảnh | Tôi từng suýt bỏ quên một thông báo và chỉ nhận ra khi mở máy tính. Chưa xác định thông báo cụ thể và kênh đăng. |
-| Quy trình hiện tại (3–7 bước) | Bản nháp: 1. Có thông báo được đăng → 2. Tôi mở máy tính và kiểm tra kênh thông báo → 3. Đọc nội dung và hạn xử lý → 4. Xác định việc cần làm. |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Ở khoảng từ bước 1 đến bước 2: thông báo đã có nhưng tôi chưa nhận biết. Chưa biết độ trễ bao nhiêu phút; đây là thời gian chờ phát hiện, không phải thời gian đọc. |
-| Impact (nếu không giải thì sao) | Tôi từng suýt bỏ quên thông báo. Chưa có bằng chứng đã bỏ lỡ hạn hoặc bỏ lỡ buổi học. |
-| Success metric (baseline → target) | Baseline chưa có: độ trễ từ lúc đăng đến lúc tôi đọc được và thời gian còn lại trước hạn. Mục tiêu đề xuất: trong một tuần theo dõi, không có thông báo yêu cầu hành động bị phát hiện sau hạn. Ghi thời điểm đăng, thời điểm đọc và hạn của từng thông báo; chưa đặt mục tiêu giảm số phút khi chưa biết kênh và thời gian báo trước. |
-| Phương án không dùng AI | Kiểm tra cài đặt nhận thông báo trên thiết bị thường dùng; xác định một kênh chính thức cần theo dõi và ghi lịch kiểm tra phù hợp với lịch học. |
-| Giả thuyết về AI (nếu có) | Chưa có cơ sở cần AI. Nếu nguyên nhân là không nhận được thông báo thì tóm tắt nội dung không giải quyết được bước nghẽn. |
-| Cảm nhận nhanh | No AI trước; có thể cân nhắc Rule để nhắc kiểm tra nếu kênh và lịch thông báo cho phép. |
+| Job Story | Khi lớp có thông báo đột ngột, tôi muốn biết kịp nội dung cần làm và hạn xử lý, để không bỏ quên việc học. |
+| Actor | Tôi, học viên nhận thông báo từ LMS, email và nhóm chat của lớp |
+| Thời điểm / bối cảnh | Thông báo thường đăng buổi tối hoặc ngoài giờ học, trên nhiều kênh khác nhau |
+| Quy trình hiện tại (3–7 bước) | 1. Thông báo được đăng → 2. Tôi mở máy tính và tình cờ thấy → 3. Mở đúng kênh tìm thông báo gốc → 4. Đọc nội dung và hạn → 5. Ghi việc cần làm |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Từ bước 1 đến bước 2: khoảng 10 tiếng giữa lúc đăng và lúc tôi thấy (lần gần nhất). Đây là thời gian chờ phát hiện, không phải thời gian đọc. |
+| Impact (nếu không giải thì sao) | Mất gần một buổi để biết thông báo; nếu hạn xử lý ngắn thì có thể trễ hạn. Đã suýt bỏ quên 1 lần. |
+| Success metric (baseline → target) | Baseline ước lượng 10 tiếng → mục tiêu dưới 2 tiếng; 0 thông báo bị phát hiện sau hạn. Cách đo: trong 2 tuần, ghi giờ đăng, giờ tôi thấy và hạn của mỗi thông báo. |
+| Phương án không dùng AI | Bật thông báo cho kênh chính thức của lớp trên điện thoại; đặt 2 mốc kiểm tra cố định mỗi ngày (12h và 21h). |
+| Giả thuyết về AI (nếu có) | Không cần AI. Bước nghẽn là chưa nhận được thông báo, tóm tắt nội dung không giải quyết được. |
+| Cảm nhận nhanh | No AI |
 
 Quy trình nháp hiện tại:
 
 ```text
-[1. Thông báo được đăng: mốc bắt đầu]
-→ [Chờ đến khi tôi mở máy tính/kiểm tra: w phút] ← bước nghẽn
-→ [2. Mở kênh và thấy thông báo: t2 phút]
-→ [3. Đọc nội dung, hạn xử lý: t3 phút]
-→ [4. Xác định việc cần làm: t4 phút]
+HIỆN TẠI — khoảng 10 tiếng chờ + 15 phút xử lý (ước lượng)
 
-w, t2–t4 chưa có số đo.
-Ghi riêng độ trễ phát hiện và thời gian đọc/xử lý.
+[1 Thông báo được đăng: 0']
+→ [Chờ tới khi tôi mở máy và thấy: ~600'] ← BOTTLENECK
+→ [3 Mở đúng kênh tìm thông báo: 5'] → [4 Đọc nội dung, hạn: 5']
+→ [5 Ghi việc cần làm: 5']
 ```
 
 ### Card muốn pitch nhất
 
-- Card số: Đề xuất #1.
-- Vì sao: Đây là vấn đề đã có mốc thời gian theo trải nghiệm của tôi, lặp lại mỗi lab và có thể kiểm tra ngay bằng bộ tài liệu của bài. Cần thu hẹp rõ phần đọc yêu cầu trước khi bàn cách hỗ trợ.
-- Câu hỏi muốn nhóm phản biện: Với một checklist dẫn về từng yêu cầu gốc, tôi còn mất thời gian ở bước nào, và làm sao kiểm tra rằng đọc nhanh hơn vẫn nắm đủ yêu cầu?
+- Card số: 1
+- Vì sao: Lặp lại ở mọi lab, cả nhóm đều gặp (Lương cũng có card tương tự), dễ phỏng vấn bạn ở nhóm khác ở CP4, và so sánh được cả 4 mức No AI / Rule / Workflow / Agent.
+- Câu hỏi muốn nhóm phản biện: Nếu đã có một checklist mẫu dùng lại cho mọi lab, bước đối chiếu còn tốn thời gian không, và có cần AI nữa không?
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| Mốc 30 phút là thời gian đọc ba tài liệu, không phải số đo bước đối chiếu; nộp sát hạn chưa chứng minh quan hệ nguyên nhân. | Cần tôi xem lại phạm vi thời gian. | Ghi là ước lượng theo trí nhớ; không tự chia phút cho từng bước và không quy việc nộp sát hạn hoàn toàn cho đọc đề. |
-| Card tiến độ chưa phân biệt thông tin khó tìm với việc thành viên chưa cập nhật. | Cần đối chiếu một lần hỏi tiến độ thật. | Tách tìm kiếm, hỏi lại và chờ; bổ sung bảng tiến độ làm phương án No AI. |
-| Vấn đề thông báo nằm ở lúc nhận biết, không có bằng chứng về khó hiểu hay tổng hợp nội dung. | Cần tôi xác nhận kênh nhận thông báo. | Chuyển metric sang độ trễ phát hiện và phát hiện trước hạn; ưu tiên kiểm tra cách nhận thông báo. |
-| Các card trước về chốt việc sau họp và ghép báo cáo chưa có trải nghiệm cá nhân xác nhận. | Tôi đã cung cấp ba vấn đề thực sự gặp: #1, #2, #5. | Đổi top 3 theo dữ kiện này; những gợi ý khác giữ trạng thái chưa xác nhận ở CP1. |
+| Card #1: mốc 30 phút mới chỉ là thời gian đọc ba file, chưa tách riêng bước đối chiếu nên chưa chắc bottleneck ở đâu | Đồng ý | Tách số phút cho từng bước; xác định bottleneck là bước 4 (đối chiếu, khoảng 15 phút) |
+| Card #2: chưa phân biệt thông tin khó tìm trong chat với việc thành viên chưa cập nhật | Đồng ý | Tách bước tìm trong chat và bước chờ trả lời; bottleneck là bước chờ, nên phương án No AI là bảng phân công tự cập nhật |
+| Card #3: vấn đề nằm ở lúc nhận biết thông báo, không phải ở việc đọc hiểu nội dung | Đồng ý | Đổi metric sang độ trễ phát hiện; kết luận không cần AI |
 
 ---
 
