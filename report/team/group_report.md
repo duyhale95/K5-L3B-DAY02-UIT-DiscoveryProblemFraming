@@ -179,11 +179,17 @@ Nhóm phỏng vấn trực tiếp ba người đã từng chốt giờ họp qua
 
 ### 3.3. Research giải pháp đã có
 
+Quy trình chốt lịch hiện tại dùng để đối chiếu: (1) một người đề xuất giờ trong chat → (2) chờ từng người trả lời → (3) có người bận thì tìm và đề xuất giờ khác → (4) lặp lại bước 2–3 → (5) chốt và nhắc lại. Các link được mở và kiểm ngày 09/11/2026; điểm nào trang không ghi thì nhóm không đưa vào.
+
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| When2meet (bảng chọn khung giờ) | https://www.when2meet.com/ | Bước 3–4: mỗi người tự tô khung giờ rảnh trên một bảng ngày × giờ, người hẹn nhìn được giờ trùng | Gom giờ rảnh của cả nhóm trong một lượt thay vì hỏi từng giờ; xử lý đúng nguyên nhân của người B (chỉ báo rảnh "theo buổi") | Không giải bước 2: vẫn phải chờ từng người vào điền. Thêm một bước rời khỏi app chat | Nếu nghẽn là "khó tìm giờ chung" thì một lượt gom giờ rảnh là đủ, chưa cần AI |
+| Doodle Group Poll (bình chọn giờ đề xuất) | https://doodle.com/en/product/polls/ | Bước 1–4: người hẹn đưa sẵn vài giờ, mọi người bình chọn qua một link | Trang ghi "Anyone can vote—no Doodle account required"; dạng bình chọn gần với cách nhóm đang đề xuất giờ trong chat | Trang nhắc tới gói trả phí khi cần "more than 20 time slots". Vẫn phải chờ phản hồi; nếu không giờ nào hợp thì quay lại đề xuất vòng mới | Đưa sẵn 3–4 giờ cùng lúc có thể giảm số vòng, nhưng không giảm thời gian chờ |
+| Google Calendar — "Find a time" | https://support.google.com/calendar/answer/37161 | Bước 1 và 3: gợi ý giờ trống dựa trên lịch của khách mời | Trang ghi gợi ý giờ "based on a guest's availability and working hours"; người nhận không cần dùng Google Calendar vẫn trả lời được lời mời | Chỉ xem được giờ rảnh nếu người kia đã chia sẻ lịch. Sinh viên ít ghi lịch học và việc riêng lên Google Calendar nên gợi ý dễ sai | Công cụ dựa vào lịch chỉ đúng khi lịch được cập nhật. Đây là rủi ro về dữ liệu đầu vào nếu nhóm tính dùng AI |
+| Reclaim.ai — AI Scheduling Links | https://reclaim.ai/features/scheduling-links | Bước 1 và 3: tự tìm giờ trống trên lịch và cập nhật khi lịch thay đổi | Trang ghi "AI agents continuously optimize availability across your calendar"; có gói miễn phí và giảm giá cho sinh viên | Dựa hoàn toàn vào Google Calendar/Outlook. Trang ghi AI có thể dời các sự kiện ưu tiên thấp trên lịch của người hẹn, một hành động nhóm không muốn AI tự làm | Đã có công cụ AI cho bài này, nhưng nó giải bài "có lịch số đầy đủ", khác bối cảnh nhóm học qua chat. Không cần tự xây Agent |
+| Pattern: lịch họp cố định hằng tuần | Phỏng vấn C, mục 3.2 | Bỏ qua bước 1–4: chỉ cần một tin xác nhận | Người C chốt trong 5–10 phút, nhanh nhất trong ba người được hỏi; không cần công cụ | Không linh hoạt khi có người bận đột xuất; cần cả nhóm thống nhất từ đầu | Phương án No AI cần so sánh trước: lịch cố định cộng bình chọn khi phải đổi giờ |
+
+**Tổng hợp.** Các công cụ có sẵn chủ yếu giải bước 3–4 (tìm giờ chung). Chưa công cụ nào giải bước 2 (chờ thành viên phản hồi), mà phỏng vấn A cho thấy đây mới là phần mất nhiều thời gian nhất. Vì vậy ở CP5–CP6 nhóm cần đo riêng hai phần thời gian này trước khi chọn mức can thiệp. Nếu phần chờ chiếm đa số, đổi công cụ hay thêm AI đều không rút ngắn được đáng kể.
 
 ---
 
