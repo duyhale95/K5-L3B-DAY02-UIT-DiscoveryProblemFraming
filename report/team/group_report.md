@@ -181,40 +181,90 @@ Nếu đổi candidate, Duy điều chỉnh đầu vào và đối tượng kh�
 
 ### 3.2. Kiểm chứng
 
-**Dữ liệu hiện có**
+**Nguồn và phạm vi sử dụng**
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác hoặc giới hạn |
-|---|---|---|---|
-| CP2 của [Lương](../individual/2A202603839_VoHongLuong.md) và [Bảo](../individual/2A202603861_NguyenThienBao.md) | 2 tự thuật trong nhóm | Lương ước lượng 10–15 phút/lượt. Bảo ước lượng khoảng 30 phút đọc ba file và khoảng 20 phút đối chiếu, kiểm lại. Cả hai mô tả việc phải đối chiếu nhiều file. | Các mốc có phạm vi khác nhau và chưa được bấm giờ theo cùng cách. Chưa xác định phần công sức thuộc về đọc hiểu, tìm thông tin hay đối chiếu. |
-| Đối chiếu tài liệu lab Day 02 | 1 bộ tài liệu | [CHECKPOINTS.md](../../CHECKPOINTS.md) nêu đầu ra của từng CP. [RUBRIC.md](../../RUBRIC.md) nêu điều kiện chấm. [SUBMISSION.md](../../SUBMISSION.md) nêu tên file, cách nộp và hạn theo ca lab. | [SUBMISSION.md](../../SUBMISSION.md) đã có checklist trước khi nộp. Đây là cách làm có sẵn cần đưa vào quan sát để biết học viên còn phải đối chiếu thêm ở đâu. |
-| Phỏng vấn ngoài nhóm và quan sát có bấm giờ | Chưa có kết quả trong repo | Chờ snapshot và bản đo của Bảo. | Chưa có căn cứ xác định mức độ lặp lại, baseline chung hoặc bước nghẽn thực tế. |
+Bảo đã nhận ba bản trả lời ngày 09/11/2026 từ sinh viên ngoài nhóm UIT, về các bài thực hành Excel, SQL và SPSS. Các tình huống được lưu ẩn danh ở [P01](../assets/cp4-interview-snapshot-01.md), [P02](../assets/cp4-interview-snapshot-02.md), [P03](../assets/cp4-interview-snapshot-03.md). Nguồn nhận được là văn bản trả lời tám câu hỏi; chưa ghi rõ kênh thu thập hay phỏng vấn trực tiếp. Cả ba đồng ý với điều kiện “nếu dùng làm ví dụ minh họa”, nên phần này trình bày các tình huống tự thuật ẩn danh và giữ nguyên giới hạn đó. Cần xác nhận thêm nếu sử dụng ngoài phạm vi minh họa.
 
-**Kế hoạch kiểm chứng**
+Các câu hỏi tập trung vào lần làm gần nhất, thứ tự mở file, chỗ phải tra lại, thời gian và phạm vi ước lượng, checklist đang dùng, lỗi đã gặp, ngoại lệ và hiện vật còn giữ. Không có câu hỏi về việc có muốn dùng một giải pháp mới.
 
-Bộ phiếu chuẩn bị cho Bảo: [câu hỏi phỏng vấn](../assets/cp4-interview-guide.md), [mẫu snapshot ẩn danh](../assets/cp4-interview-snapshot-template.md) và [phiếu bấm giờ, đối chiếu đầu ra](../assets/cp4-baseline-measurement-template.md). Đây là tài liệu chuẩn bị, chưa phải kết quả kiểm chứng; ưu tiên A1–A2 và chuẩn bị bộ nguồn/tham chiếu theo A5 trước lượt đo.
+| Nguồn | Tình huống và cách xử lý | Số liệu tự thuật | Tín hiệu xác nhận | Tín hiệu phản bác hoặc giới hạn |
+|---|---|---|---|---|
+| P01 — sinh viên năm 3, phân tích dữ liệu | PDF → Excel → Word; tự lập checklist Notion. Bổ sung định dạng/tên file và biểu đồ theo nhóm sản phẩm sau khi kiểm lại. | Khoảng 7 phút từ đọc yêu cầu PDF đến kiểm xong Word và Excel; nhớ lại, chưa bấm giờ. | Có yêu cầu chi tiết nằm ở nguồn khác; đã phải bổ sung checklist và một biểu đồ. | Không làm lại toàn bộ; thao tác kiểm Excel có thể thuộc hiểu dữ liệu. Chưa có checklist hoặc đề gốc để kiểm. |
+| P02 — sinh viên năm 3, cơ sở dữ liệu | README → PDF → schema.sql và dữ liệu mẫu; checklist trong README cá nhân. Sửa một truy vấn từ INNER JOIN sang LEFT JOIN sau test. | Khoảng 9 phút đọc hiểu và đối chiếu; nhớ lại, chưa bấm giờ. | Phải kiểm điều kiện giữ đối tượng không có bản ghi liên quan trong PDF và dữ liệu mẫu. | Lỗi JOIN có thể do kiến thức SQL; chưa chứng minh nguyên nhân là yêu cầu phân tán. Test hiện có đã giúp phát hiện lỗi. |
+| P03 — sinh viên năm 2, thống kê | Slide → SPSS → PDF; ghi việc trên Google Keep, thêm kiểm định dạng báo cáo. | Khoảng 6 phút để hiểu cần trình bày bảng và nhận xét nào; nhớ lại, chưa bấm giờ. | Có quay lại slide và đối chiếu đầu ra với PDF. | Checklist tự lập cơ bản đủ; không nhớ mục bỏ sót; phần khó nhất là đọc hiểu. Không gặp ngoại lệ rõ ràng. |
+| Tài liệu Day 02 | Đối chiếu CHECKPOINTS, RUBRIC và SUBMISSION trong repo. | Một bộ tài liệu; chưa có lượt thao tác bấm giờ. | Yêu cầu đầu ra, điều kiện chấm và cách nộp nằm ở các mục/file khác nhau. | SUBMISSION đã có checklist trước nộp; phải thử cách này trước khi kết luận cần công cụ mới. |
 
-- **Bảo** phỏng vấn tổng cộng 2–3 học viên ngoài nhóm đã làm bài lab có nhiều file hướng dẫn. Hỏi về một lần cụ thể, các nguồn đã mở, chỗ phải tra lại, cách xử lý và hậu quả đã xảy ra. Ghi cả trường hợp dùng checklist sẵn có và hoàn thành thuận lợi.
-- **Bảo** quan sát ít nhất một lượt theo cách làm thông thường của học viên. Bắt đầu khi học viên mở bộ tài liệu, kết thúc khi người đó báo đã kiểm xong danh sách yêu cầu. Ghi phiên bản tài liệu, các phút tìm, đọc, đối chiếu, lập và kiểm lại. Tách thời gian gián đoạn khỏi thời gian thao tác. Đối chiếu đầu ra với danh sách tham chiếu để đếm mục thiếu, hiểu sai hoặc thiếu nguồn.
-- **Bảo** tổng hợp mỗi snapshot theo mã, vai trò, ngày, phương thức, tình huống gần nhất, cách xử lý, số liệu và nguồn. Giữ riêng lời kể, số bấm giờ và các ý chưa xác nhận. Ghi trích dẫn nguyên văn khi có ghi chép, cùng tín hiệu xác nhận và phản bác.
+**Lưu ý về thời gian.** Không lấy trung bình 7, 9 và 6 phút vì ba số có phạm vi khác nhau. Bản ghi Bảo cung cấp còn nêu thời gian phỏng vấn trung bình khoảng **5 phút 43 giây**, nhưng chưa có thời lượng riêng từng buổi hay cách tính. Đây là thời lượng thu thập câu trả lời, không phải thời gian đọc/lập checklist, nên không dùng làm baseline. Các mốc tự thuật trong nhóm cũng chưa được trộn vào số đo ngoài nhóm.
 
-**Câu hỏi về lần làm gần nhất**
+**Đối chiếu A1–A5 sau khi đọc ba tình huống**
 
-1. Bạn đã mở tài liệu nào trước? Sau đó bạn làm gì để xác định các yêu cầu phải nộp?
-2. Lần đó có chỗ nào bạn phải đọc lại hoặc mở file khác để kiểm không? Bạn đã xử lý thế nào?
-3. Bạn đã dùng checklist hay ghi chú nào? Nó giúp chốt được những việc gì, còn mục nào bạn phải kiểm riêng?
-4. Có yêu cầu nào bạn phát hiện thiếu hoặc hiểu sai sau khi đã bắt đầu làm không? Chuyện gì xảy ra tiếp theo?
+Giữ nguyên điểm trong mục 3.1 như mốc trước khảo sát; chưa tự nâng điểm khi còn thiếu hiện vật, phạm vi đồng ý mở rộng và lượt đo.
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng.** Chờ kết quả CP4. Nếu quan sát cho thấy nghẽn nằm ở một nhóm yêu cầu cụ thể như cách nộp hoặc điều kiện chấm, thu hẹp vào nhóm đó. Nếu học viên chủ yếu mất thời gian để hiểu kiến thức hoặc checklist hiện có đã đủ dùng, xem lại phạm vi trước khi chốt v0.
+| Giả định | Căn cứ từ câu trả lời | Nhận định và phần cần kiểm tiếp |
+|---|---|---|
+| A1 | Cả ba kể việc mở nhiều nguồn; P01 có yêu cầu biểu đồ nhóm sản phẩm ở Word, P02 có điều kiện truy vấn ở PDF. | Có tín hiệu định tính về tra lại. Phải phân biệt file hướng dẫn với file dữ liệu/schema; không xem mọi lần chuyển file là lãng phí. |
+| A2 | P01 nói đối chiếu tốn công nhất; P02 gộp đọc hiểu và đối chiếu; P03 nói đọc hiểu tốn công nhất. | Chưa xác nhận đối chiếu là nghẽn chung. Cần bấm giờ riêng từng loại thao tác theo cùng nhiệm vụ. |
+| A3 | P01 sửa checklist và bổ sung biểu đồ; P02 sửa một truy vấn; P03 không nhớ lỗi bỏ sót. | Có sửa cục bộ, nhưng chưa chứng minh nguyên nhân do nhiều file. P03 phản bác việc luôn có lỗi đáng kể. |
+| A4 | P01 mở ghi chú PDF về dữ liệu trống; P02 kiểm điều kiện với PDF và dữ liệu mẫu; P03 không gặp ngoại lệ rõ. | Có hành vi tìm căn cứ, chưa chứng minh người học cần đường dẫn ngay trong checklist; quan sát cách truy nguồn để kiểm tiếp. |
+| A5 | Người trả lời chưa gửi hiện vật; các tình huống khác môn và không có phiên bản nguồn. | Chưa đạt điều kiện so sánh cùng phạm vi. Chọn bộ Day 02 đúng commit và lập danh sách tham chiếu được hai thành viên rà trước khi so các cách làm. |
+
+**Điều chỉnh problem đề xuất từ các tình huống, chờ Duy duyệt**
+
+Thu hẹp vào việc **xác định đủ đầu ra, yêu cầu nộp và điều kiện đi kèm trong checklist có căn cứ**, thay vì coi mọi thao tác chuyển file là vấn đề. Ví dụ P01 cho thấy cần giữ yêu cầu “theo nhóm sản phẩm”; P02 nhắc nhóm giữ điều kiện về bản ghi không có liên kết. Việc chọn JOIN hoặc hiểu ý nghĩa thống kê thuộc kiến thức môn học, không mặc định giải quyết bằng gom hướng dẫn.
+
+P03 cho thấy ghi chú thủ công và kiểm lại có thể đã đủ. Vì vậy, checklist sẵn có trong SUBMISSION và checklist thủ công có nguồn phải là phương án đối chứng. Chưa đặt mục tiêu giảm từ các mốc 7/9/6 phút, chưa kết luận cần AI, chưa có quyết định Go.
+
+**Đo hiện trạng — còn phải thực hiện ít nhất một lượt**
+
+Phiếu đo được gộp ngay tại đây để dùng tiếp; chưa có kết quả đo.
+
+- Người/mã lượt, ngày giờ GMT+7, vai trò, trong/ngoài nhóm: Chưa điền. Nếu Bảo tự đo, ghi rõ tự đo.
+- Lab và phạm vi: Chọn Day 02; chốt trước các đầu ra, điều kiện chấm và cách nộp cần đưa vào checklist.
+- Bộ nguồn, commit/phiên bản và sửa cục bộ nếu có: Chưa chốt. Ghi từng file thực tế; không ép người làm mở đủ mọi file.
+- Mức quen thuộc, công cụ/checklist thường dùng: Chưa điền.
+- Danh sách yêu cầu tham chiếu: Chưa lập. Mỗi mục có mã, nguồn, điều kiện áp dụng; hai thành viên rà và chốt trước khi chấm đầu ra. Không cho người làm xem đáp án tham chiếu trong lượt đo.
+- Bắt đầu khi người làm mở bộ tài liệu; kết thúc khi báo đã lập và kiểm xong checklist. Giữ nguyên đầu ra lúc dừng, rồi mới rà thiếu/sai. Gián đoạn ghi riêng; không hướng dẫn trong lúc đo.
+- Ghi lap mỗi khi đổi hoạt động; một khoảng chỉ thuộc một loại. Nếu quay lại đọc/đối chiếu, thêm dòng. Phỏng vấn giải thích sau khi dừng để tránh làm lệch thời gian.
+
+| Lượt | Bắt đầu mm:ss | Kết thúc mm:ss | Giây | Hoạt động | File/mục đã mở, lý do tra lại |
+|---:|---|---|---:|---|---|
+| 1 | | | | | |
+| 2 | | | | | |
+| 3 | | | | | |
+
+Loại hoạt động: **Tìm** vị trí/file; **Đọc** hiểu một nguồn (ghi rõ kiến thức hay yêu cầu); **Đối chiếu** ít nhất hai đoạn/nguồn; **Lập danh sách** viết/sửa checklist; **Kiểm lại** checklist với nguồn; **Gián đoạn** ngoài nhiệm vụ. Khoảng nào chưa phân loại được thì ghi rõ, không tính hai lần.
+
+| Chỉ số | Kết quả |
+|---|---|
+| Phút tìm / đọc / đối chiếu / lập danh sách / kiểm lại | Chưa đo |
+| Tổng thao tác (tổng năm loại trên) | Chưa đo |
+| Phút gián đoạn / tổng thời gian trôi qua | Chưa đo |
+| Số file khác nhau / lượt mở lại | Chưa đếm |
+| Link đầu ra trước góp ý; hoàn thành hay dừng giữa chừng | Chưa có |
+| Mã tham chiếu, hai người rà và ngày duyệt | Chưa có |
+
+Cộng giây rồi đổi sang phút. Tổng thời gian trôi qua phải bằng tổng thao tác cộng gián đoạn. Số chưa đo không ghi là 0.
+
+| Mã yêu cầu | Nội dung và điều kiện/ngoại lệ | Nguồn đúng phiên bản | Vị trí trong đầu ra | Đúng / thiếu / sai / không áp dụng / chưa rõ | Thiếu hoặc sai nguồn dẫn? |
+|---|---|---|---|---|---|
+| R01 | | | | | |
+
+Sau lượt đo, đếm từng mã một lần, loại mục không áp dụng khỏi tổng; lỗi nguồn ghi riêng vì có thể trùng lỗi nội dung. Thời gian sửa sau góp ý không cộng vào baseline. Một lượt không đại diện cả lớp.
 
 ### 3.3. Research giải pháp đã có
 
+Ngày mở và kiểm nguồn: **09/11/2026**. Đây là đối chiếu tài liệu tính năng, chưa phải thử nghiệm hiệu quả trên bộ Day 02. Các nhận xét về phù hợp/khoảng trống là phân tích cho bài nhóm.
+
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Checklist trước nộp có sẵn — No AI | [SUBMISSION, checklist trước khi nộp](../../SUBMISSION.md#checklist-trước-khi-nộp); [RUBRIC](../../RUBRIC.md) | Kiểm đầu ra và cách nộp. | Có ngay trong đề, gồm tên repo/file, phần cá nhân/nhóm, link và hạn nộp; không phải tạo công cụ mới. | Checklist không liệt kê hết điều kiện chấm chi tiết trong RUBRIC, như baseline–target–cách đo hoặc trường hợp chọn No AI/Rule. Cần đối chiếu phần áp dụng. | Dùng làm phương án đầu tiên; ghi rõ yêu cầu nào vẫn phải tra thêm trước khi đề xuất hỗ trợ khác. |
+| Checklist Markdown dẫn nguồn theo phiên bản — No AI | [GitHub task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-tasklists); [permalink đến dòng Markdown](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet) | Lập danh sách và truy lại căn cứ khi kiểm. | GitHub hỗ trợ checkbox Markdown; permalink trỏ đến dòng ở một phiên bản file. Có thể gắn mỗi yêu cầu với nguồn cố định. | Người làm vẫn phải đọc và tổng hợp; checkbox không chứng minh đã hiểu đúng. Link cố định cần rà lại khi đề thay đổi. | Thử bảng yêu cầu–điều kiện–nguồn trước; dùng task list Markdown thông thường, không phụ thuộc tính năng tasklist blocks đã ngừng hỗ trợ. |
+| NotebookLM / Gemini Notebook — hỗ trợ theo nguồn | [Giới thiệu và trích dẫn](https://support.google.com/gemininotebook/answer/16164461?hl=en); [loại nguồn và giới hạn](https://support.google.com/gemininotebook/answer/16215270?hl=en) | Hỗ trợ hỏi đáp khi đọc và đối chiếu; thử tạo nháp checklist để người học rà. | Tài liệu chính thức mô tả câu trả lời dựa trên nguồn có trích dẫn; hỗ trợ Markdown, PDF, DOCX và văn bản dán vào. | Chưa chứng minh trích đủ mọi yêu cầu/ngoại lệ của lab. Chỉ nhập nguồn được phép dùng; cần ghi phiên bản và kiểm nội dung nhập. Trang web chỉ lấy nội dung trang được đưa vào, không tự nhập các trang con. | Có thể thử trên đúng bộ nguồn đã chốt; người học kiểm từng mục với nguồn, đo cả thời gian kiểm/sửa. Có trích dẫn không đồng nghĩa checklist đầy đủ. |
+
+**Kết luận research.** Chưa cần tự xây agent để khảo sát hướng giải quyết. Trước hết thử checklist có sẵn và checklist thủ công dẫn nguồn; chỉ thử hỗ trợ theo nguồn nếu A2 còn được xác nhận sau đo. Hiệu quả phải tính thời gian từ mở tài liệu đến checklist đã kiểm, số yêu cầu thiếu/sai và điều kiện bị bỏ sót. Research hiện chưa cung cấp số phút tiết kiệm hoặc độ chính xác trên bài của nhóm.
 
 ---
+
 
 ## 4. Quy trình trước/sau (CP5)
 

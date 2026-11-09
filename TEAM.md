@@ -63,6 +63,6 @@ Mỗi thành viên tự bổ sung đóng góp thực tế, bằng chứng và đ
 ### NguyenThienBao-2A202603861
 
 - Phần việc được phân công: Thực hiện phỏng vấn, đo hiện trạng và research CP4. Vẽ quy trình trước/sau ở CP5.
-- Đóng góp đã hoàn thành: Chờ cập nhật.
-- Bằng chứng: Chờ cập nhật.
+- Đóng góp đã hoàn thành: Cung cấp ba bản trả lời ngoài nhóm ngày 09/11/2026, tổng hợp thành snapshot ẩn danh với điều kiện sử dụng để minh họa; đối chiếu A1–A5, ghi tín hiệu phản bác và tổng hợp ba phương án research có nguồn. Phần đo hiện trạng chưa có kết quả; bản tổng hợp chờ Duy duyệt.
+- Bằng chứng: [Báo cáo nhóm, mục 3](report/team/group_report.md#3-kiểm-chứng--research-giải-pháp-đã-có-cp4); [P01](report/assets/cp4-interview-snapshot-01.md), [P02](report/assets/cp4-interview-snapshot-02.md), [P03](report/assets/cp4-interview-snapshot-03.md).
 - Điều học được từ phần nhóm: Chờ cập nhật.
