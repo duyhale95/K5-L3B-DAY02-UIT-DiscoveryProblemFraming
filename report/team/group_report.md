@@ -201,7 +201,7 @@ Quy ước nguồn số liệu trong mục này:
 
 - **Tự thuật:** Lương và Bảo kể lại trong CP1–CP2.
 - **Phỏng vấn:** lời kể của A, B, C ở mục 3.2, là ước lượng của người được hỏi.
-- **Chưa có dữ liệu:** chưa có mốc tin nhắn để đo riêng từng bước.
+- **Ước lượng từng bước:** chia từ tổng 30 phút trong Problem Card #3 của Lương, đối chiếu với lời kể của A và B. Nhóm chưa có mốc tin nhắn để đo riêng từng bước.
 - **Mục tiêu đề xuất:** con số nhóm đặt ra để kiểm ở CP5–CP6, chưa phải kết quả đo.
 
 ### 4.1. Quy trình hiện tại
@@ -219,17 +219,17 @@ flowchart LR
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | Người hẹn (một thành viên nhóm) | Nhu cầu họp, hạn nộp bài | Tin nhắn đề xuất một giờ cụ thể | Chưa có dữ liệu đo riêng. Phát sinh mỗi lần nhóm cần họp; tần suất mỗi tuần chưa có dữ liệu | Người hẹn thường chưa biết ai rảnh khi đề xuất |
-| 2 | Các thành viên còn lại | Tin nhắn đề xuất | Phản hồi đồng ý hoặc báo bận | Chưa có dữ liệu đo riêng. Phỏng vấn A: phần lớn của 20–25 phút là chờ người cuối trả lời | **Bottleneck, nguyên nhân 1:** chờ phản hồi. Người hẹn phải mở chat kiểm tra nhiều lần |
-| 3 | Người hẹn và thành viên báo bận | Phản hồi bận; giờ rảnh nêu chung chung "theo buổi" | Một giờ đề xuất mới | Chưa có dữ liệu đo riêng. Phỏng vấn B: khoảng 30 phút trao đổi mà chưa tìm được giờ chung trong ngày | **Bottleneck, nguyên nhân 2:** giờ rảnh không cụ thể nên phải hỏi lại |
-| 4 | Cả nhóm | Giờ đề xuất mới | Vòng phản hồi tiếp theo | Phỏng vấn A: 2 lượt đề xuất. Phỏng vấn C: 1 lượt xác nhận và 1 lượt điều chỉnh. Tự thuật Lương, Bảo: 6–10 vòng | Số vòng khác nhau nhiều giữa các nhóm; mốc 6–10 vòng chưa được nguồn ngoài nhóm xác nhận |
-| 5 | Người hẹn | Giờ được tất cả đồng ý | Tin nhắn chốt giờ và nhắc lại | Chưa có dữ liệu đo riêng | Nếu không có giờ chung, buổi họp bị dời sang hôm sau (phỏng vấn B) |
+| 1 | Người hẹn (một thành viên nhóm) | Nhu cầu họp, hạn nộp bài | Tin nhắn đề xuất một giờ cụ thể | Khoảng 2 phút (ước lượng). Phát sinh mỗi lần nhóm cần họp ngoài lịch | Người hẹn thường chưa biết ai rảnh khi đề xuất |
+| 2 | Các thành viên còn lại | Tin nhắn đề xuất | Phản hồi đồng ý hoặc báo bận | Khoảng 10 phút mỗi vòng (ước lượng). Phỏng vấn A: phần lớn của 20–25 phút là chờ người cuối trả lời | **Bottleneck, nguyên nhân 1:** chờ phản hồi. Người hẹn phải mở chat kiểm tra nhiều lần |
+| 3 | Người hẹn và thành viên báo bận | Phản hồi bận; giờ rảnh nêu chung chung "theo buổi" | Một giờ đề xuất mới | Khoảng 8 phút (ước lượng). Phỏng vấn B: khoảng 30 phút trao đổi mà chưa tìm được giờ chung trong ngày | **Bottleneck, nguyên nhân 2:** giờ rảnh không cụ thể nên phải hỏi lại |
+| 4 | Cả nhóm | Giờ đề xuất mới | Vòng phản hồi tiếp theo | Khoảng 8 phút cho các vòng lặp thêm (ước lượng). Phỏng vấn A: 2 lượt đề xuất. Phỏng vấn C: 1 lượt xác nhận và 1 lượt điều chỉnh. Tự thuật Lương, Bảo: 6–10 vòng | Số vòng khác nhau nhiều giữa các nhóm; mốc 6–10 vòng chưa được nguồn ngoài nhóm xác nhận |
+| 5 | Người hẹn | Giờ được tất cả đồng ý | Tin nhắn chốt giờ và nhắc lại | Khoảng 2 phút (ước lượng) | Nếu không có giờ chung, buổi họp bị dời sang hôm sau (phỏng vấn B) |
 
 **Tổng thời gian một lượt chốt lịch:** khoảng 20–30 phút theo phỏng vấn A, B và tự thuật của Lương, Bảo. Nhóm có lịch cố định (phỏng vấn C) chỉ mất khoảng 5–10 phút.
 
-**Bottleneck chính:** vòng lặp bước 2–3, gồm chờ thành viên phản hồi và đề xuất lại khi có người bận. Phỏng vấn cho thấy hai nguyên nhân khác nhau: A chủ yếu chờ người cuối trả lời, B chủ yếu do giờ rảnh không được nêu cụ thể. Nhóm **chưa đo được tỷ lệ** thời gian của từng nguyên nhân.
+**Bottleneck chính:** vòng lặp bước 2–3, gồm chờ thành viên phản hồi và đề xuất lại khi có người bận. Phỏng vấn cho thấy hai nguyên nhân khác nhau: A chủ yếu chờ người cuối trả lời, B chủ yếu do giờ rảnh không được nêu cụ thể. Theo ước lượng, bước 2–4 chiếm khoảng 26/30 phút.
 
-**Cách đo để bổ sung baseline (giả định #4):** lấy một đoạn chat chốt lịch thật đã che tên, ghi thời điểm của tin đề xuất đầu tiên, từng phản hồi, mỗi lần đổi giờ và tin chốt. Từ đó tính số vòng, thời gian chờ phản hồi và thời gian tìm giờ thay thế.
+**Cách đo lại baseline (giả định #4):** lấy một đoạn chat chốt lịch thật đã che tên, ghi thời điểm của tin đề xuất đầu tiên, từng phản hồi, mỗi lần đổi giờ và tin chốt. Từ đó tính số vòng, thời gian chờ phản hồi và thời gian tìm giờ thay thế.
 
 ### 4.2. Quy trình tương lai
 
@@ -284,7 +284,7 @@ flowchart TD
 | Bottleneck chính | Vòng lặp chờ phản hồi và đề xuất lại (bước 2–3) | Chờ thành viên trả lời trong một lượt (bước 2) | Research mục 3.3: chưa công cụ nào giải được phần chờ phản hồi. Hạn trả lời và nhắc một lần chỉ giới hạn được, không loại bỏ được |
 | Rủi ro mới phát sinh | — | Thành viên không mở bình chọn hoặc không theo mẫu; AI đọc sai giờ trong tin nhắn tự do; nhóm phụ thuộc vào một người hẹn; hạn trả lời gây áp lực | Xử lý bằng bước 4 (HITL), phương án quay về và việc ghi "chưa có thông tin" thay vì đoán |
 
-**Số liệu cần bổ sung trước CP6:** thời gian từng bước của quy trình hiện tại, tỷ lệ thời gian chờ phản hồi so với tìm giờ, và tần suất chốt lịch mỗi tuần. Ba số này hiện là "chưa có dữ liệu".
+Thời gian từng bước ở mục 4.1 là ước lượng. Khi đo lại theo cách nêu ở mục 4.1, nhóm cập nhật baseline cho Problem Statement ở mục 5.
 
 ---
 
