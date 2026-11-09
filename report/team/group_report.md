@@ -147,14 +147,14 @@ Candidate S1 đã được trưởng nhóm chốt. Các câu hỏi dưới đây
 
 ### 2.7. Phân công triển khai S1
 
-Phân công triển khai theo xác nhận của trưởng nhóm. Bảo và Lương thực hiện khảo sát, Nhật research song song. CP5 sử dụng kết quả CP4 đã được tổng hợp.
+Phân công triển khai theo xác nhận của trưởng nhóm. Bảo thực hiện khảo sát, đo hiện trạng và research CP4. Duy duyệt và phản biện bản tổng hợp sau khi Bảo bàn giao. CP5 sử dụng kết quả CP4 đã được tổng hợp.
 
 | Phần việc | Người chính | Người hỗ trợ/kiểm tra | Đầu ra và mốc |
 |---|---|---|---|
 | CP4 — Giả định và điều phối | Duy | Bảo | 4–6 giả định, ưu tiên pain và mức sử dụng checklist, trước khi phỏng vấn. |
-| CP4 — Phỏng vấn | Bảo, Lương | Duy | Bảo hỏi 1 người, Lương hỏi 1–2 người ngoài nhóm có trải nghiệm thật. Ghi snapshot và tín hiệu phản bác trong phiên CP4. |
-| CP4 — Research | Nhật | Lương | So 2–3 công cụ hoặc pattern, gồm checklist thủ công. Ghi link, bước hỗ trợ, điều kiện dùng và khoảng trống trước CP5. |
-| CP4 — Quan sát và đo | Lương | Bảo | Ít nhất một lượt đọc tài liệu/lập checklist. Ghi thời gian từng bước, mục thiếu và phạm vi mẫu. |
+| CP4 — Phỏng vấn | Bảo | Duy duyệt | Phỏng vấn 2–3 người ngoài nhóm có trải nghiệm thực tế. Ghi snapshot và tín hiệu phản bác. |
+| CP4 — Research | Bảo | Duy duyệt | So 2–3 công cụ hoặc pattern, gồm checklist thủ công. Ghi link, bước hỗ trợ, điều kiện dùng và khoảng trống trước CP5. |
+| CP4 — Quan sát và đo | Bảo | Duy duyệt | Ít nhất một lượt đọc tài liệu/lập checklist. Ghi thời gian từng bước, mục thiếu và phạm vi mẫu. |
 | CP5 — Quy trình trước/sau | Bảo | Nhật | Sơ đồ và bảng bước có actor, input, output, phút, điểm kiểm tra và phương án quay về. |
 | CP5 — Metric và v0 | Duy | Lương | Nhóm tự chốt sáu trường v0 từ CP4. Lương đối chiếu số liệu và phạm vi phép đo. |
 | CP6 — Mức can thiệp | Nhật | Bảo | Bảng bốn mức và lý do chọn mức đủ dùng. Canvas/PAIR nếu áp dụng. |
@@ -169,41 +169,40 @@ Nếu đổi candidate, Duy điều chỉnh đầu vào và đối tượng kh�
 
 ### 3.1. Assumption Map
 
-| # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
+| # | Giả định | Loại | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Cách kiểm chứng và thứ tự ưu tiên |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| A1 | Học viên phải mở lại nhiều file để xác định đầu ra, tiêu chí và cách nộp trong một bài lab cụ thể. | Value | 5 | 3 | Ưu tiên 1. Hỏi về bài lab gần nhất và xin ví dụ một yêu cầu đã phải tra lại. Nếu tài liệu tóm tắt hiện có đủ dùng, ghi nhận trường hợp đó. |
+| A2 | Đối chiếu yêu cầu giữa các file chiếm công sức đáng kể trong quá trình lập danh sách việc. | Value | 5 | 2 | Ưu tiên 1. Quan sát một lượt và ghi riêng thời gian tìm, đọc hiểu, đối chiếu, ghi và kiểm lại. Kiểm tra xem bước tốn công nhất có nằm ở kiến thức chuyên môn hay ở việc tìm yêu cầu. |
+| A3 | Việc đọc và đối chiếu nhiều nguồn dẫn tới ít nhất một lần phải làm lại hoặc sửa checklist vì thiếu, sai yêu cầu. | Value | 4 | 1 | Ưu tiên 2. Hỏi lần gần nhất phát hiện thiếu hoặc sai yêu cầu, đối chiếu bản nháp với tài liệu gốc nếu có. |
+| A4 | Khi gặp yêu cầu có điều kiện hoặc ngoại lệ, học viên cần mở được nguồn gốc từ checklist để tự kiểm trước khi làm hoặc nộp. | Usability | 4 | 1 | Ưu tiên 2. Hỏi lần gần nhất người học đã kiểm một điều kiện, sau đó quan sát họ tìm căn cứ cho một mục cụ thể. |
+| A5 | Có thể chuẩn bị một bộ tài liệu lab đúng phiên bản và một danh sách yêu cầu tham chiếu để so sánh các cách làm trên cùng phạm vi. | Feasibility | 4 | 3 | Chuẩn bị trước lượt đo. Chọn một bài lab, ghi commit hoặc phiên bản tài liệu, rồi nhờ hai thành viên rà danh sách tham chiếu và chốt các ngoại lệ. |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+Điểm bằng chứng phản ánh tình trạng trước khảo sát. Mức 1 là chưa có quan sát trực tiếp, mức 2–3 là có tự thuật hoặc có tài liệu đối chiếu nhưng còn thiếu xác nhận từ người ngoài nhóm. A1 và A2 quyết định có giữ trọng tâm đối chiếu tài liệu cho CP5 hay thu hẹp sang một bước cụ thể hơn.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+**Dữ liệu hiện có**
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác hoặc giới hạn |
+|---|---|---|---|
+| CP2 của [Lương](../individual/2A202603839_VoHongLuong.md) và [Bảo](../individual/2A202603861_NguyenThienBao.md) | 2 tự thuật trong nhóm | Lương ước lượng 10–15 phút/lượt. Bảo ước lượng khoảng 30 phút đọc ba file và khoảng 20 phút đối chiếu, kiểm lại. Cả hai mô tả việc phải đối chiếu nhiều file. | Các mốc có phạm vi khác nhau và chưa được bấm giờ theo cùng cách. Chưa xác định phần công sức thuộc về đọc hiểu, tìm thông tin hay đối chiếu. |
+| Đối chiếu tài liệu lab Day 02 | 1 bộ tài liệu | [CHECKPOINTS.md](../../CHECKPOINTS.md) nêu đầu ra của từng CP. [RUBRIC.md](../../RUBRIC.md) nêu điều kiện chấm. [SUBMISSION.md](../../SUBMISSION.md) nêu tên file, cách nộp và hạn theo ca lab. | [SUBMISSION.md](../../SUBMISSION.md) đã có checklist trước khi nộp. Đây là cách làm có sẵn cần đưa vào quan sát để biết học viên còn phải đối chiếu thêm ở đâu. |
+| Phỏng vấn ngoài nhóm và quan sát có bấm giờ | Chưa có kết quả trong repo | Chờ snapshot và bản đo của Bảo. | Chưa có căn cứ xác định mức độ lặp lại, baseline chung hoặc bước nghẽn thực tế. |
 
-| Trường | Nội dung |
-|---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+**Kế hoạch kiểm chứng**
 
-Tổng hợp:
+- **Bảo** phỏng vấn tổng cộng 2–3 học viên ngoài nhóm đã làm bài lab có nhiều file hướng dẫn. Hỏi về một lần cụ thể, các nguồn đã mở, chỗ phải tra lại, cách xử lý và hậu quả đã xảy ra. Ghi cả trường hợp dùng checklist sẵn có và hoàn thành thuận lợi.
+- **Bảo** quan sát ít nhất một lượt theo cách làm thông thường của học viên. Bắt đầu khi học viên mở bộ tài liệu, kết thúc khi người đó báo đã kiểm xong danh sách yêu cầu. Ghi phiên bản tài liệu, các phút tìm, đọc, đối chiếu, lập và kiểm lại. Tách thời gian gián đoạn khỏi thời gian thao tác. Đối chiếu đầu ra với danh sách tham chiếu để đếm mục thiếu, hiểu sai hoặc thiếu nguồn.
+- **Bảo** tổng hợp mỗi snapshot theo mã, vai trò, ngày, phương thức, tình huống gần nhất, cách xử lý, số liệu và nguồn. Giữ riêng lời kể, số bấm giờ và các ý chưa xác nhận. Ghi trích dẫn nguyên văn khi có ghi chép, cùng tín hiệu xác nhận và phản bác.
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
-|---|---:|---|---|
-| | | | |
+**Câu hỏi về lần làm gần nhất**
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+1. Bạn đã mở tài liệu nào trước? Sau đó bạn làm gì để xác định các yêu cầu phải nộp?
+2. Lần đó có chỗ nào bạn phải đọc lại hoặc mở file khác để kiểm không? Bạn đã xử lý thế nào?
+3. Bạn đã dùng checklist hay ghi chú nào? Nó giúp chốt được những việc gì, còn mục nào bạn phải kiểm riêng?
+4. Có yêu cầu nào bạn phát hiện thiếu hoặc hiểu sai sau khi đã bắt đầu làm không? Chuyện gì xảy ra tiếp theo?
+
+**Nhóm đã sửa problem thế nào sau kiểm chứng.** Chờ kết quả CP4. Nếu quan sát cho thấy nghẽn nằm ở một nhóm yêu cầu cụ thể như cách nộp hoặc điều kiện chấm, thu hẹp vào nhóm đó. Nếu học viên chủ yếu mất thời gian để hiểu kiến thức hoặc checklist hiện có đã đủ dùng, xem lại phạm vi trước khi chốt v0.
 
 ### 3.3. Research giải pháp đã có
 
