@@ -9,7 +9,7 @@
 - Trưởng nhóm: Hà Lê Duy
 - Thành viên và phân công: [TEAM.md](../../TEAM.md)
 - Candidate problem được chọn (1 câu): **L3 — Chốt giờ họp nhóm.** Thành viên nhóm 3–4 người phải chờ phản hồi và đề xuất lại nhiều vòng để tìm giờ mọi người đều rảnh.
-- Quyết định cuối: Go / Not Yet / No-Go
+- Quyết định cuối: **Go, phạm vi nhỏ** — pilot 2 tuần với Workflow (Rule làm lõi, AI đọc tin trả lời tự do), xem mục 8.
 
 ---
 
@@ -233,15 +233,15 @@ flowchart LR
 
 ### 4.2. Quy trình tương lai
 
-Đây là phương án dựa trên research ở mục 3.3. Ở CP5, bước 3 còn một nhánh AI tùy chọn. **Sau CP6, nhóm chọn No AI** (mục 6.2): bước 3 do người hẹn tự đếm, hoặc dùng tính năng bình chọn có sẵn trong app chat để đếm giúp. Nhánh AI được giữ trong sơ đồ để thể hiện phương án đã cân nhắc nhưng không dùng.
+Đây là **phương án đề xuất** dựa trên research ở mục 3.3. Mức can thiệp chính thức (No AI / Rule / Workflow / Agent) do nhóm chốt ở CP6. Bước 3 là bước AI tùy chọn và chỉ dùng nếu CP6 chọn Workflow.
 
 ```mermaid
 flowchart TD
   F0{"Nhóm đã có khung họp cố định hằng tuần?"}
   F0 -->|"Có"| F6["0. Gửi một tin xác nhận khung cố định<br/>CON NGƯỜI"]
-  F0 -->|"Chưa có hoặc cần đổi giờ"| F1["1. Gửi mẫu hỏi giờ rảnh hoặc bình chọn: 3–4 khung giờ cụ thể, kèm hạn trả lời<br/>CON NGƯỜI + MẪU CỐ ĐỊNH"]
-  F1 --> F2["2. Thành viên đánh dấu khung rảnh trong một lượt; đến hạn nhắc người chưa trả lời một lần<br/>CON NGƯỜI"]
-  F2 --> F3["3. Gom các trả lời thành bảng khung trùng<br/>Người hẹn tự đếm hoặc bình chọn đếm giúp (đã chọn ở CP6)<br/>Nhánh AI tùy chọn: không dùng"]
+  F0 -->|"Chưa có hoặc cần đổi giờ"| F1["1. Gửi mẫu hỏi giờ rảnh: 3–4 khung giờ cụ thể, kèm hạn trả lời<br/>RULE"]
+  F1 --> F2["2. Thành viên đánh dấu khung rảnh trong một lượt; đến hạn nhắc người chưa trả lời một lần<br/>RULE + CON NGƯỜI"]
+  F2 --> F3["3. Gom các trả lời thành bảng khung trùng<br/>AI tùy chọn, hoặc người hẹn tự đếm"]
   F3 --> F4["4. Người hẹn kiểm bảng với tin nhắn gốc rồi chọn giờ<br/>CON NGƯỜI - HITL"]
   F4 --> F5["5. Mọi thành viên xác nhận giờ đã chốt<br/>CON NGƯỜI"]
   F6 --> F5
@@ -254,9 +254,9 @@ flowchart TD
 | Bước | Ai xử lý | Việc làm | Giải nguyên nhân nào |
 |---:|---|---|---|
 | 0 | Con người | Nếu nhóm đã thống nhất khung họp cố định (pattern của C), chỉ gửi một tin xác nhận | Bỏ qua toàn bộ vòng lặp |
-| 1 | Con người + mẫu cố định | Người hẹn gửi mẫu tin nhắn cố định hoặc bình chọn trong chat: 3–4 khung giờ cụ thể và hạn trả lời | Nguyên nhân 2: buộc báo giờ cụ thể thay vì "theo buổi" |
-| 2 | Con người | Thành viên chọn mọi khung mình rảnh trong một lượt. Đến hạn, người hẹn nhắc riêng người chưa trả lời một lần | Nguyên nhân 1: giới hạn thời gian chờ |
-| 3 | Con người (bình chọn có sẵn đếm giúp nếu dùng) | Gom các trả lời thành bảng khung trùng. CP6 chọn không dùng nhánh AI | Giảm việc đếm tay và hỏi lại |
+| 1 | Rule | Người hẹn gửi mẫu tin nhắn cố định hoặc bình chọn trong chat: 3–4 khung giờ cụ thể và hạn trả lời | Nguyên nhân 2: buộc báo giờ cụ thể thay vì "theo buổi" |
+| 2 | Rule + con người | Thành viên chọn mọi khung mình rảnh trong một lượt. Đến hạn, người hẹn nhắc riêng người chưa trả lời một lần | Nguyên nhân 1: giới hạn thời gian chờ |
+| 3 | AI tùy chọn hoặc con người | Gom các trả lời thành bảng khung trùng. Nếu nhóm dùng bình chọn có sẵn, bước này không cần AI | Giảm việc đếm tay khi thành viên trả lời bằng tin nhắn tự do |
 | 4 | Con người (HITL) | Người hẹn đối chiếu bảng với tin nhắn gốc, chọn khung có đủ người. Nếu không có khung đủ người, quyết định họp với đa số hay dời lịch | Giữ quyết định chốt giờ ở con người |
 | 5 | Con người | Từng thành viên xác nhận giờ đã chốt | Tránh hiểu nhầm giờ họp |
 
@@ -282,9 +282,9 @@ flowchart TD
 |---|---:|---:|---|
 | Số bước | 5, bước 2–4 lặp nhiều vòng | 5, không lặp nếu có khung trùng; 2 bước nếu có khung cố định | Vòng lặp đề xuất lại được thay bằng một lượt gom giờ rảnh |
 | Tổng thời gian | Khoảng 20–30 phút (phỏng vấn A, B; tự thuật) | Mục tiêu đề xuất: dưới 10 phút | Mục tiêu dựa trên mốc 5–10 phút của nhóm có lịch cố định (phỏng vấn C). Chưa có số đo sau khi áp dụng |
-| Số bước thủ công | 5/5 | 5/5 do con người; bước 1 dùng mẫu cố định, bước 3 có thể để bình chọn có sẵn đếm giúp | Theo mức No AI chốt ở CP6. Thời gian giảm nhờ bỏ vòng lặp, không nhờ tự động hóa. Bước 4 là điểm kiểm tra |
+| Số bước thủ công | 5/5 | 3/5 (bước 2, 4, 5); bước 1 dùng mẫu cố định, bước 3 do AI hoặc tính năng bình chọn | Bước 4 giữ thủ công vì là điểm kiểm tra |
 | Bottleneck chính | Vòng lặp chờ phản hồi và đề xuất lại (bước 2–3) | Chờ thành viên trả lời trong một lượt (bước 2) | Research mục 3.3: chưa công cụ nào giải được phần chờ phản hồi. Hạn trả lời và nhắc một lần chỉ giới hạn được, không loại bỏ được |
-| Rủi ro mới phát sinh | — | Thành viên không mở bình chọn hoặc không theo mẫu; người hẹn đếm nhầm; nhóm phụ thuộc vào một người hẹn; hạn trả lời gây áp lực | Xử lý bằng bước 4 (HITL), phương án quay về và việc ghi "chưa có thông tin" thay vì đoán |
+| Rủi ro mới phát sinh | — | Thành viên không mở bình chọn hoặc không theo mẫu; AI đọc sai giờ trong tin nhắn tự do; nhóm phụ thuộc vào một người hẹn; hạn trả lời gây áp lực | Xử lý bằng bước 4 (HITL), phương án quay về và việc ghi "chưa có thông tin" thay vì đoán |
 
 Thời gian từng bước ở mục 4.1 là ước lượng. Khi đo lại theo cách nêu ở mục 4.1, nhóm cập nhật baseline cho Problem Statement ở mục 5.
 
@@ -321,92 +321,87 @@ Khi cần tìm giờ họp mới, người hẹn trong nhóm học tập 3–4 n
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài toán nằm ở ô **độ mơ hồ thấp × độ phức tạp thấp**, khi mỗi người trả lời trên cùng một danh sách khung giờ cụ thể.
+**Ma trận:** độ phức tạp **thấp** (3–4 người, một cuộc họp, các bước gửi khung → thu phản hồi → tính khung trùng → nhắc → chốt đều cố định). Độ mơ hồ **thấp** ở phần tính khung trùng (đúng/sai rõ), nhưng **cao** ở phần đọc phản hồi: thành viên hay trả lời tự do kiểu "tối mai rảnh sau 8h, trừ 9–10h" thay vì chọn đúng khung (phỏng vấn B: "ban đầu chỉ báo rảnh theo buổi"). → **Workflow có AI ở một bước**, phần còn lại là Rule.
 
-- **Độ mơ hồ thấp:** với một khung giờ có ngày, giờ bắt đầu, giờ kết thúc và múi giờ rõ ràng, cần xác định từng người có tham gia được hay không. Khung phù hợp phải được tất cả người cần dự xác nhận. Không phản hồi được giữ là “chưa có thông tin”.
-- **Độ phức tạp thấp:** phạm vi chỉ có 3–4 người, một cuộc họp và 3–4 khung đề xuất mỗi lượt. Các bước gửi, thu phản hồi, đối chiếu và xác nhận đã biết trước; chưa cần truy cập lịch cá nhân hay tự quyết bước tiếp theo.
-- Tin nhắn như “rảnh buổi tối” vẫn mơ hồ, đúng tình huống B ở mục 3.2. Trong lượt thử, người hẹn hỏi lại theo khung cụ thể. Chờ người cuối trả lời như A là độ trễ phối hợp, không phải công việc suy luận mà AI có thể làm thay.
-
-Đây là phân loại cho phạm vi nhỏ hiện tại. Nếu mở sang nhiều nhóm hoặc lịch nhiều tuần, cần đánh giá lại thay vì giữ nguyên kết luận.
+Chờ người cuối trả lời (phỏng vấn A) không phải việc AI làm thay được. Phần này xử lý bằng hạn trả lời và nhắc tự động (Rule).
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | Người hẹn gửi cùng lúc 3–4 khung giờ cụ thể, kèm hạn phản hồi, bằng mẫu tin nhắn hoặc tính năng bình chọn có sẵn trong app chat; mọi người báo tất cả khung mình tham gia được. Người hẹn xem bảng hoặc kết quả bình chọn, kiểm lại và xin xác nhận. | Nhóm 3–4 người, số khung ít, phản hồi có thể làm rõ bằng một mẫu chung. | Vẫn chờ người trả lời; có thể ghi nhầm hoặc dùng phản hồi cũ. Cần đối chiếu nguồn trước khi chốt. | **Chọn cho lượt thử đầu.** |
-| **Rule** | Nhóm tự viết công thức bảng tính hoặc script đọc phản hồi và tự tính khung đủ người theo điều kiện cố định; người hẹn kiểm và chốt. | Việc nhập đã có cấu trúc và đếm tay thực sự tốn công hoặc hay sai. | Người chưa trả lời dễ bị nhầm với người bận; tổng số phiếu chưa đủ nếu không kiểm đúng danh sách người cần dự. | Chưa cần bổ sung logic tự động cho lượt thử đầu; xem lại sau khi có số đo. |
-| **Workflow** | Theo các bước cố định: người hẹn đưa phản hồi → AI trích giờ vào bảng → người hẹn đối chiếu nguồn → người hẹn xin xác nhận. | Thành viên thực sự cần trả lời tự do và việc chuyển các câu đó thành bảng vẫn chiếm công sức đáng kể sau khi thử mẫu. | AI có thể hiểu sai giờ, bỏ điều kiện hoặc đoán thay người chưa trả lời; thời gian kiểm/sửa có thể lớn hơn tự ghi. | Chưa chọn; CP4 chưa chứng minh nhu cầu này. |
-| **Agent** | Cho hệ thống tự tìm giờ, hỏi bổ sung, chọn công cụ hoặc điều chỉnh lịch qua nhiều lượt. | Phạm vi có các bước không dự đoán trước, dữ liệu và quyền truy cập phù hợp; phải có lý do Workflow không đủ. | Vượt quyền chốt lịch, gửi lời mời hoặc dời lịch; tăng quyền truy cập và khó kiểm soát. | Không chọn trong phạm vi nhóm 3–4 người của bài này. |
+| **No AI** (sửa quy trình) | Mẫu tin nhắn 3–4 khung + hạn trả lời; người hẹn tự đếm, tự nhắc | Mọi người trả lời đúng khung ngay lần đầu | Người hẹn vẫn phải mở chat canh phản hồi (A); tin tự do vẫn phải hỏi lại (B) | Phương án quay về |
+| **Rule** | Google Form/bình chọn → Sheets + Apps Script tự tính khung đủ người, tự nhắc 1 lần khi tới hạn | Mọi phản hồi đều đi qua Form | Không đọc được tin trả lời tự do trong chat; người không mở Form bị bỏ sót | **Dùng cho bước 1, 2 và phần tính toán** |
+| **Workflow** | Rule ở trên + AI chuyển tin trả lời tự do thành trạng thái theo từng khung → người hẹn duyệt → chốt | Có một phần phản hồi là tin tự do | AI hiểu sai giờ, bỏ điều kiện "trừ…", đoán thay người chưa trả lời | **Chọn** |
+| **Agent** | AI tự đọc chat nhóm, tự hỏi lại từng người, tự chốt, tự gửi lời mời, tự dời lịch | Nhiều nhóm, nhiều cuộc họp đan xen, bước tiếp theo không đoán trước được | Vượt quyền chốt và dời lịch (đúng rủi ro của Reclaim.ai, mục 3.3); phải đọc toàn bộ chat và lịch cá nhân | Không chọn |
 
-**Mức chọn: No AI — gom giờ rảnh một lượt bằng mẫu chung hoặc bình chọn có sẵn, người hẹn tổng hợp và kiểm.** Dùng bình chọn có sẵn đúng với bài học research ở mục 3.3: công cụ miễn phí đã giải được bước tìm giờ chung, nhóm không cần tự xây gì. Đây là phương án để thử theo metric ở mục 5, chưa phải bằng chứng đã giảm được thời gian và chưa thay cho quyết định Go / Not Yet / No-Go ở mục 8.
+**Mức chọn:** Workflow — Rule làm lõi, AI chỉ ở một bước: đọc phản hồi tự do.
 
-**Vì sao mức đơn giản nhất đủ để thử:** A cho thấy chờ phản hồi có thể chiếm phần lớn thời gian. B cho thấy cần hỏi giờ cụ thể trước khi tìm giờ chung. Mẫu trả lời xử lý trực tiếp phần chưa rõ của B; bảng 3–4 người đủ nhỏ để người hẹn tự kiểm. C là tín hiệu rằng quy ước phối hợp có thể giúp chốt nhanh, nhưng lịch cố định của C không được dùng để bảo đảm nhóm đang tìm giờ mới cũng đạt dưới 10 phút.
+**Vì sao không chọn mức đơn giản hơn:** Phỏng vấn (3 người, mẫu nhỏ) cho thấy hai nguyên nhân. A mất phần lớn thời gian chờ người cuối trả lời: No AI không giải được vì người hẹn vẫn tự canh và nhắc, còn Rule giải được bằng hạn trả lời và nhắc tự động. B mất thời gian vì phản hồi không cụ thể: Form có khung cố định giải được nếu mọi người dùng Form, nhưng chính B và rủi ro ở mục 4.3 cho thấy thành viên hay trả lời thẳng trong chat. Chỉ cần một tin tự do là Rule bỏ sót người đó hoặc người hẹn phải nhập tay, và vòng hỏi lại quay về. AI ở bước 3 lấp đúng chỗ này. C có lịch cố định nên chỉ cần No AI; với nhóm như C, nhóm vẫn khuyến nghị giữ lịch cố định.
 
-Chưa có số đo cho thấy đếm giờ chung là bước tốn công nhất, nên chưa có căn cứ thêm Rule, Workflow hay Agent. Nếu sau lượt thử vẫn chậm, cần xem chậm ở chờ phản hồi, làm rõ giờ hay tổng hợp; chỉ cân nhắc Rule khi khâu tổng hợp có lỗi hoặc tốn công được ghi nhận. Không tự nâng mức vì tổng thời gian chưa đạt mục tiêu.
+**Kiến trúc pilot** (khớp quy trình tương lai ở mục 4.2):
 
-**Cụ thể hóa nhánh được dùng trong mục 4.2:**
+```text
+[1 Người hẹn tạo Form/bình chọn: 3–4 khung + hạn trả lời]      ← RULE (mẫu cố định)
+→ [2 Thành viên trả lời qua Form; tới hạn script nhắc 1 lần]    ← RULE (Apps Script)
+→ [3a Phản hồi qua Form: script ghi vào Sheets]                 ← RULE
+  [3b Tin tự do trong chat: người hẹn dán vào → AI trích
+      trạng thái từng khung + nguyên văn → ghi vào Sheets]       ← AI
+→ [Script tính khung đủ người]                                  ← RULE
+→ [4 Người hẹn duyệt bảng, đối chiếu nguyên văn, chọn khung]    ← CON NGƯỜI (HITL)
+→ [5 Gửi tin chốt, thành viên xác nhận]                         ← CON NGƯỜI
 
-1. Người hẹn xác định danh sách người cần dự và gửi 3–4 khung (mẫu tin nhắn hoặc bình chọn), ghi đủ ngày, giờ bắt đầu/kết thúc, múi giờ và hạn trả lời.
-2. Mỗi thành viên chọn mọi khung mình tham gia được hoặc báo không khung nào phù hợp. Đến hạn, người hẹn nhắc người chưa trả lời một lần; không coi hết hạn là đồng ý.
-3. Người hẹn ghi bảng theo từng người, từng khung và tin nhắn nguồn (hoặc đọc kết quả bình chọn và đối chiếu đúng danh sách người cần dự). Khi có thay đổi, dùng phản hồi mới nhất đã được người đó xác nhận; nếu hai tin mâu thuẫn thì hỏi lại.
-4. Người hẹn kiểm khung chung với phản hồi gốc, rồi gửi giờ đề nghị chốt để mọi người xác nhận.
-5. Khi đủ xác nhận mới ghi “chốt đủ người”. Nếu không có giờ chung, đề xuất bộ khung mới hoặc thống nhất dời lịch; họp với đa số được ghi riêng.
-
-Mục 4.2 và 4.3 đã được cập nhật theo mức này: 5/5 bước do con người, không dùng nhánh AI ở bước 3.
-
-Nhóm có lịch cố định như C có thể chỉ xác nhận lại, nhưng lượt đó nằm ngoài mẫu thử “tìm giờ mới” của v0.
+BOUNDARY: AI không gửi tin, không chốt, không dời lịch; không đọc lịch cá nhân
+hay toàn bộ chat; người chưa trả lời luôn là "chưa có thông tin".
+PHƯƠNG ÁN QUAY VỀ: AI sai → người hẹn tự sửa ô trong Sheets; script lỗi → đếm tay từ Form (No AI).
+```
 
 ### 6.3. AI Canvas rút gọn
 
-**Không áp dụng cho phương án No AI**, theo [hướng dẫn CP6 cho No AI/Rule](../../docs/01-worksheet.md#nếu-nhóm-chọn-no-ai-hoặc-rule). Việc cần làm là ghi đúng phản hồi và kiểm khung nào đủ người; không có bước cần AI dự đoán hoặc tạo nội dung. Người hẹn giữ việc tổng hợp và chốt, còn dữ liệu thử gồm các phản hồi được phép dùng, bảng giờ rảnh, mốc thời gian và kết quả xác nhận.
+| Thành phần | Nội dung |
+|---|---|
+| **Prediction** — AI dự đoán / tạo ra gì? | Trạng thái của người gửi tin ở từng khung: rảnh / bận / rảnh một phần / không rõ, kèm đoạn trích nguyên văn |
+| **Judgment** — con người cân nhắc, quyết định gì? | Người hẹn kiểm ô AI điền với nguyên văn; quyết định họp đủ người, họp với đa số hay dời lịch |
+| **Action** — hành động cuối cùng là gì, ai làm? | Người hẹn gửi tin chốt; thành viên xác nhận. Script chỉ tính và nhắc, AI không gửi gì |
+| **Outcome** — đo kết quả bằng gì? | Thời gian từ đề xuất đầu tiên đến đủ xác nhận; số lần hỏi lại; số ô AI điền bị sửa |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Danh sách người cần dự, 3–4 khung (ngày, giờ, múi giờ), tin trả lời của đúng cuộc họp đó. Đều có sẵn, không cần lịch cá nhân |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Cột "sửa tay" trong Sheets: ô nào người hẹn sửa, nguyên văn và nhãn đúng. Dùng để bổ sung bộ eval và chỉnh prompt |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-**Không áp dụng phần đánh giá AI cho lượt thử này** theo cùng hướng dẫn. Phỏng vấn chưa chứng minh thành viên muốn giao quyền hẹn lịch cho hệ thống; việc nói gom giờ có thể hữu ích ở mục 3.2 cũng chưa phải hành vi sử dụng thực tế.
-
-Với phương án thủ công, lỗi cần tránh là đánh dấu một khung “đủ người” khi còn người bận, chưa trả lời hoặc chỉ đồng ý một phần thời lượng. Vì vậy phải giữ trạng thái chưa rõ và kiểm lại trước khi công bố; quy tắc này không phụ thuộc vào việc dùng AI.
+- **Augment hay automate?** Augment. A và B thấy gom giờ rảnh một lượt giúp giảm hỏi lại, nhưng không ai muốn hệ thống tự chốt lịch (mục 3.2). Chốt giờ cần ngữ cảnh AI không có, ví dụ có chấp nhận họp với đa số trước hạn nộp không.
+- **Sai kiểu nào tệ hơn?** Báo nhầm "rảnh" tệ hơn bỏ sót: ghi một người là rảnh khi người đó bận thì nhóm chốt giờ thiếu người rồi phải dời (đúng tình huống B), còn để "không rõ" thì chỉ tốn một câu hỏi lại. Vì vậy câu mơ hồ gán "không rõ", "rảnh một phần" không tính là đủ, và tiêu chí đánh giá ưu tiên "không báo nhầm rảnh".
 
 ---
 
 ## 7. Problem Statement v1 + tiêu chí đánh giá (CP6)
 
-Khi cần tìm giờ họp mới, người hẹn trong nhóm học tập 3–4 người chưa có lịch cố định cần thu được các khung giờ rảnh cụ thể và đủ xác nhận của người cần dự, để giảm việc hỏi lại mà không chốt nhầm một giờ thiếu người. Lượt thử dùng mẫu trả lời chung và người hẹn tổng hợp thủ công.
-
 | Trường | Nội dung |
 |---|---|
-| **Actor** | Người hẹn của nhóm học tập 3–4 người chưa có lịch họp cố định; các thành viên cần dự chịu trách nhiệm báo khả năng tham gia và xác nhận giờ cuối. Danh sách người cần dự được ghi trước khi gửi khung giờ. |
-| **Quy trình** | Gửi 3–4 khung cụ thể và hạn trả lời (mẫu tin nhắn hoặc bình chọn có sẵn) → từng người báo tất cả khung tham gia được → người hẹn đối chiếu bảng hoặc kết quả bình chọn → gửi giờ đề nghị chốt → đủ xác nhận thì công bố. Thiếu thông tin hoặc không có khung chung thì hỏi lại hoặc đề xuất khung mới. |
-| **Bottleneck** | Giữ hai nguyên nhân của v0: chờ phản hồi và làm rõ/tìm lại giờ chung. Mẫu chung nhắm vào phần hỏi lại do giờ rảnh chưa cụ thể; chưa có căn cứ nói nó rút ngắn được thời gian người khác chưa mở chat. Khâu ghi bảng cũng cần được đo, không mặc định là nghẽn chính. |
-| **Impact** | A kể mất khoảng 20–25 phút qua hai lượt đề xuất, chủ yếu chờ người cuối. B kể trao đổi khoảng 30 phút rồi dời họp và ghép báo cáo sang hôm sau, chưa chốt giờ trong khoảng đó. Cả hai vẫn kịp nộp bài. Đây là tự thuật, chưa phải kết quả đo từ lịch sử chat. |
-| **Success Metric** (baseline → target, cách đo) | **Baseline (tự thuật, cần đo lại từ chat):** 20–30 phút mỗi lần chốt (A: 20–25 phút; Lương, Bảo: khoảng 30 phút). **Target:** ít nhất 2/3 lượt thử chốt đủ người trong **dưới 10 phút**, và 0 lượt công bố "đủ người" khi còn thiếu xác nhận. **Cách đo:** tính từ tin đề xuất đầu tiên đến khi mọi người xác nhận, trên 3 lượt cách cũ và 3 lượt cách mới; chi tiết ở mục 5, "Cách đo trước và sau". |
-| **Boundary** | Chỉ dùng phản hồi giờ rảnh của cuộc họp đó, không đọc lịch cá nhân hay toàn bộ lịch sử chat. Không coi im lặng là rảnh, không quyết thay người chưa phản hồi. Người hẹn kiểm bảng với tin nhắn gốc trước khi chốt (HITL). Không có giờ chung thì cả nhóm thống nhất khung mới, dời lịch hoặc họp với đa số, và ghi đúng kết quả đó. |
-| **AI intervention point** | **Không có.** Bước 3 trong phương án CP5 dùng người hẹn tự ghi và đối chiếu. Dữ liệu ít, logic khung chung rõ; chưa có bằng chứng AI tạo thêm giá trị so với mẫu trả lời. |
-| **Mức chọn** | **No AI** cho lượt thử đầu; chưa chọn Rule, Workflow hoặc Agent. |
-| **Rủi ro & người kiểm tra** | Người hẹn có thể ghi sai giờ, bỏ cập nhật hoặc nhầm người chưa phản hồi là đồng ý; người hẹn đối chiếu nguồn và từng thành viên xác nhận trước khi chốt. Thành viên có thể không theo mẫu hoặc không trả lời đúng hạn; người hẹn hỏi lại/nhắc một lần, ghi riêng kết quả chưa chốt. Người hẹn lưu mốc chat, một thành viên khác rà cách đếm và phân loại lượt đạt để tránh chỉ ghi các lượt thuận lợi. |
-
-**Thay đổi so với v0 và lý do:**
+| **Actor** | Người hẹn trong nhóm học tập 3–4 người **chưa có lịch họp cố định**, hẹn họp qua chat |
+| **Quy trình** | Gửi khung giờ → chờ phản hồi → hỏi lại khi phản hồi không cụ thể hoặc có người bận → lặp lại → chốt |
+| **Bottleneck** | Vòng lặp bước 2–4, khoảng 26/30 phút (ước lượng): chờ phản hồi (A) và phản hồi không cụ thể phải hỏi lại (B) |
+| **Impact** | 20–30 phút mỗi lần chốt; B phải dời họp sang hôm sau; người hẹn mở chat kiểm tra nhiều lần |
+| **Success Metric** | (1) Thời gian chốt từ 20–30 phút xuống dưới 10 phút ở ít nhất 2/3 lượt pilot; (2) 0 lượt công bố "đủ người" khi còn thiếu xác nhận; (3) bước AI: ≥ 90% ô khớp nhãn người hẹn kiểm, 0 ô "rảnh" sai. Đo theo mục 5, "Cách đo trước và sau" |
+| **Boundary** | AI không gửi tin, không chốt, không dời lịch; không đọc lịch cá nhân hay toàn bộ chat; không suy ra "rảnh" từ im lặng. Người hẹn duyệt mọi ô AI điền trước khi chốt |
+| **AI intervention point** | Bước 3 của quy trình tương lai (mục 4.2), chỉ với tin trả lời tự do không đi qua Form |
+| **Mức chọn** | Workflow |
+| **Rủi ro & người kiểm tra** | AI hiểu sai giờ hoặc bỏ điều kiện → người hẹn đối chiếu nguyên văn và sửa. Script lỗi → người hẹn đếm tay từ Form. Đưa tin nhắn vào AI → chỉ dán tin trả lời giờ rảnh, thay tên bằng mã thành viên |
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| Quy trình | Quy trình hiện tại đề xuất từng giờ, chờ và đổi giờ; CP5 còn nhánh AI tùy chọn. | Lượt thử gửi một bộ khung cụ thể, người hẹn ghi bảng và đối chiếu thủ công. | B cần làm rõ giờ rảnh; chưa có bằng chứng cần AI để tổng hợp lượng phản hồi nhỏ. |
-| Boundary | Nêu giới hạn nếu dùng AI và việc người hẹn kiểm. | Chuyển thành quy tắc vận hành cho No AI: giữ trạng thái chưa rõ, kiểm phản hồi cập nhật và không chốt thay người chưa xác nhận. | Sai sót vẫn có thể xảy ra khi tổng hợp thủ công; bỏ AI không bỏ bước kiểm. |
-| Success Metric | Ít nhất 2/3 lượt dưới 10 phút, đủ xác nhận; baseline tạm thời. | Giữ mục tiêu và cách đo, bổ sung điều kiện không công bố sai “đủ người” trên mọi lượt thử; có người rà lại bản ghi. | Không đánh đổi độ đúng để đạt thời gian; ghi được cả lỗi ở lượt không đạt. |
-| AI intervention point / mức chọn | Chưa chốt; bước tổng hợp có thể dùng AI. | Không có can thiệp AI; chọn No AI cho lượt thử đầu. | Nguyên nhân chờ phản hồi của A không được xử lý bằng suy luận; cách hỏi cụ thể giải trực tiếp phần thiếu thông tin của B. |
-| Rủi ro & người kiểm tra | Chủ yếu nhấn mạnh bảng sai, thiếu người và người hẹn kiểm. | Thêm phản hồi cũ/mâu thuẫn, không theo mẫu và việc rà lại kết quả đo bởi thành viên khác. | Đánh giá đúng phương án thủ công đã chọn và tránh báo cáo thiếu các lượt chưa chốt. |
+| Success Metric | Chỉ đo thời gian chốt và đủ xác nhận | Thêm metric cho bước AI: ≥ 90% ô khớp, 0 ô "rảnh" sai | Có bước AI thì phải đo riêng độ đúng: chốt nhanh mà chốt sai người thì không đạt |
+| AI intervention point / mức chọn | Chưa chốt; bước 3 là AI tùy chọn | Bước 3, chỉ cho tin tự do; Workflow | Rule không đọc được tin tự do (phỏng vấn B, rủi ro mục 4.3) |
+| Rủi ro & người kiểm tra | Chỉ có bảng sai hoặc thiếu người | Thêm lỗi script và việc đưa tin nhắn vào AI (thay tên bằng mã) | Thêm thành phần kỹ thuật thì thêm cách hỏng mới, mỗi cách cần người hoặc cách kiểm |
 
-**Tiêu chí đánh giá giải pháp không dùng AI (5 tiêu chí):**
-
-Đầu ra cần kiểm là mẫu hỏi giờ, bảng phản hồi, tin chốt và bản ghi mốc thời gian. Áp dụng nhánh No AI của worksheet, không chấm một đầu ra AI không được sử dụng.
+**Tiêu chí đánh giá đầu ra của AI** (bảng trạng thái AI trích từ một tin trả lời tự do):
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | Khung giờ đủ rõ để trả lời | Bộ đề xuất có 3–4 khung, mỗi khung đủ ngày, giờ bắt đầu/kết thúc, múi giờ; có danh sách người cần dự và hạn trả lời. | Chỉ ghi “tối”, thiếu ngày/thời lượng, chưa rõ cần ai tham dự hoặc thiếu hạn phản hồi. |
-| 2 | Bảng phản ánh đúng phản hồi | Mỗi người có trạng thái theo từng khung và nguồn kiểm được; dùng phản hồi mới nhất đã rõ. Người im lặng hoặc trả lời mâu thuẫn giữ là chưa rõ. | Tự đoán giờ, bỏ điều kiện, dùng tin cũ trái cập nhật hoặc tính người chưa trả lời là rảnh. |
-| 3 | Chốt giờ có đủ căn cứ | Khung chốt phù hợp toàn bộ thời lượng với mọi người cần dự và có đủ xác nhận. Không có khung chung thì ghi chưa chốt/dời/họp đa số đúng thực tế. | Ghi “chốt đủ người” khi thiếu xác nhận, có người bận hoặc chỉ rảnh một phần khung. |
-| 4 | Xử lý thiếu dữ liệu và quay về thủ công | Hết hạn mà thiếu phản hồi thì người hẹn nhắc một lần; vẫn thiếu/không có giờ chung thì hỏi lại, đề xuất khung mới hoặc thống nhất kết quả khác. Giữ nguyên mốc bắt đầu và lưu thay đổi. | Hết hạn được coi là đồng ý; bỏ người khỏi danh sách để đạt thời gian; bắt đầu lại đồng hồ khi đổi khung hoặc quay về chat. |
-| 5 | Thành viên trả lời đúng mẫu ngay lượt đầu | Ít nhất 3/4 người trả lời theo các khung cụ thể đã gửi (chọn khung hoặc báo không khung nào phù hợp) mà không cần hỏi lại. | Người hẹn phải hỏi lại kiểu "rảnh buổi tối là mấy giờ?", tức nguyên nhân của B vẫn còn. |
-
-Một lượt thử được tính đạt khi đáp ứng cả 5 tiêu chí. Mục tiêu thời gian (dưới 10 phút) được kiểm riêng bằng Success Metric ở trên. Hiện chưa có lượt thử nào; đây là chuẩn kiểm, chưa phải kết quả.
+| 1 | Không bịa | Mọi ô rảnh/bận/rảnh một phần đều kèm trích nguyên văn | Có ô không có trích dẫn, hoặc điền trạng thái cho người chưa gửi tin |
+| 2 | Không báo nhầm "rảnh" | 0 ô "rảnh" sai; tổng ô khớp nhãn ≥ 90% | Ghi "rảnh" khi người đó bận một phần hoặc cả khung |
+| 3 | Xử lý câu mơ hồ | "Tối mai rảnh" (không có giờ) → "không rõ" | Tự đoán "tối" là 19h–22h rồi ghi "rảnh" |
+| 4 | Giữ điều kiện | "Rảnh sau 8h, trừ 9–10h" với khung 20:00–21:30 → "rảnh một phần" | Ghi "rảnh" cả khung, bỏ qua "trừ 9–10h" |
+| 5 | Dùng tin mới nhất | Người đổi ý trong hai tin → dùng tin sau, trích cả hai | Dùng tin cũ, hoặc gộp hai tin mâu thuẫn thành "rảnh" |
 
 ---
 
@@ -417,26 +412,37 @@ Một lượt thử được tính đạt khi đáp ứng cả 5 tiêu chí. M�
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | Trung bình | A và B có lần chốt lịch mất 20–30 phút, B phải dời họp; Lương và Bảo tự thuật tương tự. Nhưng C (lịch cố định) chỉ mất 5–10 phút, và mọi con số đều là ước lượng, chưa đo từ chat |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Người hẹn chỉ cần đọc bảng và sửa ô sai, có nguyên văn bên cạnh để đối chiếu. Rủi ro nằm ở thành viên: chưa biết họ có chịu mở Form hay vẫn trả lời thẳng trong chat (giả định #3, chưa có hành vi thật) |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | Thấp | Google Form, Sheets, Apps Script và bình chọn trong app chat đều miễn phí, có sẵn. Input của AI chỉ là vài tin trả lời ngắn. Nhóm có nền tảng phần mềm; phần khó nhất là viết prompt và kiểm bằng bộ eval ở mục 7 |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | Thấp | Chi phí gọi AI rất nhỏ vì mỗi lượt chỉ vài tin. Tin nhắn đưa vào AI chỉ là tin trả lời giờ rảnh, đã thay tên bằng mã thành viên. Người vận hành là người hẹn của nhóm, không cần tổ chức phê duyệt |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** **Go, phạm vi nhỏ.**
 
-**Lý do:**
+**Lý do:** không có rủi ro mức Cao. Hai rủi ro Trung bình (Value, Usability) kiểm được ngay trong pilot bằng mốc giờ trong chat và tỷ lệ thành viên dùng Form. Các công cụ đều có sẵn nên pilot không cần xây hệ thống mới.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất (2 tuần, 1 nhóm học tập 3–4 người chưa có lịch cố định):**
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+- **Trước pilot:** đo lại baseline từ 3 lần chốt lịch gần nhất trong chat (đã che tên), tách thời gian chờ phản hồi và thời gian hỏi lại. Chạy bước AI trên bộ eval 10 tin trả lời mẫu, chấm theo 5 tiêu chí ở mục 7; chỉ dùng với nhóm thật khi đạt cả 5.
+- **Tuần 1 — chỉ Rule:** Form 3–4 khung + hạn trả lời, Apps Script tính khung đủ người và nhắc một lần. Đếm số phản hồi đi qua Form và số tin trả lời tự do trong chat.
+- **Tuần 2 — thêm bước AI:** chỉ khi tuần 1 có từ 20% phản hồi là tin tự do. Người hẹn dán tin tự do vào bước AI, duyệt bảng, ghi cột "sửa tay".
+- **Mỗi lượt ghi:** thời gian từ đề xuất đầu tiên đến đủ xác nhận, số lần hỏi lại, số ô AI điền bị sửa, kết quả (chốt đủ người / họp với đa số / dời lịch).
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** không áp dụng.
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Nếu No-Go — nên làm gì thay AI:** không áp dụng. Phương án quay về khi pilot không đạt nằm ở ngưỡng dừng bên dưới.
+
+**Ngưỡng dừng:**
+
+- Nếu sau 3 lượt chốt lịch, dưới 20% phản hồi là tin tự do → bỏ bước AI, giữ Rule (Form + nhắc tự động).
+- Nếu có 1 ô "rảnh" sai do AI điền lọt qua bước duyệt và dẫn tới chốt giờ thiếu người → dừng bước AI, xem lại prompt và bước duyệt trước khi chạy tiếp.
+- Nếu người hẹn phải sửa trên 30% số ô AI điền trong 3 lượt → quay về người hẹn tự điền (No AI cho bước 3).
+- Nếu sau 2 tuần, dưới 2/3 lượt chốt được trong 10 phút và phần chờ phản hồi vẫn chiếm trên một nửa thời gian → vấn đề là thói quen phản hồi, không phải công cụ → chuyển sang lịch họp cố định hằng tuần (pattern của C).
 
 ---
+
 
 ## 9. Hạn chế và hướng tiếp theo
 
