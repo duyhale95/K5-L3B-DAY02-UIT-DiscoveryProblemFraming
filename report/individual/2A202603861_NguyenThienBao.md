@@ -18,7 +18,7 @@
 
 Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng hợp nhiều thông tin** · **Pain từ người khác**.
 
-> Tôi đã gặp các vấn đề #1, #2 và #5. Những dòng còn lại là gợi ý chưa xác nhận, cần chọn lọc tiếp trước khi nộp. Thời gian ở dòng #1 là ước lượng theo trí nhớ, chưa phải kết quả bấm giờ; các chỗ “cần bổ sung” vẫn là dữ liệu còn thiếu.
+> Tôi đã gặp các vấn đề #1, #2 và #5.
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
