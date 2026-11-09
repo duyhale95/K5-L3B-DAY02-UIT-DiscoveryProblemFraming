@@ -195,41 +195,96 @@ Quy trình chốt lịch hiện tại dùng để đối chiếu: (1) một ngư
 
 ## 4. Quy trình trước/sau (CP5)
 
+Phạm vi theo điều chỉnh ở mục 3.2: nhóm học tập 3–4 người chưa có lịch họp cố định, hẹn họp qua chat (Messenger, Zalo, Discord).
+
+Quy ước nguồn số liệu trong mục này:
+
+- **Tự thuật:** Lương và Bảo kể lại trong CP1–CP2.
+- **Phỏng vấn:** lời kể của A, B, C ở mục 3.2, là ước lượng của người được hỏi.
+- **Chưa có dữ liệu:** chưa có mốc tin nhắn để đo riêng từng bước.
+- **Mục tiêu đề xuất:** con số nhóm đặt ra để kiểm ở CP5–CP6, chưa phải kết quả đo.
+
 ### 4.1. Quy trình hiện tại
 
-Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
-
-```text
-
+```mermaid
+flowchart LR
+  B1["1. Người hẹn đề xuất một giờ trong chat"] --> B2["2. Chờ từng thành viên trả lời"]
+  B2 -->|"Mọi người đồng ý"| B5["5. Chốt giờ và nhắc lại"]
+  B2 -->|"Có người bận hoặc chỉ báo rảnh theo buổi"| B3["3. Hỏi lại giờ rảnh, tìm và đề xuất giờ khác"]
+  B3 --> B4["4. Lặp lại bước 2–3"]
+  B4 --> B2
+  style B2 fill:#f8d7da,stroke:#c0392b
+  style B3 fill:#f8d7da,stroke:#c0392b
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Người hẹn (một thành viên nhóm) | Nhu cầu họp, hạn nộp bài | Tin nhắn đề xuất một giờ cụ thể | Chưa có dữ liệu đo riêng. Phát sinh mỗi lần nhóm cần họp; tần suất mỗi tuần chưa có dữ liệu | Người hẹn thường chưa biết ai rảnh khi đề xuất |
+| 2 | Các thành viên còn lại | Tin nhắn đề xuất | Phản hồi đồng ý hoặc báo bận | Chưa có dữ liệu đo riêng. Phỏng vấn A: phần lớn của 20–25 phút là chờ người cuối trả lời | **Bottleneck, nguyên nhân 1:** chờ phản hồi. Người hẹn phải mở chat kiểm tra nhiều lần |
+| 3 | Người hẹn và thành viên báo bận | Phản hồi bận; giờ rảnh nêu chung chung "theo buổi" | Một giờ đề xuất mới | Chưa có dữ liệu đo riêng. Phỏng vấn B: khoảng 30 phút trao đổi mà chưa tìm được giờ chung trong ngày | **Bottleneck, nguyên nhân 2:** giờ rảnh không cụ thể nên phải hỏi lại |
+| 4 | Cả nhóm | Giờ đề xuất mới | Vòng phản hồi tiếp theo | Phỏng vấn A: 2 lượt đề xuất. Phỏng vấn C: 1 lượt xác nhận và 1 lượt điều chỉnh. Tự thuật Lương, Bảo: 6–10 vòng | Số vòng khác nhau nhiều giữa các nhóm; mốc 6–10 vòng chưa được nguồn ngoài nhóm xác nhận |
+| 5 | Người hẹn | Giờ được tất cả đồng ý | Tin nhắn chốt giờ và nhắc lại | Chưa có dữ liệu đo riêng | Nếu không có giờ chung, buổi họp bị dời sang hôm sau (phỏng vấn B) |
 
-**Bottleneck chính:**
+**Tổng thời gian một lượt chốt lịch:** khoảng 20–30 phút theo phỏng vấn A, B và tự thuật của Lương, Bảo. Nhóm có lịch cố định (phỏng vấn C) chỉ mất khoảng 5–10 phút.
+
+**Bottleneck chính:** vòng lặp bước 2–3, gồm chờ thành viên phản hồi và đề xuất lại khi có người bận. Phỏng vấn cho thấy hai nguyên nhân khác nhau: A chủ yếu chờ người cuối trả lời, B chủ yếu do giờ rảnh không được nêu cụ thể. Nhóm **chưa đo được tỷ lệ** thời gian của từng nguyên nhân.
+
+**Cách đo để bổ sung baseline (giả định #4):** lấy một đoạn chat chốt lịch thật đã che tên, ghi thời điểm của tin đề xuất đầu tiên, từng phản hồi, mỗi lần đổi giờ và tin chốt. Từ đó tính số vòng, thời gian chờ phản hồi và thời gian tìm giờ thay thế.
 
 ### 4.2. Quy trình tương lai
 
-Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
+Đây là **phương án đề xuất** dựa trên research ở mục 3.3. Mức can thiệp chính thức (No AI / Rule / Workflow / Agent) do nhóm chốt ở CP6. Bước 3 là bước AI tùy chọn và chỉ dùng nếu CP6 chọn Workflow.
 
-```text
-
+```mermaid
+flowchart TD
+  F0{"Nhóm đã có khung họp cố định hằng tuần?"}
+  F0 -->|"Có"| F6["0. Gửi một tin xác nhận khung cố định<br/>CON NGƯỜI"]
+  F0 -->|"Chưa có hoặc cần đổi giờ"| F1["1. Gửi mẫu hỏi giờ rảnh: 3–4 khung giờ cụ thể, kèm hạn trả lời<br/>RULE"]
+  F1 --> F2["2. Thành viên đánh dấu khung rảnh trong một lượt; đến hạn nhắc người chưa trả lời một lần<br/>RULE + CON NGƯỜI"]
+  F2 --> F3["3. Gom các trả lời thành bảng khung trùng<br/>AI tùy chọn, hoặc người hẹn tự đếm"]
+  F3 --> F4["4. Người hẹn kiểm bảng với tin nhắn gốc rồi chọn giờ<br/>CON NGƯỜI - HITL"]
+  F4 --> F5["5. Mọi thành viên xác nhận giờ đã chốt<br/>CON NGƯỜI"]
+  F6 --> F5
+  F3 -.->|"Bảng sai hoặc không có khung trùng"| R["Phương án quay về: người hẹn tự đếm hoặc đề xuất thủ công trong chat như hiện tại"]
+  R --> F4
 ```
+
+| Bước | Ai xử lý | Việc làm | Giải nguyên nhân nào |
+|---:|---|---|---|
+| 0 | Con người | Nếu nhóm đã thống nhất khung họp cố định (pattern của C), chỉ gửi một tin xác nhận | Bỏ qua toàn bộ vòng lặp |
+| 1 | Rule | Người hẹn gửi mẫu tin nhắn cố định hoặc bình chọn trong chat: 3–4 khung giờ cụ thể và hạn trả lời | Nguyên nhân 2: buộc báo giờ cụ thể thay vì "theo buổi" |
+| 2 | Rule + con người | Thành viên chọn mọi khung mình rảnh trong một lượt. Đến hạn, người hẹn nhắc riêng người chưa trả lời một lần | Nguyên nhân 1: giới hạn thời gian chờ |
+| 3 | AI tùy chọn hoặc con người | Gom các trả lời thành bảng khung trùng. Nếu nhóm dùng bình chọn có sẵn, bước này không cần AI | Giảm việc đếm tay khi thành viên trả lời bằng tin nhắn tự do |
+| 4 | Con người (HITL) | Người hẹn đối chiếu bảng với tin nhắn gốc, chọn khung có đủ người. Nếu không có khung đủ người, quyết định họp với đa số hay dời lịch | Giữ quyết định chốt giờ ở con người |
+| 5 | Con người | Từng thành viên xác nhận giờ đã chốt | Tránh hiểu nhầm giờ họp |
+
+**Boundary**
+
+- AI (nếu dùng) chỉ đọc các tin nhắn trả lời giờ rảnh được người hẹn đưa vào. AI không đọc lịch cá nhân hay toàn bộ lịch sử chat.
+- AI không tự chốt giờ, không tự gửi tin nhắn hay lời mời cho nhóm, không tự dời sự kiện nào (rủi ro đã ghi ở công cụ Reclaim, mục 3.3).
+- AI không suy diễn giờ rảnh khi thành viên chưa trả lời. Người chưa trả lời được ghi là "chưa có thông tin", không được tính là rảnh.
+
+**Khi nào cần con người kiểm tra (HITL)**
+
+- Bước 4: người hẹn luôn đối chiếu bảng khung trùng với tin nhắn gốc trước khi chốt.
+- Khi không có khung nào đủ tất cả thành viên, người hẹn quyết định họp với đa số hay dời lịch.
+
+**Phương án quay về**
+
+- Bảng khung trùng sai, thiếu người hoặc không có khung trùng: người hẹn tự đếm từ bình chọn hoặc quay về đề xuất giờ thủ công trong chat như quy trình hiện tại.
+- Thành viên không dùng mẫu hoặc bình chọn: người hẹn hỏi riêng người đó, không chặn cả nhóm.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 5, bước 2–4 lặp nhiều vòng | 5, không lặp nếu có khung trùng; 2 bước nếu có khung cố định | Vòng lặp đề xuất lại được thay bằng một lượt gom giờ rảnh |
+| Tổng thời gian | Khoảng 20–30 phút (phỏng vấn A, B; tự thuật) | Mục tiêu đề xuất: dưới 10 phút | Mục tiêu dựa trên mốc 5–10 phút của nhóm có lịch cố định (phỏng vấn C). Chưa có số đo sau khi áp dụng |
+| Số bước thủ công | 5/5 | 3/5 (bước 2, 4, 5); bước 1 dùng mẫu cố định, bước 3 do AI hoặc tính năng bình chọn | Bước 4 giữ thủ công vì là điểm kiểm tra |
+| Bottleneck chính | Vòng lặp chờ phản hồi và đề xuất lại (bước 2–3) | Chờ thành viên trả lời trong một lượt (bước 2) | Research mục 3.3: chưa công cụ nào giải được phần chờ phản hồi. Hạn trả lời và nhắc một lần chỉ giới hạn được, không loại bỏ được |
+| Rủi ro mới phát sinh | — | Thành viên không mở bình chọn hoặc không theo mẫu; AI đọc sai giờ trong tin nhắn tự do; nhóm phụ thuộc vào một người hẹn; hạn trả lời gây áp lực | Xử lý bằng bước 4 (HITL), phương án quay về và việc ghi "chưa có thông tin" thay vì đoán |
+
+**Số liệu cần bổ sung trước CP6:** thời gian từng bước của quy trình hiện tại, tỷ lệ thời gian chờ phản hồi so với tìm giờ, và tần suất chốt lịch mỗi tuần. Ba số này hiện là "chưa có dữ liệu".
 
 ---
 
