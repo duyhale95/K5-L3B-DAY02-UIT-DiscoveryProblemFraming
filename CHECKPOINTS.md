@@ -34,7 +34,7 @@ Mỗi checkpoint có template và prompt mẫu tương ứng trong [docs/01-work
 - **Sản phẩm:** Bảng scan có ít nhất 5 dòng trong báo cáo cá nhân, mục 2.
 - **Cần hiểu:** Khác nhau giữa *problem* ("tốn 90 phút mỗi tuần viết báo cáo") và *solution trá hình* ("thiếu một chatbot viết báo cáo").
 - **Tự kiểm tra:**
-  - [ ] Có ít nhất 5 problem, mỗi problem viết dạng Job Story.
+  - [x] Có ít nhất 5 problem, mỗi problem viết dạng Job Story.
   - [x] Không dòng nào có chữ "AI", "chatbot", "agent" trong cột Job Story (kể cả dòng thuộc lăng kính "Cần đọc, tổng hợp nhiều thông tin": mô tả việc khó, chưa nói cách giải).
   - [x] Mỗi dòng có ít nhất 1 dấu hiệu thật đo được (thời gian, tần suất, số người).
 
@@ -50,7 +50,7 @@ Mỗi checkpoint có template và prompt mẫu tương ứng trong [docs/01-work
 - **Cần hiểu:** Bottleneck là **một bước cụ thể** trong quy trình, không phải cảm giác chung chung "quy trình chậm".
 - **Tự kiểm tra:**
   - [x] Mỗi card có đủ: Job Story, actor, quy trình, bottleneck, impact, success metric, phương án không dùng AI.
-  - [ ] Mỗi quy trình có số phút cho từng bước và đánh dấu bước nghẽn.
+  - [x] Mỗi quy trình có số phút cho từng bước và đánh dấu bước nghẽn.
   - [x] Đã đưa card cho AI đóng vai "PM hoài nghi" phản biện và sửa ít nhất 1 điểm.
 
 ---
@@ -86,7 +86,7 @@ Mỗi checkpoint có template và prompt mẫu tương ứng trong [docs/01-work
 - **Sản phẩm:** Báo cáo nhóm mục 3: assumption map, interview snapshot hoặc kết quả survey, bảng research có link, và nhóm đã sửa problem thế nào sau kiểm chứng.
 - **Cần hiểu:** Lời khen ("ý hay đấy!") không phải bằng chứng. Hành vi đã xảy ra và cam kết (thời gian, tiền, hành động tiếp theo) mới là bằng chứng.
 - **Tự kiểm tra:**
-  - [ ] Không câu hỏi phỏng vấn nào bắt đầu bằng "Bạn có muốn…" hay "Bạn có dùng… không nếu…".
+  - [x] Không câu hỏi phỏng vấn nào bắt đầu bằng "Bạn có muốn…" hay "Bạn có dùng… không nếu…".
   - [x] Có ít nhất 1 tín hiệu **phản bác** được ghi lại, kể cả khi nhỏ.
   - [x] Mọi link trong bảng research đều mở được và đúng nội dung được trích.
 
@@ -144,4 +144,4 @@ Mỗi checkpoint có template và prompt mẫu tương ứng trong [docs/01-work
 - **Tự kiểm tra:**
   - [x] Có ít nhất 1 ví dụ cụ thể bạn đã đổi ý sau khi bị phản biện, hoặc đã phản biện làm nhóm đổi ý.
   - [x] Có ít nhất 1 chỗ AI sai hoặc hời hợt và bạn đã sửa thế nào.
-  - [ ] Reflection không do AI viết.
+  - [x] Reflection không do AI viết.
