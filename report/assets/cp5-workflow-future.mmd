@@ -1,16 +1,19 @@
 flowchart TD
-  F0{"Nhóm đã có khung họp cố định hằng tuần?"}
-  F0 -->|"Có"| F6["0. Gửi một tin xác nhận khung cố định<br/>CON NGƯỜI"]
+  F0{"Có thể giữ khung họp cố định?"}
+  F0 -->|"Có"| F6["0. Giữ khung cố định<br/>CON NGƯỜI"]
   F0 -->|"Chưa có hoặc cần đổi giờ"| F1["1. Tạo Form hoặc bình chọn: 3–4 khung giờ cụ thể, kèm hạn trả lời<br/>RULE"]
   F1 --> F2["2. Thành viên trả lời qua Form; đến hạn script nhắc người chưa trả lời một lần<br/>RULE"]
   F2 --> F3a["3a. Phản hồi qua Form được ghi vào Sheets<br/>RULE"]
-  F2 --> F3b["3b. Tin trả lời tự do trong chat: người hẹn dán vào, AI trích trạng thái từng khung kèm nguyên văn, ghi vào Sheets<br/>AI"]
-  F3a --> F3c["Script tính khung đủ người<br/>RULE"]
-  F3b --> F3c
-  F3c --> F4["4. Người hẹn duyệt bảng, đối chiếu nguyên văn, chọn khung<br/>CON NGƯỜI - HITL"]
-  F4 --> F5["5. Gửi tin chốt, mọi thành viên xác nhận<br/>CON NGƯỜI"]
+  F2 -->|"Có tin tự do và AI được bật"| F3b["3b. AI trích trạng thái và dẫn chứng vào bảng nháp<br/>AI"]
+  F2 -->|"Có tin tự do và đang dùng Rule"| F3m["Người hẹn đối chiếu tin và nhập tay<br/>CON NGƯỜI"]
+  F3b --> F4["4a. Người hẹn đối chiếu và duyệt bảng nháp<br/>CON NGƯỜI - HITL"]
+  F3a --> F3c["Script tính khung đủ người từ phản hồi đã xác nhận<br/>RULE"]
+  F3m --> F3c
+  F4 --> F3c
+  F3c --> F4b["4b. Người hẹn chọn khung giờ<br/>CON NGƯỜI"]
+  F4b --> F5["5. Gửi tin chốt, mọi thành viên cần dự xác nhận<br/>CON NGƯỜI"]
   F6 --> F5
   F3b -.->|"AI điền sai"| R1["Quay về: người hẹn tự sửa ô trong Sheets"]
-  F3c -.->|"Script lỗi hoặc không có khung đủ người"| R2["Quay về: đếm tay từ Form; quyết định họp với đa số hoặc dời lịch"]
+  F3c -.->|"Script lỗi hoặc không có khung đủ người"| R2["Đếm tay từ Form và chat, hỏi lại nếu cần"]
   R1 --> F4
-  R2 --> F4
+  R2 --> F4b

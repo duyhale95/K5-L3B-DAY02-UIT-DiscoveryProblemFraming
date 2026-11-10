@@ -7,7 +7,7 @@
 - Tên nhóm: UIT
 - Trưởng nhóm: Hà Lê Duy
 - Candidate problem nhóm chọn (1 câu): **L3 — Chốt giờ họp nhóm.** Thành viên nhóm 3–4 người phải chờ phản hồi và đề xuất lại nhiều vòng để tìm giờ mọi người đều rảnh.
-- Quyết định cuối (Go / Not Yet / No-Go):
+- Quyết định cuối: **Go, phạm vi nhỏ.** Thử Workflow trong 2 tuần với một nhóm học tập 3–4 người chưa có lịch cố định. Tuần đầu dùng Rule. Tuần hai chỉ thêm AI nếu ít nhất 20% phản hồi tuần đầu là tin tự do và bước AI đạt các tiêu chí kiểm tra. [Quyết định và ngưỡng dừng](report/team/group_report.md#82-kết-luận)
 
 ## Thành viên
 
@@ -15,8 +15,8 @@
 |---:|---|---|---|---|
 | 1 | Hà Lê Duy | 2A202603851 | Trưởng nhóm | duyhale95 |
 | 2 | Võ Hồng Lương | 2A202603839 | Vẽ quy trình trước/sau, hạn chế và tài liệu tham khảo | luongvh2510 |
-| 3 | Nguyễn Đức Nhật | 2A202603812 |  | Chờ thành viên xác nhận |
-| 4 | Nguyễn Thiên Bảo | 2A202603861 |  | Chờ thành viên xác nhận |
+| 3 | Nguyễn Đức Nhật | 2A202603812 | Phản biện điểm nghẽn L3, rà ranh giới AI và tiêu chí đánh giá | NguyenDucNhat3006 |
+| 4 | Nguyễn Thiên Bảo | 2A202603861 | Research L3, cập nhật Workflow, Problem Statement v1 và quyết định thử nghiệm | Limdim1604 |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
@@ -26,13 +26,13 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 | Checkpoint | Người chính | Người hỗ trợ | Sản phẩm |
 |---|---|---|---|
-| CP3 — Hội tụ nhóm | | | Cluster, cây OST, bảng chấm điểm |
-| CP4 — Kiểm chứng | | | Assumption map, snapshot hoặc survey |
-| CP4 — Research | | | Bảng research có link |
-| CP5 — Quy trình trước/sau | | | Quy trình + bảng before/after |
-| CP5 — Problem Statement v0 | | | Problem Statement v0 |
-| CP6 — Mức can thiệp + Problem Statement v1 | | | Ma trận, AI Canvas, eval, Problem Statement v1 |
-| CP6 — Quyết định | | | 4 rủi ro + Go/Not Yet/No-Go |
+| CP3 — Hội tụ nhóm | Hà Lê Duy | Võ Hồng Lương, Nguyễn Đức Nhật, Nguyễn Thiên Bảo | Tổng hợp pitch, cluster, cây OST và bảng chấm điểm. Chọn L3 do Lương đề xuất. |
+| CP4 — Kiểm chứng | Hà Lê Duy (lập giả định, tổng hợp) | Nguyễn Đức Nhật (rà giả định và kết quả A–B) | Assumption Map và ba ghi nhận ẩn danh A–C cho L3. |
+| CP4 — Research | Nguyễn Thiên Bảo | Nguyễn Đức Nhật (đối chiếu công cụ) | Bảng bốn công cụ và phương án lịch cố định, đối chiếu theo từng bước của L3. |
+| CP5 — Quy trình trước/sau | Võ Hồng Lương | Hà Lê Duy (tệp Mermaid), Nguyễn Đức Nhật (rà điểm nghẽn và bước duyệt) | Sơ đồ, bảng các bước và bảng before/after. |
+| CP5 — Problem Statement v0 | Hà Lê Duy | Võ Hồng Lương và Nguyễn Đức Nhật (đối chiếu quy trình, số liệu và ranh giới) | Problem Statement v0 và cách đo trước/sau. |
+| CP6 — Mức can thiệp + Problem Statement v1 | Nguyễn Thiên Bảo (cập nhật báo cáo) | Nguyễn Đức Nhật (ranh giới và tiêu chí đánh giá), Võ Hồng Lương (đồng bộ quy trình) | Ma trận, AI Canvas, Problem Statement v1 và năm tiêu chí đánh giá bước AI. |
+| CP6 — Quyết định | Nguyễn Thiên Bảo (ghi quyết định trong báo cáo) | Nguyễn Đức Nhật (rà rủi ro và ngưỡng dừng), Võ Hồng Lương (ghi hạn chế và hướng tiếp theo) | Bốn rủi ro, quyết định Go phạm vi nhỏ, kế hoạch thử 2 tuần và ngưỡng dừng. |
 
 ## Cá nhân
 
@@ -101,9 +101,8 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - **CP5–CP6:** Khóa chặt ranh giới không dùng AI để tự chốt lịch hay suy diễn im lặng là rảnh; đóng góp thiết kế 5 tiêu chí đánh giá cho bước AI đọc tin nhắn tự do với ngưỡng cứng 0 ô rảnh sai và chuyển câu mơ hồ về nhãn không rõ.
 
 **Bằng chứng (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):**
-- [Mục 2.1 — Pitch danh sách vấn đề cá nhân](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/team/group_report.md#21-pitch-danh-s%C3%A1ch-v%E1%BA%A5n-%C4%91%E1%BB%81-c%C3%A1-nh%C3%A2n)
-- [Mục 4 — Quy trình trước/sau khi có AI](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/team/group_report.md#4-quy-tr%C3%ACnh-tr%C6%B0%E1%BB%9Bc--sau-khi-c%C3%B3-ai-cp5) · [Mục 6 — Mức can thiệp AI, Problem Statement v1 & Eval](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/team/group_report.md#6-m%E1%BB%A9c-can-thi%E1%BB%87p-ai--problem-statement-v1-cp6)
-- [Báo cáo cá nhân 2A202603812_NguyenDucNhat.md](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/blob/main/report/individual/2A202603812_NguyenDucNhat.md) · [Commit nộp bài CP1 CP2 ab664fb](https://www.google.com/search?q=https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/ab664fb)
+- [CP3 — Pitch và phản biện](report/team/group_report.md#21-pitch) · [CP5 — Quy trình trước/sau](report/team/group_report.md#4-quy-trình-trướcsau-cp5) · [CP6 — Mức can thiệp AI](report/team/group_report.md#6-mức-can-thiệp-ai-cp6) · [Problem Statement v1 và tiêu chí đánh giá](report/team/group_report.md#7-problem-statement-v1--tiêu-chí-đánh-giá-cp6)
+- [Commit CP1–CP2](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/ab664fb) · [Commit cập nhật báo cáo cá nhân và đóng góp](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/d0cae98)
 
 **Điều mình học được từ phần nhóm:**
 - Bài toán nhìn qua tưởng cần làm bot hay gọi mô hình phức tạp, nhưng khi ngồi phân tích quy trình thật với nhau mới thấy điểm nghẽn nằm ở các câu trả lời tự do kèm điều kiện. Dùng form làm khung chính kết hợp AI đọc câu trả lời tự do và bắt buộc người hẹn duyệt lại vừa gọn vừa tránh được rủi ro báo nhầm giờ rảnh làm lỡ việc của cả nhóm.
@@ -112,16 +111,19 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
--
+- Chuẩn bị B1–B3 và tham gia phản biện CP3. Phụ trách research công cụ cho L3 và cập nhật phần CP6 trong báo cáo nhóm.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- **CP3.** Trình bày B1–B3 và hỏi Nhật ở card N1 về tỷ lệ giao dịch có thể ghép theo mã phiên sạc và các trường hợp ngoại lệ.
+- **CP4.** Viết bảng so sánh When2meet, Doodle, Google Calendar, Reclaim.ai và phương án họp cố định. Phần tổng hợp chỉ ra công cụ có thể giảm số vòng tìm giờ chung, còn thời gian chờ thành viên phản hồi cần đo riêng.
+- **CP6.** Cập nhật ma trận mức can thiệp, AI Canvas, Problem Statement v1 và năm tiêu chí đánh giá bước AI. Ghi quyết định Go phạm vi nhỏ, kế hoạch thử 2 tuần và điều kiện dừng.
+- **Giai đoạn trước khi chọn L3.** Chuẩn bị hướng dẫn kiểm chứng và tổng hợp ba ghi nhận minh họa cho hướng đọc đề lab. Ba ghi nhận đó thuộc đề tài ban đầu.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- [CP3 — Pitch và phản biện](report/team/group_report.md#21-pitch) · [Commit research L3](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/cf9c802) · [Commit Workflow, v1 và quyết định](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/1e5a139) · [Commit kiểm chứng hướng đọc đề lab](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/5a1401d)
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Chờ Bảo tự bổ sung.
