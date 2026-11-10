@@ -111,19 +111,23 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Phần việc phụ trách:**
 
-- Chuẩn bị B1–B3 và tham gia phản biện CP3. Phụ trách research công cụ cho L3 và cập nhật phần CP6 trong báo cáo nhóm.
+- CP4: chuẩn bị phỏng vấn và thu snapshot cho ứng viên S1 (đọc yêu cầu lab); research giải pháp đã có cho L3 (mục 3.3).
+- CP6: mức can thiệp AI (mục 6), Problem Statement v1 và tiêu chí đánh giá (mục 7), bốn rủi ro và quyết định (mục 8).
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
-- **CP3.** Trình bày B1–B3 và hỏi Nhật ở card N1 về tỷ lệ giao dịch có thể ghép theo mã phiên sạc và các trường hợp ngoại lệ.
-- **CP4.** Viết bảng so sánh When2meet, Doodle, Google Calendar, Reclaim.ai và phương án họp cố định. Phần tổng hợp chỉ ra công cụ có thể giảm số vòng tìm giờ chung, còn thời gian chờ thành viên phản hồi cần đo riêng.
-- **CP6.** Cập nhật ma trận mức can thiệp, AI Canvas, Problem Statement v1 và năm tiêu chí đánh giá bước AI. Ghi quyết định Go phạm vi nhỏ, kế hoạch thử 2 tuần và điều kiện dừng.
-- **Giai đoạn trước khi chọn L3.** Chuẩn bị hướng dẫn kiểm chứng và tổng hợp ba ghi nhận minh họa cho hướng đọc đề lab. Ba ghi nhận đó thuộc đề tài ban đầu.
+- **CP3:** pitch ba card B1, B2, B3. Mình hỏi Duy ở D3 về việc lưu nguồn ngay từ đầu, và hỏi Nhật ở N1 về tỷ lệ ca đối chiếu được bằng mã phiên sạc. Card B1 được gộp với L2 của Lương thành S1.
+- **CP4 — kiểm chứng S1:** soạn bộ câu hỏi phỏng vấn theo Mom Test, mẫu snapshot và phiếu bấm giờ; thu bản trả lời của 3 sinh viên ngoài nhóm và viết thành 3 snapshot P01–P03. Phần này được gỡ khi nhóm làm lại CP3 và đổi sang L3.
+- **CP4 — research L3 (mục 3.3):** so sánh When2meet, Doodle, Google Calendar, Reclaim.ai và pattern lịch cố định theo từng bước của quy trình chốt lịch; mở kiểm từng link, bỏ các nguồn không kiểm được. Kết luận: công cụ có sẵn chỉ giải bước tìm giờ chung, chưa giải bước chờ phản hồi.
+- **CP6 (mục 6–8):** bản đầu chọn No AI; sau khi phản biện, mình viết lại thành Workflow (Rule làm lõi: Form + Apps Script tính khung đủ người và nhắc tự động; AI chỉ đọc tin trả lời tự do; người hẹn duyệt). Viết Problem Statement v1, 5 tiêu chí đánh giá đầu ra AI, chấm 4 rủi ro, quyết định Go phạm vi nhỏ với pilot theo bậc và 4 ngưỡng dừng.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- [CP3 — Pitch và phản biện](report/team/group_report.md#21-pitch) · [Commit research L3](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/cf9c802) · [Commit Workflow, v1 và quyết định](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/1e5a139) · [Commit kiểm chứng hướng đọc đề lab](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/5a1401d)
+- [Mục 3.3 — Research giải pháp đã có](report/team/group_report.md#33-research-giải-pháp-đã-có) · [Commit 3.3](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/cf9c802)
+- [Mục 6 — Mức can thiệp AI](report/team/group_report.md#6-mức-can-thiệp-ai-cp6) · [Mục 7 — Problem Statement v1](report/team/group_report.md#7-problem-statement-v1--tiêu-chí-đánh-giá-cp6) · [Mục 8 — Quyết định](report/team/group_report.md#8-quyết-định-cp6) · [Commit bản No AI đầu](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/700ed17) · [Commit viết lại CP6 thành Workflow và mục 8](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/1e5a139)
+- Kiểm chứng S1 (đã gỡ khi đổi đề tài): [Commit bộ câu hỏi và mẫu](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/4e0f478) · [Commit 3 snapshot P01–P03](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/5a1401d)
+- Báo cáo cá nhân: [2A202603861_NguyenThienBao.md](report/individual/2A202603861_NguyenThienBao.md) · [Commit CP1–CP2](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/0f5dfc4)
 
 **Điều mình học được từ phần nhóm:**
 
-- Chờ Bảo tự bổ sung.
+- Chọn mức can thiệp phải bám vào bước nghẽn cụ thể, không bám vào cảm giác "đơn giản là đủ" hay "phải có AI". Bản No AI đầu tiên bỏ qua đúng chỗ Rule không làm được là tin trả lời tự do; còn nếu đưa AI vào mọi bước thì lại thừa. Cách mình chốt là để AI ở đúng một bước và đặt ngưỡng để bỏ bước đó nếu pilot cho thấy không cần.

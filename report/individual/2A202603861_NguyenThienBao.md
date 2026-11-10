@@ -142,16 +142,16 @@ HIỆN TẠI — khoảng 10 tiếng chờ + 15 phút xử lý (ước lượng)
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch 3 card B1 (đọc và đối chiếu yêu cầu lab), B2 (theo dõi ai làm gì trong bài nhóm), B3 (biết kịp thông báo đột ngột) | B1 được gộp với L2 của Lương thành ứng viên S1, từng được chọn ở vòng CP3 đầu. B2, B3 vào cluster C cùng L3 |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: (1) Hỏi Duy ở card D3: "Nếu lưu nguồn ngay từ đầu, còn nhu cầu tìm kiếm nâng cao không?" (2) Hỏi Nhật ở card N1: "Đối chiếu theo mã phiên sạc xử lý được bao nhiêu phần trăm khối lượng công việc, còn lại những ca ngoại lệ nào?" | Duy đồng ý lưu mã nguồn ngay lúc đọc là đủ cho lượt thử. Nhật thừa nhận chưa có số đo cả kỳ và các ca lệch có thể chiếm phần lớn thời gian; N1 dừng trước shortlist vì khó thu đủ mẫu trong một buổi lab (mục 2.4) |
+| Nhận phản biện | Câu hỏi tôi nhận được: (1) Nhật hỏi B1: "Nếu đã có checklist mẫu dùng lại cho mọi lab, bước đối chiếu còn tốn thời gian không, có cần AI nữa không?" (2) Lương hỏi B2: "Lần gần nhất chuyện này xảy ra là khi nào? Mất bao lâu?" | Tôi đã sửa gì: với B1, tôi chuyển "Cảm nhận nhanh" sang thử checklist (Rule) trước, chỉ xét AI nếu vẫn phải lật qua lại giữa các file. Với B2, tôi nhận ra mình không nhớ được lần cụ thể nào, nên ghi rõ số liệu là ước lượng và để B2 ngoài shortlist |
+| Gom cluster / cây OST | Card B1 của tôi được gộp với L2 của Lương vì cùng một pain là đọc yêu cầu lab rải rác nhiều file; B2, B3 nằm trong cluster C | Hai card thành một nhánh trong cluster B và một candidate trong shortlist (mục 2.2, 2.4) |
+| Chọn candidate problem | Ban đầu nhóm chọn S1 (B1 + L2). Khi nhóm làm lại CP3 và chọn L3, tôi chuyển sang làm research cho L3 | Nhóm chốt L3 — Chốt giờ họp nhóm, vì có điểm kết thúc rõ (cả nhóm xác nhận giờ) và đo được bằng mốc tin nhắn |
+| Kiểm chứng / research | Soạn bộ câu hỏi phỏng vấn theo Mom Test, mẫu snapshot và phiếu bấm giờ cho S1; thu bản trả lời của 3 sinh viên ngoài nhóm và viết thành 3 snapshot P01–P03. Sau khi nhóm đổi sang L3, tôi làm mục 3.3: research 4 công cụ hẹn lịch (When2meet, Doodle, Google Calendar, Reclaim.ai) và pattern lịch cố định, mở và kiểm từng link | Snapshot S1 bị gỡ khi nhóm đổi đề tài. Mục 3.3 chỉ ra công cụ có sẵn chỉ giải bước tìm giờ chung, chưa giải bước chờ phản hồi. Kết luận này được dùng để tách hai nguyên nhân ở mục 4–6 |
+| Quy trình nhóm | Góp ý mục 4.2–4.3 cho khớp với mức can thiệp ở CP6. Lần đầu tôi sửa thẳng vào mục 4 của Lương; sau đó tôi trả mục 4 về bản gốc để Lương tự cập nhật | Lương cập nhật 4.2–4.3 theo mức Workflow (commit 40cdfa1) |
+| Problem Statement | Viết Problem Statement v1 (mục 7): thêm AI intervention point, mức chọn, rủi ro và người kiểm tra; bảng v0 → v1; 5 tiêu chí đánh giá đầu ra AI | v1 khác v0 ở Success Metric (thêm metric cho bước AI), AI intervention point và rủi ro |
+| Mức can thiệp AI | Viết mục 6. Bản đầu chọn No AI. Tôi phản biện lại vì bản đó bỏ qua đúng chỗ Rule không làm được (tin trả lời tự do của B), rồi viết lại thành Workflow: Rule làm lõi, AI chỉ đọc tin trả lời tự do | Mục 6 có ma trận, bảng 4 mức, lý do không chọn mức đơn giản hơn, kiến trúc pilot, AI Canvas và 2 câu PAIR |
+| Quyết định | Viết mục 8: chấm 4 rủi ro, quyết định Go phạm vi nhỏ, pilot 2 tuần theo bậc (Rule trước, AI sau) và 4 ngưỡng dừng | Ngưỡng dừng đầu tiên ("dưới 20% tin tự do thì bỏ AI") kiểm chính giả định yếu nhất của lựa chọn Workflow |
 
 ---
 
@@ -159,12 +159,12 @@ HIỆN TẠI — khoảng 10 tiếng chờ + 15 phút xử lý (ước lượng)
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Gợi ý thêm problem theo 4 lăng kính, rồi trình bày lại bảng scan | Mở rộng danh sách từ 3 ý tôi tự nghĩ ra lên 10 ý | Đưa ra nhiều ý tôi chưa từng gặp, cột dấu hiệu chỉ ghi "cần bổ sung"; khi ước lượng số phút, AI giả định tôi đã gặp #3 và #5 | Chỉ giữ 5 ý tôi xác nhận đã gặp, ghi rõ số liệu là ước lượng, bỏ 5 ý không có dấu hiệu thật |
+| CP2 Problem Card | Đóng vai PM hoài nghi phản biện 3 card; gợi ý số phút ước lượng cho từng bước | Chỉ ra mốc 30 phút mới là thời gian đọc, chưa tách bước đối chiếu; card thông báo nghẽn ở lúc nhận biết chứ không ở lúc đọc | Bản đầu để `t1…t5` và nhiều câu "giả định", "cần bổ sung" nên card không có số phút | Chốt số phút ước lượng cho từng bước, chọn một bottleneck có số phút, ghi rõ Đồng ý/Không đồng ý ở bảng phản biện |
+| CP4 Research | Tìm công cụ hẹn lịch và mở kiểm từng link cho mục 3.3 | Tìm nhanh 4 công cụ, tóm điểm mạnh và khoảng trống theo từng bước quy trình | Link Doodle ban đầu bị 404; không tìm được trang hướng dẫn bình chọn chính thức của Messenger; trang Discord chặn truy cập tự động | Dùng link Doodle đúng; bỏ Messenger và Discord vì không kiểm được nguồn; chỉ ghi điều trang thật sự nói |
+| CP5 Quy trình | Rà mục 4 cho khớp với mức can thiệp ở CP6 | Chỉ ra mục 4.3 ghi 3/5 bước thủ công trong khi bản CP6 đầu ghi 5/5 | AI sửa thẳng vào mục 4 của Lương, mà Lương vốn định làm theo hướng kỹ thuật hơn | Tôi trả mục 4 về bản gốc (commit 1e5a139) để Lương tự cập nhật |
+| CP5–6 Problem Statement | Nhờ AI phản biện và góp ý cho Problem Statement v1, tiêu chí đánh giá; sau đó tôi tự cân nhắc và viết lại | Gợi ý tách metric về thời gian khỏi độ đúng của đầu ra, chú ý lỗi báo nhầm "rảnh" | Góp ý về cách trình bày chưa đủ để xác nhận metric có căn cứ; tôi vẫn phải đối chiếu từng nhận định với dữ liệu của nhóm | Tôi tự viết lại từng trường, tách rõ baseline, target và cách đo; giữ bước người hẹn kiểm nguyên văn và rà lại nội dung theo bằng chứng hiện có |
+| CP6 Mức can thiệp / quyết định | Nhờ AI phản biện và góp ý về mức can thiệp, bốn rủi ro và ngưỡng dừng; sau đó tôi tự viết lại phần phân tích | Gợi ý cách thử Rule trước rồi mới xem có cần AI, cùng ngưỡng tỷ lệ tin tự do để xem xét bỏ bước AI | Hướng No AI ban đầu chưa phân tích đủ trường hợp tin tự do. Tuy nhiên, phỏng vấn B cũng chưa chứng minh người học sẽ tiếp tục trả lời ngoài Form sau khi đổi cách hỏi | Tôi cân nhắc các góp ý rồi tự viết lại theo hướng Workflow: Rule làm lõi, AI chỉ đọc tin tự do, người hẹn duyệt. Tôi giữ điều kiện hạ về Rule nếu pilot không có đủ tin tự do; lựa chọn Workflow vẫn cần kiểm chứng |
 
 ---
 
@@ -174,20 +174,39 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Khi so các card, tôi thấy vấn đề mình gặp thường xuyên chưa chắc là vấn đề phù hợp nhất để nhóm chọn trong buổi lab. Tôi muốn pitch B1 vì việc đọc yêu cầu bài là chuyện gần với mình, còn card L3 của Lương có điểm kết thúc dễ kiểm tra hơn: đã chốt được giờ và đủ người xác nhận hay chưa. Với các bài đối soát của Nhật, tác động có thể lớn nhưng nhóm cần dữ liệu và người xác nhận quy tắc. Qua đó, tôi thấy khi chọn problem phải xét cả khả năng tiếp cận bằng chứng, không chỉ nhìn số phút hoặc quy mô ảnh hưởng được nêu trong card.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Phần chọn mức can thiệp là chỗ tôi cần tự kiểm lại nhiều nhất. Nếu thấy tin nhắn tự do rồi kết luận ngay cần AI đọc tin, tôi vẫn đang đi từ một cách giải sang vấn đề. Phỏng vấn B có phản hồi chưa cụ thể, nhưng chưa chứng minh rằng sau khi có Form, mọi người vẫn thường xuyên trả lời ngoài Form. Vì vậy, bản cuối có pilot theo bậc: tuần đầu chỉ dùng Rule và đếm phản hồi tự do; chỉ thêm AI khi có đủ trường hợp cần xử lý. Ngưỡng dưới 20% thì bỏ AI giúp lựa chọn Workflow còn có thể được sửa theo dữ liệu, thay vì cố giữ phương án đã viết.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Ở B1, câu hỏi của Nhật về checklist dùng lại khiến tôi phải nói rõ phần nào vẫn cần đối chiếu theo từng đề. Tôi không thể lấy việc mất thời gian đọc nhiều file làm lý do đủ để chọn AI. Trong phần nhóm, tôi cũng đã đổi bản CP6 từ No AI sang Workflow, thể hiện ở hai commit [700ed17](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/700ed17) và [1e5a139](https://github.com/duyhale95/K5-L3B-DAY02-UIT-DiscoveryProblemFraming/commit/1e5a139). Bản sau tách phần tính khung giờ bằng Rule và phần đọc tin tự do bằng AI. Điều cần giữ là đây mới là lựa chọn để thử; nếu Form đã đủ thì tôi phải chấp nhận hạ mức về Rule.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điểm đáng chú ý với tôi là cùng một biểu hiện “chốt lịch lâu” nhưng A và B lại vướng ở hai đoạn khác nhau. A chủ yếu chờ người cuối trả lời, còn B cần làm rõ giờ rảnh và vẫn không tìm được giờ chung trong ngày. Khi làm research, tôi phải đối chiếu công cụ với từng đoạn này: tìm được giờ chung không có nghĩa là khiến thành viên phản hồi sớm hơn. Trường hợp C cũng là một đối chứng cần giữ, vì lịch cố định đã giúp nhóm đó xử lý khá nhanh. Tôi dùng kết quả phỏng vấn L3 do nhóm tổng hợp; ba bản trả lời tôi thu trước đó thuộc đề tài S1, không phải bằng chứng cho việc chốt lịch.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Phần tôi phải cân nhắc kỹ là metric và phạm vi của con số. Mốc khoảng 30 phút của B kết thúc ở việc dời họp, nên không thể dùng như một lượt chốt thành công. Các thời gian hiện có cũng chủ yếu là nhớ lại, chưa phải baseline đo từ chat. Với bước AI, chỉ ghi “đúng trên 90%” chưa đủ: một ô báo nhầm rảnh vẫn có thể khiến nhóm chọn sai giờ. Vì vậy, tôi tách độ khớp tổng thể khỏi điều kiện không có ô rảnh sai, đồng thời giữ người hẹn kiểm nguyên văn trước khi chốt. Mục tiêu dưới 10 phút vẫn cần được kiểm qua pilot.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Tôi sẽ lấy một đoạn chat được phép dùng và ghi mốc thời gian sớm hơn, trước khi viết kỹ phương án can thiệp. Tôi muốn hỏi rõ “đoạn nào đang chờ người, đoạn nào người hẹn thực sự đang xử lý” và “đã thử gom giờ một lượt chưa”. Tôi cũng sẽ kiểm tra riêng giả định rằng mọi người vẫn trả lời tự do sau khi có Form, vì đây là căn cứ quan trọng để giữ bước AI. Về phối hợp, khi cần đổi phần liên quan đến quy trình của Lương, tôi sẽ trao đổi trước rồi để bạn cập nhật phần mình phụ trách. Lần này tôi đã phải trả lại mục 4 sau khi sửa, nên cách làm đó cần tránh lặp lại.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Vấn đề nhóm chọn là các nhóm học tập 3–4 người chưa có lịch cố định mất thời gian chờ và hỏi lại để chốt giờ họp. Quy trình hiện tại đi từ đề xuất một giờ, nhận phản hồi, đổi giờ khi có người bận rồi lặp lại đến khi chốt. Bài nhóm đặt mục tiêu ít nhất hai trong ba lượt pilot chốt đủ người trong dưới 10 phút, nhưng baseline còn phải đo lại và không được tính lượt dời lịch là chốt thành công. Phương án dự kiến dùng Rule để thu phản hồi có cấu trúc, tính khung trùng và nhắc, còn AI chỉ chuyển tin trả lời tự do thành bảng trạng thái. AI không tự đoán người chưa phản hồi là rảnh, không tự gửi tin hay chốt lịch, và người hẹn phải kiểm đầu ra trước khi sử dụng. Nhóm chọn Workflow có điều kiện: thử Rule trước, chỉ thêm bước AI nếu thực tế còn đủ phản hồi tự do cần xử lý. Quyết định là Go phạm vi nhỏ trong hai tuần, với ngưỡng bỏ AI hoặc quay về cách phối hợp đơn giản hơn nếu kết quả không đạt.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- Tài liệu lab: [worksheet](../../docs/01-worksheet.md), [bài mẫu](../../docs/02-deliverable-example.md), [RUBRIC](../../RUBRIC.md)
+- Báo cáo nhóm: [group_report.md](../team/group_report.md), mục 3.3 (research), 6–8 (mức can thiệp, Problem Statement v1, quyết định)
+- When2meet: https://www.when2meet.com/
+- Doodle Group Poll: https://doodle.com/en/product/polls/
+- Google Calendar — mời người và tìm giờ: https://support.google.com/calendar/answer/37161
+- Reclaim.ai — AI Scheduling Links: https://reclaim.ai/features/scheduling-links
